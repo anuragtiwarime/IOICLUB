@@ -1,6 +1,6 @@
 # PW Institute of Innovation Website Repository
 
-Welcome to the official repository for our college website! This project aims to deliver a seamless user experience through responsive design, an intuitive navigation system, and modern web technologies.
+Welcome to the official repository for our PW IOI website! This project aims to deliver a seamless user experience through responsive design, an intuitive navigation system, and modern web technologies.
 
 ## Features
 

@@ -45,7 +45,7 @@ export default function Policies() {
             <p className="text-gray-700 mb-6">{policy.description}</p>
             <button
               onClick={() => openModal(policy.file)}
-              className="px-4 py-2 bg-black text-white font-semibold rounded-md shadow hover:bg-gray-800"
+              className="px-4 py-2 bg-black text-white font-semibold  shadow hover:bg-gray-800"
             >
               View
             </button>
