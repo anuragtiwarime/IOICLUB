@@ -30,7 +30,4 @@ Welcome to the official repository for our college website! This project aims to
   - Mobile compatibility with an interactive toggle menu.
   - Font: `"Times New Roman", serif` for all menu links.
 
-```javascript
-<Link to="/" className="flex items-center space-x-2">
-  <img src={pwioi} alt="" className="w-20 h-14" />
-</Link>
+
