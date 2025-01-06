@@ -1,8 +1,36 @@
-# React + Vite
+# PW Institute of Innovation Website Repository
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to the official repository for our college website! This project aims to deliver a seamless user experience through responsive design, an intuitive navigation system, and modern web technologies.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Responsive Navigation Bar**:
+  - Dropdown menus for easy access to subcategories.
+  - Mobile-friendly design with a hamburger menu.
+- **Image Slider**:
+  - Dynamic carousel with auto-slide functionality.
+  - Smooth transitions and shadow-like effects for a professional aesthetic.
+- **Dynamic Pages**:
+  - Dedicated pages for Clubs, Policies, Careers, Students, and Faculty & Staff.
+
+## Technology Stack
+
+- **Frontend**: ReactJS
+- **Styling**: TailwindCSS
+- **Icons**: React-icons and Lucide-react
+- **Routing**: React Router
+
+## Components Overview
+
+### Navbar
+
+- **Key Features**:
+  - Fixed top navigation for consistent access.
+  - Dropdowns for `Students` section (Schools of Technology & Management).
+  - Mobile compatibility with an interactive toggle menu.
+  - Font: `"Times New Roman", serif` for all menu links.
+
+```javascript
+<Link to="/" className="flex items-center space-x-2">
+  <img src={pwioi} alt="" className="w-20 h-14" />
+</Link>
