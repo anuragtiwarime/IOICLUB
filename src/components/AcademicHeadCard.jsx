@@ -8,7 +8,7 @@ export default function AcademicHeadCard({ image, name, role, description, linke
         <img
           src={image}
           alt={name}
-          className="w-36 h-28 rounded-full mb-4 object-cover"
+          className="w-28 h-28 rounded-full mb-4 object-cover"
         />
         <h3 className="text-xl font-semibold text-center text-black">{name}</h3>
         
