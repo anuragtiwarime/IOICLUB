@@ -9,7 +9,7 @@ const FacultyandStaff = () => {
     },
     {
       image: som, 
-      name: "Dr. Jane Smith",
+      name: "Satiya sir",
       position: "Associate Professor, Department of Mathematics",
       subject: "Discrete Mathematics",
     },
