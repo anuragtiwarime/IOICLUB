@@ -1,6 +1,7 @@
 import React from 'react';
 import { FaLinkedin } from 'react-icons/fa'; // Import LinkedIn logo as an icon
 import Ankit from '../assets/ankit.jpg';
+import Man from '../assets/man.webp';
 
 const MangagementPage = () => {
   const students = [
@@ -8,28 +9,28 @@ const MangagementPage = () => {
       name: 'Ankit Raj',
       city: 'Hazaribagh',
       state: 'Jharkhand',
-      photo: Ankit,
+      photo: Man,
       linkedIn: 'https://www.linkedin.com/in/ankitraj061',
     },
     {
       name: 'Anuj Kumar',
       city: 'Banaras',
       state: 'Uttar Pradesh',
-      photo: Ankit,
+      photo: Man,
       linkedIn: 'https://www.linkedin.com/in/ankitraj061',
     },
     {
       name: 'Umesh Sharma',
       city: 'Ranchi',
       state: 'Jharkhand',
-      photo: Ankit,
+      photo: Man,
       linkedIn: 'https://www.linkedin.com/in/ankitraj061',
     },
     {
       name: 'Ravi Verma',
       city: 'Patna',
       state: 'Bihar',
-      photo: Ankit,
+      photo: Man,
       linkedIn: 'https://www.linkedin.com/in/ankitraj061',
     },
   ];

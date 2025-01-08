@@ -2,7 +2,6 @@ import AccessCard from '../components/AccessCard';
 import ImageSlider from '../components/ImageSlider';
 import COOCard from '../components/COOCard';
 import AcademicHeadCard from '../components/AcademicHeadCard';
-
 import COO from '../assets/CTO.jpeg';
 import img4 from '../assets/img4.jpg';
 import img8 from '../assets/img8.JPG';
@@ -13,7 +12,6 @@ export default function Home() {
   return (
     <div className="pt-16">
       <ImageSlider />
-
       <section className="py-16 px-4 bg-gray-50">
       <h2 className="text-3xl font-bold text-center text-black mb-12">
         Meet Our Leadership

@@ -1,6 +1,7 @@
 import React from 'react';
 import Ankit from '../assets/ankit.jpg';
 import { FaLinkedin } from 'react-icons/fa';
+import Man from '../assets/man.webp'
 
 const TechnologyPage = () => {
  const students = [
@@ -15,21 +16,21 @@ const TechnologyPage = () => {
        name: 'Anuj Kumar',
        city: 'Banaras',
        state: 'Uttar Pradesh',
-       photo: Ankit,
+       photo: Man,
        linkedIn: 'https://www.linkedin.com/in/ankitraj061',
      },
      {
        name: 'Umesh Sharma',
        city: 'Ranchi',
        state: 'Jharkhand',
-       photo: Ankit,
+       photo: Man,
        linkedIn: 'https://www.linkedin.com/in/ankitraj061',
      },
      {
        name: 'Ravi Verma',
        city: 'Patna',
        state: 'Bihar',
-       photo: Ankit,
+       photo: Man,
        linkedIn: 'https://www.linkedin.com/in/ankitraj061',
      },
    ];
