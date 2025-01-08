@@ -3,8 +3,6 @@ import ImageSlider from '../components/ImageSlider';
 import COOCard from '../components/COOCard';
 import AcademicHeadCard from '../components/AcademicHeadCard';
 
-
-
 import COO from '../assets/CTO.jpeg';
 import img4 from '../assets/img4.jpg';
 import img8 from '../assets/img8.JPG';

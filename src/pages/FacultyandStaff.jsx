@@ -1,4 +1,4 @@
-import som from '../assets/som.jpeg';
+import som from '../assets/SOM.jpeg';
 const FacultyandStaff = () => {
   const facultyData = [
     {
