@@ -1,32 +1,32 @@
-import som from '../assets/SOM.jpeg';
+import SOM from '../assets/SOM.jpeg';
 const FacultyandStaff = () => {
   const facultyData = [
     {
-      image: som, 
+      image: SOM, 
       name: "Anisha Koshy",
       position: "Faculty, School of Technology",
       subject: "English",
     },
     {
-      image: som, 
+      image: SOM, 
       name: "Satiya sir",
       position: "Associate Professor, Department of Mathematics",
       subject: "Discrete Mathematics",
     },
     {
-      image: som, 
+      image: SOM, 
       name: "Dr. Jane Smith",
       position: "Associate Professor, Department of Mathematics",
       subject: "Discrete Mathematics",
     },
     {
-      image: som, 
+      image: SOM, 
       name: "Dr. Jane Smith",
       position: "Associate Professor, Department of Mathematics",
       subject: "Discrete Mathematics",
     },
     {
-      image: som, 
+      image: SOM, 
       name: "Dr. Jane Smith",
       position: "Associate Professor, Department of Mathematics",
       subject: "Discrete Mathematics",
