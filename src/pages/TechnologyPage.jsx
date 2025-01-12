@@ -962,8 +962,8 @@ const TechnologyPage = () => {
     },
     {
       name: "Patan Nazneen",
-      city: "xyz",
-      state: "xyz",
+      city: "Annamaya",
+      state: "Andhra Pradesh",
       photo: Woman,
       linkedIn: "https://www.linkedin.com/in/random-id"
     },
@@ -997,8 +997,8 @@ const TechnologyPage = () => {
     },
     {
       name: "Sayan Das",
-      city: "xyz",
-      state: "xyz",
+      city: "Parganas",
+      state: "West Bengal",
       photo: Man,
       linkedIn: "https://www.linkedin.com/in/random-id"
     },
@@ -1018,57 +1018,64 @@ const TechnologyPage = () => {
     },
     {
       name: "Snuhith Goud",
-      city: "xyz",
-      state: "xyz",
+      city: "Warangal",
+      state: "Telangana",
       photo: Man,
       linkedIn: "https://www.linkedin.com/in/random-id"
     },
     {
       name: "Sohana Parveen",
-      city: "xyz",
-      state: "xyz",
+      city: "Murshidabad",
+      state: "West Bengal",
       photo: Woman,
       linkedIn: "https://www.linkedin.com/in/random-id"
     },
     {
       name: "Souvik Biswas",
-      city: "xyz",
-      state: "xyz",
+      city: "Maldah",
+      state: "West Bengal",
+      photo: Man,
+      linkedIn: "https://www.linkedin.com/in/random-id"
+    },
+    {
+      name: "Srakash Dhar",
+      city: "Agartala ",
+      state: "Tripura",
       photo: Man,
       linkedIn: "https://www.linkedin.com/in/random-id"
     },
     {
       name: "Suraj Chaudhary",
-      city: "xyz",
-      state: "xyz",
+      city: "kanpur",
+      state: "Uttar Pradesh",
       photo: Man,
       linkedIn: "https://www.linkedin.com/in/random-id"
     },
     {
       name: "Suraj Kumar",
-      city: "xyz",
-      state: "xyz",
+      city: "Bhojpur",
+      state: "Bihar",
       photo: Man,
       linkedIn: "https://www.linkedin.com/in/random-id"
     },
     {
       name: "Sushrut Kaviskar",
-      city: "xyz",
-      state: "xyz",
+      city: "Thane",
+      state: "Maharashtra",
       photo: Man,
       linkedIn: "https://www.linkedin.com/in/random-id"
     },
     {
       name: "Tejas Jyoti",
-      city: "xyz",
-      state: "xyz",
+      city: "Ranebennur",
+      state: "Karnataka",
       photo: Man,
       linkedIn: "https://www.linkedin.com/in/random-id"
     },
     {
       name: "Vaishnavi Arjun",
-      city: "xyz",
-      state: "xyz",
+      city: " Bengaluru",
+      state: "Karnataka",
       photo: Woman,
       linkedIn: "https://www.linkedin.com/in/random-id"
     },
@@ -1081,8 +1088,8 @@ const TechnologyPage = () => {
     },
     {
       name: "Md Osama",
-      city: "xyz",
-      state: "xyz",
+      city: "Nathnagar",
+      state: "Bihar",
       photo: Man,
       linkedIn: "https://www.linkedin.com/in/random-id"
     },
@@ -1095,15 +1102,15 @@ const TechnologyPage = () => {
     },
     {
       name: "Md Irfan",
-      city: "xyz",
-      state: "xyz",
+      city: "Siddipet",
+      state: "Telangana",
       photo: Man,
       linkedIn: "https://www.linkedin.com/in/random-id"
     },
     {
       name: "Suyash Dubey",
-      city: "xyz",
-      state: "xyz",
+      city: "Faridabad",
+      state: "Haryana",
       photo: Man,
       linkedIn: "https://www.linkedin.com/in/random-id"
     }

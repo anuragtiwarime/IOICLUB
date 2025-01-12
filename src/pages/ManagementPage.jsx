@@ -1,38 +1,222 @@
 import React from 'react';
-import { FaLinkedin } from 'react-icons/fa'; // Import LinkedIn logo as an icon
-import Ankit from '../assets/ankit.jpg';
+import { FaLinkedin } from 'react-icons/fa'; 
 import Man from '../assets/man.webp';
 
 const MangagementPage = () => {
   const students = [
-    {
-      name: 'Ankit Raj',
-      city: 'Hazaribagh',
-      state: 'Jharkhand',
-      photo: Man,
-      linkedIn: 'https://www.linkedin.com/in/ankitraj061',
-    },
-    {
-      name: 'Anuj Kumar',
-      city: 'Banaras',
-      state: 'Uttar Pradesh',
-      photo: Man,
-      linkedIn: 'https://www.linkedin.com/in/ankitraj061',
-    },
-    {
-      name: 'Umesh Sharma',
-      city: 'Ranchi',
-      state: 'Jharkhand',
-      photo: Man,
-      linkedIn: 'https://www.linkedin.com/in/ankitraj061',
-    },
-    {
-      name: 'Ravi Verma',
-      city: 'Patna',
-      state: 'Bihar',
-      photo: Man,
-      linkedIn: 'https://www.linkedin.com/in/ankitraj061',
-    },
+    
+     
+      {
+          name: 'Abhinav Jain',
+          city: '',  
+          state: '', 
+          photo: Man,
+          linkedIn: '',
+      },
+      {
+          name: 'Abhishek Kumar',
+          city: '',
+          state: '',
+          photo: Man,
+          linkedIn: '',
+      },
+      {
+          name: 'Amrita P',
+          city: '',
+          state: '',
+          photo: Man,
+          linkedIn: '',
+      },
+      {
+          name: 'Atchaya R',
+          city: ' Madurai',
+          state: 'Tamil Nadu',
+          photo: Man,
+          linkedIn: '',
+      },
+      {
+          name: 'Deeksha Pawar',
+          city: '',
+          state: '',
+          photo: Man,
+          linkedIn: '',
+      },
+      {
+          name: 'Deepak',
+          city: 'Bhadurpally',
+          state: 'Andhra Pradesh',
+          photo: Man,
+          linkedIn: '',
+      },
+      {
+          name: 'Deepak Kumar Mahto',
+          city: '',
+          state: '',
+          photo: Man,
+          linkedIn: '',
+      },
+      {
+          name: 'Iffa Naaz',
+          city: '',
+          state: '',
+          photo: Man,
+          linkedIn: '',
+      },
+      {
+          name: 'Jasleen Kaur',
+          city: '',
+          state: '',
+          photo: Man,
+          linkedIn: '',
+      },
+      {
+          name: 'Jaypal pandey',
+          city: '',
+          state: '',
+          photo: Man,
+          linkedIn: '',
+      },
+      {
+          name: 'Kashish Kashish',
+          city: '',
+          state: '',
+          photo: Man,
+          linkedIn: '',
+      },
+      {
+          name: 'Khushal',
+          city: '',
+          state: '',
+          photo: Man,
+          linkedIn: '',
+      },
+      {
+          name: 'Mayank Ranjan',
+          city: '',
+          state: '',
+          photo: Man,
+          linkedIn: '',
+      },
+      {
+          name: 'Md kaif alam',
+          city: '',
+          state: '',
+          photo: Man,
+          linkedIn: '',
+      },
+      {
+          name: 'Parvathi Chandhana',
+          city: '',
+          state: '',
+          photo: Man,
+          linkedIn: '',
+      },
+      {
+          name: 'PRAJWAL KAGALAGOMB',
+          city: '',
+          state: '',
+          photo: Man,
+          linkedIn: '',
+      },
+      {
+          name: 'Pulkit Vyas',
+          city: '',
+          state: '',
+          photo: Man,
+          linkedIn: '',
+      },
+      {
+          name: 'Raj Mishra',
+          city: '',
+          state: '',
+          photo: Man,
+          linkedIn: '',
+      },
+      {
+          name: 'Rajdeep Debnath',
+          city: '',
+          state: '',
+          photo: Man,
+          linkedIn: '',
+      },
+      {
+          name: 'Sahil Singh',
+          city: '',
+          state: '',
+          photo: Man,
+          linkedIn: '',
+      },
+      {
+          name: 'Sahil Soni',
+          city: '',
+          state: '',
+          photo: Man,
+          linkedIn: '',
+      },
+      {
+          name: 'Shivam Kumar',
+          city: '',
+          state: '',
+          photo: Man,
+          linkedIn: '',
+      },
+      {
+          name: 'Shreya Tiwari',
+          city: '',
+          state: '',
+          photo: Man,
+          linkedIn: '',
+      },
+      {
+          name: 'Shubham Kumar Saurav',
+          city: '',
+          state: '',
+          photo: Man,
+          linkedIn: '',
+      },
+      {
+          name: 'Tushar Dengle',
+          city: '',
+          state: '',
+          photo: Man,
+          linkedIn: '',
+      },
+      {
+          name: 'Shristi',
+          city: '',
+          state: '',
+          photo: Man,
+          linkedIn: '',
+      },
+      {
+          name: 'Vivek',
+          city: '',
+          state: '',
+          photo: Man,
+          linkedIn: '',
+      },
+      {
+          name: 'Vivek Sahu',
+          city: '',
+          state: '',
+          photo: Man,
+          linkedIn: '',
+      },
+      {
+          name: 'Yash Sahu',
+          city: '',
+          state: '',
+          photo: Man,
+          linkedIn: '',
+      },
+      {
+          name: 'Dharani Hosur',
+          city: '',
+          state: '',
+          photo: Man,
+          linkedIn: '',
+      }
+
   ];
 
   return (

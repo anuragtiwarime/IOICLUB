@@ -8,6 +8,7 @@ import Careers from './pages/Careers.jsx';
 import FacultyandStaff from './pages/FacultyandStaff.jsx';
 import TechnologyPage from './pages/TechnologyPage.jsx';  
 import ManagementPage from './pages/ManagementPage.jsx';
+import './App.css';
 
 const App = () => (
   <Router>

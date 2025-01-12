@@ -78,30 +78,33 @@ const FacultyandStaff = () => {
 
   return (
     <div className="pt-24 px-4 max-w-7xl mx-auto">
-    <h1 className="text-3xl font-bold text-black mb-8 text-center">Faculty and Staff</h1>
-
-    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-      {facultyData.map((faculty, index) => (
-        <div
-          key={index}
-          className="bg-white p-6 rounded-lg shadow-lg transform transition-transform hover:scale-105"
-        >
-          <div className="flex flex-col items-center text-center">
-            <img
-              src={faculty.image}
-              alt={faculty.name}
-              className="w-24 h-24 rounded-full mb-4 object-cover"
-            />
-            <h3 className="text-xl font-semibold mb-2">{faculty.name}</h3>
+      <h1 className="text-3xl font-bold text-black mb-8 text-center">Faculty and Staff</h1>
+  
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        {facultyData.map((faculty, index) => (
+          <div
+            key={index}
+            className="bg-white p-6 rounded-lg shadow-lg border hover:shadow-2xl transform transition-transform hover:scale-105"
+          >
+            <div className="flex flex-col items-center text-center">
+              <img
+                src={faculty.image}
+                alt={faculty.name}
+                className="w-28 h-28 rounded-full mb-4 object-cover border-4 border-gray-200 shadow-sm"
+              />
+              <h3 className="text-lg font-semibold text-gray-800 mb-2">{faculty.name}</h3>
+            </div>
+            <div>
+              <p className="text-gray-600 text-sm text-justify leading-relaxed">
+                {faculty.about}
+              </p>
+            </div>
           </div>
-          <div>
-            <p className="text-gray-700 text-sm text-justify">{faculty.about}</p>
-          </div>
-        </div>
-      ))}
+        ))}
+      </div>
     </div>
-  </div>
   );
+  
 }
 
 export default FacultyandStaff;
