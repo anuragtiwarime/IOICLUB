@@ -1,6 +1,7 @@
 import React from 'react';
 import { FaLinkedin } from 'react-icons/fa'; 
 import Man from '../assets/man.webp';
+import Woman from '../assets/women.jpeg';
 
 const MangagementPage = () => {
   const students = [
@@ -50,15 +51,15 @@ const MangagementPage = () => {
       },
       {
           name: 'Deepak Kumar Mahto',
-          city: '',
-          state: '',
+          city: ' Bengaluru',
+          state: 'Karnataka',
           photo: Man,
           linkedIn: '',
       },
       {
           name: 'Iffa Naaz',
-          city: '',
-          state: '',
+          city: 'Okhla',
+          state: 'Delhi',
           photo: Man,
           linkedIn: '',
       },
@@ -71,22 +72,22 @@ const MangagementPage = () => {
       },
       {
           name: 'Jaypal pandey',
-          city: '',
-          state: '',
+          city: 'Gorakhpur',
+          state: 'Uttar Pradesh',
           photo: Man,
           linkedIn: '',
       },
       {
           name: 'Kashish Kashish',
-          city: '',
-          state: '',
-          photo: Man,
+          city: 'Nehru Vihar',
+          state: 'Delhi',
+          photo: Woman,
           linkedIn: '',
       },
       {
           name: 'Khushal',
-          city: '',
-          state: '',
+          city: 'Nashik',
+          state: 'Maharashtra',
           photo: Man,
           linkedIn: '',
       },
@@ -112,16 +113,16 @@ const MangagementPage = () => {
           linkedIn: '',
       },
       {
-          name: 'PRAJWAL KAGALAGOMB',
-          city: '',
-          state: '',
+          name: 'Prajwal Kagalagomb',
+          city: ' Bengaluru',
+          state: 'Karnataka',
           photo: Man,
           linkedIn: '',
       },
       {
           name: 'Pulkit Vyas',
-          city: '',
-          state: '',
+          city: 'Sikar',
+          state: 'Rajasthan',
           photo: Man,
           linkedIn: '',
       },
@@ -141,8 +142,8 @@ const MangagementPage = () => {
       },
       {
           name: 'Sahil Singh',
-          city: '',
-          state: '',
+          city: 'Ranchi',
+          state: 'Jharkhand',
           photo: Man,
           linkedIn: '',
       },
@@ -162,9 +163,9 @@ const MangagementPage = () => {
       },
       {
           name: 'Shreya Tiwari',
-          city: '',
-          state: '',
-          photo: Man,
+          city: 'Jaipur',
+          state: 'Rajasthan',
+          photo: Woman,
           linkedIn: '',
       },
       {
@@ -176,22 +177,22 @@ const MangagementPage = () => {
       },
       {
           name: 'Tushar Dengle',
-          city: '',
-          state: '',
+          city: 'Nanded',
+          state: 'Maharashtra',
           photo: Man,
           linkedIn: '',
       },
       {
           name: 'Shristi',
-          city: '',
-          state: '',
-          photo: Man,
+          city: 'Faridabad',
+          state: 'Haryana',
+          photo: Woman,
           linkedIn: '',
       },
       {
           name: 'Vivek',
-          city: '',
-          state: '',
+          city: 'Jafrabad',
+          state: 'Uttar Pradesh',
           photo: Man,
           linkedIn: '',
       },
@@ -211,8 +212,8 @@ const MangagementPage = () => {
       },
       {
           name: 'Dharani Hosur',
-          city: '',
-          state: '',
+          city: 'Bengaluru',
+          state: 'Karnataka',
           photo: Man,
           linkedIn: '',
       }
