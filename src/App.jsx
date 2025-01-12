@@ -9,6 +9,7 @@ import FacultyandStaff from './pages/FacultyandStaff.jsx';
 import TechnologyPage from './pages/TechnologyPage.jsx';  
 import ManagementPage from './pages/ManagementPage.jsx';
 import './App.css';
+import PageNotFound from './pages/PageNotFound';
 
 const App = () => (
   <Router>
@@ -23,6 +24,7 @@ const App = () => (
 <Route path="/students/management" element={<ManagementPage />} />
 
         <Route path ='/facultyandstaff' element={<FacultyandStaff/>}></Route>
+        <Route path="*" element={<PageNotFound />} />
       </Routes>
     </div>
   </Router>
