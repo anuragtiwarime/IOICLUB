@@ -3,6 +3,7 @@ import Ankit from '../assets/ankit.jpg';
 import { FaLinkedin } from 'react-icons/fa';
 import Man from '../assets/man.webp'
 import Woman from '../assets/women.jpeg'
+import Footer from '../components/Footer';
 
 const TechnologyPage = () => {
  const students = [
@@ -1122,7 +1123,8 @@ const TechnologyPage = () => {
    ];
  
    return (
-     <div className="pt-24 px-4 max-w-7xl mx-auto">
+    <>
+     <div className="pt-24 pb-16 px-4 max-w-7xl mx-auto">
        <h1 className="text-3xl font-bold text-black mb-8 text-center">Our SOT Students</h1>
        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
          {students.map((student, index) => (
@@ -1150,6 +1152,8 @@ const TechnologyPage = () => {
          ))}
        </div>
      </div>
+     <Footer></Footer>
+     </>
    );
  };
 

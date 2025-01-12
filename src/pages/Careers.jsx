@@ -1,6 +1,8 @@
+import Footer from "../components/Footer";
 export default function Careers() {
   return (
-    <div className="pt-24 px-4 max-w-7xl mx-auto">
+    <>
+    <div className="pt-24 pb-16 px-4 max-w-7xl mx-auto">
       <h1 className="text-3xl font-bold text-black mb-8 text-center">Career Opportunities</h1>
       <div className="space-y-8">
 
@@ -45,5 +47,7 @@ export default function Careers() {
 
       </div>
     </div>
+    <Footer />
+    </>
   );
 }

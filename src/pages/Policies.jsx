@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import COC from '../assets/COC.pdf';
 import AP from '../assets/AP.pdf';
 import SP from '../assets/SP.pdf';
+import Footer from '../components/Footer';
 
 export default function Policies() {
   const [modalContent, setModalContent] = useState(null);
@@ -33,7 +34,8 @@ export default function Policies() {
   };
 
   return (
-    <div className="pt-24 px-4 max-w-7xl mx-auto">
+    <>
+    <div className="pt-24 pb-16 px-4 max-w-7xl mx-auto">
       <h1 className="text-3xl font-bold text-black mb-8 text-center">Our Academic Policies</h1>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6"> {/* Added gap-6 */}
         {policies.map((policy, index) => (
@@ -73,5 +75,7 @@ export default function Policies() {
         </div>
       )}
     </div>
+    <Footer />
+    </>
   );
 }
