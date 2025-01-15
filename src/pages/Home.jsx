@@ -3,13 +3,31 @@ import ImageSlider from '../components/ImageSlider';
 import COOCard from '../components/COOCard';
 import AcademicHeadCard from '../components/AcademicHeadCard';
 import COO from '../assets/CTO.jpeg';
-import img4 from '../assets/img4.jpg';
+import img25 from '../assets/img25.JPG';
 import img8 from '../assets/img8.JPG';
 import img9 from '../assets/img9.JPG';
 import SOM from '../assets/SOM.jpeg';
 import SOT from '../assets/SOT.jpeg';
 import Footer from '../components/Footer';
+import leave from '../assets/leave.jpg';
+import concession from '../assets/concession.jpg';
+import internship from '../assets/internship.jpg';
+import img16 from '../assets/img16.JPG';
+import img17 from '../assets/img17.JPG';
+import img18 from '../assets/img18.JPG';
+import img19 from '../assets/img19.JPG';
+import img20 from '../assets/img20.JPG';
+import img21 from '../assets/img21.JPG';
+import img22 from '../assets/img22.JPG';
+import img23 from '../assets/img23.JPG';
+import img24 from '../assets/img24.JPG';
+import { useNavigate } from 'react-router-dom';
+
 export default function Home() {
+  const navigate = useNavigate();
+  const handleClick = () => {
+    navigate('/lifeatpwioi');  // This navigates to the /lifeatpwioi route
+  };
   return (
     <div className="pt-16">
       <ImageSlider />
@@ -71,19 +89,19 @@ export default function Home() {
           <AccessCard
             title="Leave Request Form"
             description="Kindly complete the form below to request a leave. Ensure all details are accurate for smooth processing of your application."
-            image="https://images.unsplash.com/photo-1506784983877-45594efa4cbe?auto=format&fit=crop&q=80&w=600"
+            image={leave}
             buttonLink="https://pw.jotform.com/242621898990067" // Replace with actual link
           />
           <AccessCard
             title="Concession Form"
             description="Please fill out the form below to apply for a concession. Ensure all information is correct for timely approval of your request."
-            image="https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?auto=format&fit=crop&q=80&w=600"
+            image={concession}
             buttonLink="https://pw.jotform.com/242623356705961" 
           />
           <AccessCard
             title="Internship and Event"
             description="Please complete the form below to register for an internship or event. Accurate details will help us process your application efficiently."
-            image="https://images.unsplash.com/photo-1559523161-0fc0d8b38a7a?auto=format&fit=crop&q=80&w=600"
+            image={internship}
             buttonLink="https://pw.jotform.com/243390511127045" // Replace with actual link
           />
         </div>
@@ -94,25 +112,47 @@ export default function Home() {
         <h2 className="text-3xl font-bold text-center text-black mb-12">Life at PW IOI</h2>
         <div className="max-w-6xl mx-auto grid grid-cols-2 md:grid-cols-3 gap-4">
           <img
-            src={img4}
+            src={img25}
             alt="College Campus"
             className="w-full h-48 object-cover rounded-lg"
           />
           <img
-            src={img8}
+            src={img16}
             className="w-full h-48 object-cover rounded-lg"
           />
           <img
             src={img9}
             className="w-full h-48 object-cover rounded-lg"
           />
+          <img
+            src={img17}
+            className="w-full h-48 object-cover rounded-lg"
+          />
+          <img
+            src={img18}
+            className="w-full h-48 object-cover rounded-lg"
+          />
+          <img
+            src={img19}
+            className="w-full h-48 object-cover rounded-lg"
+          />
+          {/* <img
+            src={img20}
+            className="w-full h-48 object-cover rounded-lg"
+          />
+          <img
+            src={img21}
+            className="w-full h-48 object-cover rounded-lg"
+          />
+          <img
+            src={img22}
+            className="w-full h-48 object-cover rounded-lg"
+          /> */}
         </div>
         <div className="text-center mt-8">
           <a
-            href="https://drive.google.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-block bg-black text-white py-2 px-6  hover:bg-gray-800 transition-colors"
+            onClick={handleClick}
+            className="inline-block bg-black text-white py-2 px-6  hover:bg-gray-800 transition-colors cursor-pointer"
           >
             View More
           </a>

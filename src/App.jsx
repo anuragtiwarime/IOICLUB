@@ -10,6 +10,9 @@ import TechnologyPage from './pages/TechnologyPage.jsx';
 import ManagementPage from './pages/ManagementPage.jsx';
 import './App.css';
 import PageNotFound from './pages/PageNotFound';
+import SOT from './pages/SOT';
+import SOM from './pages/SOM.jsx';
+import LifeAtPWIOI from './pages/LifeAtPWIOI.jsx';
 
 const App = () => (
   <Router>
@@ -25,6 +28,11 @@ const App = () => (
 
         <Route path ='/facultyandstaff' element={<FacultyandStaff/>}></Route>
         <Route path="*" element={<PageNotFound />} />
+        <Route path="/sot" element={<SOT />} />
+        <Route path='/som' element={<SOM></SOM>}></Route>
+        <Route path="/lifeatpwioi" element={<LifeAtPWIOI />} />
+
+
       </Routes>
     </div>
   </Router>

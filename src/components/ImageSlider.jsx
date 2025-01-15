@@ -1,26 +1,21 @@
 import { useState, useEffect } from 'react';
 import React from 'react';
 import { GoChevronLeft, GoChevronRight } from 'react-icons/go';
-import img1 from '../assets/img1.jpg';
-import img2 from '../assets/img2.jpg';
-import img3 from '../assets/img3.jpg';
-import img4 from '../assets/img4.jpg';
-import img5 from '../assets/img5.jpg';
-import img6 from '../assets/img6.jpg';
-import img7 from '../assets/img7.JPG';
-import img8 from '../assets/img8.JPG';
-import img9 from '../assets/img9.JPG';
+import img10 from '../assets/img10.jpg';
+import img11 from '../assets/img11.jpg';
+import img12 from '../assets/img12.jpg';
+import img13 from '../assets/img13.jpg';
+import img14 from '../assets/img14.jpg';
+import img15 from '../assets/img15.jpg';
+
 
 const images = [
-  img9,
-  img8,
-  img7,
-  img6,
-  img5,
-  img4,
-  img3,
-  img2,
-  img1,
+  img15,
+  img10,
+  img11,
+  img12,
+  img13,
+  img14
 ];
 
 export default function ImageSlider() {
@@ -56,7 +51,7 @@ export default function ImageSlider() {
           <img
             src={image}
             alt={`Slide ${index + 1}`}
-            className="w-full h-full object-cover rounded-lg shadow-xl filter brightness-90 contrast-110"
+            className="w-full h-full object-fit rounded-lg shadow-xl filter brightness-90 contrast-110"
           />
         </div>
       ))}

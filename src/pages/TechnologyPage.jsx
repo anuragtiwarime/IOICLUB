@@ -26,7 +26,7 @@ const TechnologyPage = () => {
        city: 'Mathura',
        state: 'Uttar Pradesh',
        photo: Man,
-       linkedIn: 'https://www.linkedin.com/in/',
+       linkedIn: 'https://www.linkedin.com/in/umesh-sharma--/',
      },
    
      {

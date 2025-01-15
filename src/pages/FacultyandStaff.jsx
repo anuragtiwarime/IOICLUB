@@ -81,33 +81,38 @@ const FacultyandStaff = () => {
     <>
     <div className="pt-24 pb-16 px-4 max-w-7xl mx-auto">
       <h1 className="text-3xl font-bold text-black mb-8 text-center">Faculty and Staff</h1>
-  
+
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         {facultyData.map((faculty, index) => (
           <div
             key={index}
             className="bg-white p-6 rounded-lg shadow-lg border hover:shadow-2xl transform transition-transform hover:scale-105"
           >
-            <div className="flex flex-col items-center text-center">
+            {/* Flex for desktop and default column for mobile */}
+            <div className="flex flex-col lg:flex-row items-center lg:items-start text-center lg:text-left">
               <img
                 src={faculty.image}
                 alt={faculty.name}
-                className="w-28 h-28 rounded-full mb-4 object-cover border-4 border-gray-200 shadow-sm"
+                className="w-28 h-28 rounded-full mb-4 lg:mb-0 lg:mr-6 object-cover border-4 border-gray-200 shadow-sm"
               />
-              <h3 className="text-lg font-semibold text-gray-800 mb-2">{faculty.name}</h3>
+              <div>
+  <h3 className="text-lg lg:mt-10 font-semibold text-gray-800 mb-2">{faculty.name}</h3>
+  <p className="text-gray-600 text-sm text-justify leading-relaxed">
+    {/* Faculty about content here */}
+  </p>
+</div>
+
+              
             </div>
-            <div>
-              <p className="text-gray-600 text-sm text-justify leading-relaxed">
-                {faculty.about}
-              </p>
-            </div>
+            <div className="text-gray-600 text-sm text-justify leading-relaxed mt-4">
+              {faculty.about}
+              </div>
           </div>
         ))}
       </div>
     </div>
     <Footer />
-
-    </>
+  </>
   );
   
 }

@@ -44,21 +44,21 @@ const Navbar = () => {
             <Link
               to="/clubs"
               className="hover:text-gray-300 transition duration-200 ease-in-out text-lg font-semibold"
-              style={{ fontFamily: '"Times New Roman", serif' }}
+              style={{fontfamily: 'Roboto' }}
             >
               Clubs
             </Link>
             <Link
               to="/policies"
               className="hover:text-gray-300 transition duration-200 ease-in-out text-lg font-semibold"
-              style={{ fontFamily: '"Times New Roman", serif' }}
+              style={{fontfamily: 'Roboto' }}
             >
               Policies
             </Link>
             <Link
               to="/careers"
               className="hover:text-gray-300 transition duration-200 ease-in-out text-lg font-semibold"
-              style={{ fontFamily: '"Times New Roman", serif' }}
+              style={{ fontfamily: 'Roboto' }}
             >
               Careers
             </Link>
@@ -70,7 +70,7 @@ const Navbar = () => {
             >
               <span
                 className="flex items-center hover:text-gray-300 transition duration-200 ease-in-out text-lg font-semibold cursor-pointer"
-                style={{ fontFamily: '"Times New Roman", serif' }}
+                style={{ fontfamily: 'Roboto' }}
               >
                 Students
                 <GoChevronDown className="ml-1" />
@@ -95,7 +95,7 @@ const Navbar = () => {
             <Link
               to="/facultyandstaff"
               className="hover:text-gray-300 transition duration-200 ease-in-out text-lg font-semibold"
-              style={{ fontFamily: '"Times New Roman", serif' }}
+              style={{ fontfamily: 'Roboto' }}
             >
               Faculty & Staff
             </Link>
