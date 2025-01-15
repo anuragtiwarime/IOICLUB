@@ -4,7 +4,7 @@ import COOCard from '../components/COOCard';
 import AcademicHeadCard from '../components/AcademicHeadCard';
 import COO from '../assets/CTO.jpeg';
 import img25 from '../assets/img25.JPG';
-import img8 from '../assets/img8.JPG';
+
 import img9 from '../assets/img9.JPG';
 import SOM from '../assets/SOM.jpeg';
 import SOT from '../assets/SOT.jpeg';
