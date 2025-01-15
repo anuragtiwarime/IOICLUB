@@ -1,21 +1,16 @@
 import { useState, useEffect } from 'react';
 import React from 'react';
 import { GoChevronLeft, GoChevronRight } from 'react-icons/go';
-import img10 from '../assets/img10.jpg';
-import img11 from '../assets/img11.jpg';
-import img12 from '../assets/img12.jpg';
-import img13 from '../assets/img13.jpg';
-import img14 from '../assets/img14.jpg';
-import img15 from '../assets/img15.jpg';
+
 
 
 const images = [
-  img15,
-  img10,
-  img11,
-  img12,
-  img13,
-  img14
+  "https://res.cloudinary.com/dkxongd5z/image/upload/v1736949604/img15_jsnpnb.jpg",
+  "https://res.cloudinary.com/dkxongd5z/image/upload/v1736949596/img10_pieeo2.jpg",
+  "https://res.cloudinary.com/dkxongd5z/image/upload/v1736949598/img11_jvdvmh.jpg",
+  "https://res.cloudinary.com/dkxongd5z/image/upload/v1736949640/img23_awsttv.jpg",
+  "https://res.cloudinary.com/dkxongd5z/image/upload/v1736949603/img13_deelc9.jpg",
+  "https://res.cloudinary.com/dkxongd5z/image/upload/v1736949612/img14_hcgyzj.jpg"
 ];
 
 export default function ImageSlider() {

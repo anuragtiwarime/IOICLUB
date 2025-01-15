@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
 import { Link } from 'react-router-dom';
-import pwioi from '../assets/logo.png';
+
 import { GoChevronDown } from "react-icons/go";
 
 const Navbar = () => {
@@ -37,7 +37,7 @@ const Navbar = () => {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-2">
-            <img src={pwioi} alt="Logo" className="h-14" />
+            <img src="https://res.cloudinary.com/dkxongd5z/image/upload/v1736950534/logo_v2tpru.png" alt="Logo" className="h-14" />
           </Link>
           {/* Desktop Menu */}
           <div className="hidden md:flex space-x-8">

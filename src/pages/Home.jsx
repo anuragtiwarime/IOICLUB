@@ -2,31 +2,15 @@ import AccessCard from '../components/AccessCard';
 import ImageSlider from '../components/ImageSlider';
 import COOCard from '../components/COOCard';
 import AcademicHeadCard from '../components/AcademicHeadCard';
-import COO from '../assets/CTO.jpeg';
-import img25 from '../assets/img25.JPG';
 
-import img9 from '../assets/img9.JPG';
-import SOM from '../assets/SOM.jpeg';
-import SOT from '../assets/SOT.jpeg';
 import Footer from '../components/Footer';
-import leave from '../assets/leave.jpg';
-import concession from '../assets/concession.jpg';
-import internship from '../assets/internship.jpg';
-import img16 from '../assets/img16.JPG';
-import img17 from '../assets/img17.JPG';
-import img18 from '../assets/img18.JPG';
-import img19 from '../assets/img19.JPG';
-import img20 from '../assets/img20.JPG';
-import img21 from '../assets/img21.JPG';
-import img22 from '../assets/img22.JPG';
-import img23 from '../assets/img23.JPG';
-import img24 from '../assets/img24.JPG';
+
 import { useNavigate } from 'react-router-dom';
 
 export default function Home() {
   const navigate = useNavigate();
   const handleClick = () => {
-    navigate('/lifeatpwioi');  // This navigates to the /lifeatpwioi route
+    navigate('/lifeatpwioi'); 
   };
   return (
     <div className="pt-16">
@@ -39,7 +23,7 @@ export default function Home() {
         {/* COO Section */}
         <div className="flex flex-col items-center md:items-start">
           <COOCard
-            image={COO}
+            image="https://res.cloudinary.com/dkxongd5z/image/upload/v1736947135/CTO_rmphg5.jpg"
             name="Gopal Sharma"
             role="Chief Operating Officer"
             description="Gold Medalist from IIT-BHU, COO at Physics Wallah, passionate about learning, growth, and revolutionizing education."
@@ -53,7 +37,7 @@ export default function Home() {
   {/* Academic Head 1 */}
   <div className="flex flex-col w-full">
     <AcademicHeadCard
-      image={SOT}
+      image="https://res.cloudinary.com/dkxongd5z/image/upload/v1736947135/SOT_en3k6m.jpg"
       name="Janishar Ali"
       role="Head, School of Technology"
       description="AVP at PhysicsWallah, ex-founder of CuriousJr (acquired by PhysicsWallah) and MindOrks, passionate innovator."
@@ -64,7 +48,7 @@ export default function Home() {
   {/* Academic Head 2 */}
   <div className="flex flex-col w-full">
     <AcademicHeadCard
-      image={SOM}
+      image="https://res.cloudinary.com/dkxongd5z/image/upload/v1736948074/120A1776_-_Sapna_Nibsaiya_ddsbli.jpg"
       name="Dr. Sapna Nibsaiya"
       role="Head, School of Management"
       description="Experienced academic professional, trainer, and strategist with 17+ years enhancing education, skills, and career prospects."
@@ -89,19 +73,19 @@ export default function Home() {
           <AccessCard
             title="Leave Request Form"
             description="Kindly complete the form below to request a leave. Ensure all details are accurate for smooth processing of your application."
-            image={leave}
+            image="https://res.cloudinary.com/dkxongd5z/image/upload/v1736950547/leave_dcshti.jpg"
             buttonLink="https://pw.jotform.com/242621898990067" // Replace with actual link
           />
           <AccessCard
             title="Concession Form"
             description="Please fill out the form below to apply for a concession. Ensure all information is correct for timely approval of your request."
-            image={concession}
+            image="https://res.cloudinary.com/dkxongd5z/image/upload/v1736950544/concession_utyvyt.jpg"
             buttonLink="https://pw.jotform.com/242623356705961" 
           />
           <AccessCard
             title="Internship and Event"
             description="Please complete the form below to register for an internship or event. Accurate details will help us process your application efficiently."
-            image={internship}
+            image="https://res.cloudinary.com/dkxongd5z/image/upload/v1736950546/internship_uvoxo3.jpg"
             buttonLink="https://pw.jotform.com/243390511127045" // Replace with actual link
           />
         </div>
@@ -112,28 +96,28 @@ export default function Home() {
         <h2 className="text-3xl font-bold text-center text-black mb-12">Life at PW IOI</h2>
         <div className="max-w-6xl mx-auto grid grid-cols-2 md:grid-cols-3 gap-4">
           <img
-            src={img25}
+            src="https://res.cloudinary.com/dkxongd5z/image/upload/v1736949645/img25_j57sn0.jpg"
             alt="College Campus"
             className="w-full h-48 object-cover rounded-lg"
           />
           <img
-            src={img16}
+            src="https://res.cloudinary.com/dkxongd5z/image/upload/v1736949608/img16_qo7fvz.jpg"
             className="w-full h-48 object-cover rounded-lg"
           />
           <img
-            src={img9}
+            src="https://res.cloudinary.com/dkxongd5z/image/upload/v1736949629/img17_jc57om.jpg"
             className="w-full h-48 object-cover rounded-lg"
           />
           <img
-            src={img17}
+            src="https://res.cloudinary.com/dkxongd5z/image/upload/v1736949638/img18_mjjqru.jpg"
             className="w-full h-48 object-cover rounded-lg"
           />
           <img
-            src={img18}
+            src="https://res.cloudinary.com/dkxongd5z/image/upload/v1736949593/img9_hk85o8.jpg"
             className="w-full h-48 object-cover rounded-lg"
           />
           <img
-            src={img19}
+            src="https://res.cloudinary.com/dkxongd5z/image/upload/v1736949942/img19_l0lhs8.jpg"
             className="w-full h-48 object-cover rounded-lg"
           />
           {/* <img

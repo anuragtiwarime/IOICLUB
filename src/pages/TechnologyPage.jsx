@@ -1,5 +1,5 @@
 import React from 'react';
-import Ankit from '../assets/ankit.jpg';
+
 import { FaLinkedin } from 'react-icons/fa';
 import Man from '../assets/man.webp'
 import Woman from '../assets/women.jpeg'
@@ -11,7 +11,7 @@ const TechnologyPage = () => {
        name: 'Ankit Raj',
        city: 'Hazaribagh',
        state: 'Jharkhand',
-       photo: Ankit,
+       photo: "https://res.cloudinary.com/dkxongd5z/image/upload/v1736949303/ankit_mthihl.jpg",
        linkedIn: 'https://www.linkedin.com/in/ankitraj061',
      },
      {

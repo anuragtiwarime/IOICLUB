@@ -1,27 +1,4 @@
 
-import img9 from "../assets/img9.JPG";
-import img10 from "../assets/img10.JPG";
-import img11 from "../assets/img11.JPG";
-import img12 from "../assets/img12.JPG";
-import img13 from "../assets/img13.JPG";
-import img14 from "../assets/img14.JPG";
-import img15 from "../assets/img15.JPG";
-import img16 from "../assets/img16.JPG";
-import img17 from "../assets/img17.JPG";
-import img18 from "../assets/img18.JPG";
-import img19 from "../assets/img19.JPG";
-import img20 from "../assets/img20.JPG";
-import img21 from "../assets/img21.JPG";
-import img22 from "../assets/img22.JPG";
-import img23 from "../assets/img23.JPG";
-import img24 from "../assets/img24.JPG";
-import img25 from "../assets/img25.JPG";
-import img26 from "../assets/img26.JPG";
-import img27 from "../assets/img27.JPG";
-import img28 from "../assets/img28.JPG";
-import img29 from "../assets/img29.JPG";
-import img30 from "../assets/img30.JPG";
-import img31 from "../assets/img31.JPG";
 import Footer from "../components/Footer";
 const LifeAtPWIOI = () => {
   return(
@@ -30,96 +7,96 @@ const LifeAtPWIOI = () => {
             <h2 className="text-3xl font-bold text-black mb-8 text-center">Life at PW IOI</h2>
             <div className="max-w-6xl mx-auto grid grid-cols-2 md:grid-cols-3 gap-4">
               <img
-                src={img25}
+                src="https://res.cloudinary.com/dkxongd5z/image/upload/v1736949645/img25_j57sn0.jpg"
                 alt="College Campus"
                 className="w-full h-48 object-cover rounded-lg"
               />
               <img
-                src={img16}
+                src="https://res.cloudinary.com/dkxongd5z/image/upload/v1736949608/img16_qo7fvz.jpg"
                 className="w-full h-48 object-cover rounded-lg"
               />
               <img
-                src={img9}
+                src="https://res.cloudinary.com/dkxongd5z/image/upload/v1736949629/img17_jc57om.jpg"
                 className="w-full h-48 object-cover rounded-lg"
               />
               <img
-                src={img17}
+                src="https://res.cloudinary.com/dkxongd5z/image/upload/v1736949638/img18_mjjqru.jpg"
                 className="w-full h-48 object-cover rounded-lg"
               />
               <img
-                src={img18}
+                src="https://res.cloudinary.com/dkxongd5z/image/upload/v1736949593/img9_hk85o8.jpg"
                 className="w-full h-48 object-cover rounded-lg"
               />
               <img
-                src={img19}
+                src="https://res.cloudinary.com/dkxongd5z/image/upload/v1736949942/img19_l0lhs8.jpg"
                 className="w-full h-48 object-cover rounded-lg"
               />
               <img
-                src={img20}
+                src="https://res.cloudinary.com/dkxongd5z/image/upload/v1736949647/img30_vjvwoa.jpg"
                 className="w-full h-48 object-cover rounded-lg"
               />
               <img
-                src={img21}
+                src="https://res.cloudinary.com/dkxongd5z/image/upload/v1736949647/img31_minlu7.jpg"
                 className="w-full h-48 object-cover rounded-lg"
               />
               <img
-                src={img22}
+                src="https://res.cloudinary.com/dkxongd5z/image/upload/v1736949643/img27_scdcg1.jpg"
                 className="w-full h-48 object-cover rounded-lg"
               />
               <img
-                src={img23}
+                src="https://res.cloudinary.com/dkxongd5z/image/upload/v1736949640/img23_awsttv.jpg"
                 className="w-full h-48 object-cover rounded-lg"
               />
               <img
-                src={img24}
+                src="https://res.cloudinary.com/dkxongd5z/image/upload/v1736949639/img28_mcjbkt.jpg"
                 className="w-full h-48 object-cover rounded-lg"
               />
               <img
-                src={img10}
+                src="https://res.cloudinary.com/dkxongd5z/image/upload/v1736949636/img29_neubpf.jpg"
                 className="w-full h-48 object-cover rounded-lg"
               />
               <img
-                src={img11}
+                src="https://res.cloudinary.com/dkxongd5z/image/upload/v1736949630/img26_rx0pgh.jpg"
                 className="w-full h-48 object-cover rounded-lg"
               />
               <img
-                src={img12}
+                src="https://res.cloudinary.com/dkxongd5z/image/upload/v1736949622/img24_yzf6ry.jpg"
                 className="w-full h-48 object-cover rounded-lg"
               />
               <img
-                src={img13}
+                src="https://res.cloudinary.com/dkxongd5z/image/upload/v1736949620/img22_cymqhj.jpg"
                 className="w-full h-48 object-cover rounded-lg"
               />
               <img
-                src={img14}
+                src="https://res.cloudinary.com/dkxongd5z/image/upload/v1736949617/img20_hr9oor.jpg"
                 className="w-full h-48 object-cover rounded-lg"
               />
               <img
-                src={img15}
+                src="https://res.cloudinary.com/dkxongd5z/image/upload/v1736949612/img21_mjrrsx.jpg"
                 className="w-full h-48 object-cover rounded-lg"
               />
               <img
-                src={img26}
+                src="https://res.cloudinary.com/dkxongd5z/image/upload/v1736949612/img14_hcgyzj.jpg"
                 className="w-full h-48 object-cover rounded-lg"
               />
               <img
-                src={img27}
+                src="https://res.cloudinary.com/dkxongd5z/image/upload/v1736949604/img15_jsnpnb.jpg"
                 className="w-full h-48 object-cover rounded-lg"
               />
               <img
-                src={img28}
+                src="https://res.cloudinary.com/dkxongd5z/image/upload/v1736949603/img13_deelc9.jpg"
                 className="w-full h-48 object-cover rounded-lg"
               />
               <img
-                src={img29}
+                src="https://res.cloudinary.com/dkxongd5z/image/upload/v1736949601/img12_glb9oq.jpg"
                 className="w-full h-48 object-cover rounded-lg"
               />
               <img
-                src={img30}
+                src="https://res.cloudinary.com/dkxongd5z/image/upload/v1736949598/img11_jvdvmh.jpg"
                 className="w-full h-48 object-cover rounded-lg"
               />
               <img
-                src={img31}
+                src="https://res.cloudinary.com/dkxongd5z/image/upload/v1736949596/img10_pieeo2.jpg"
                 className="w-full h-48 object-cover rounded-lg"
               />
 
