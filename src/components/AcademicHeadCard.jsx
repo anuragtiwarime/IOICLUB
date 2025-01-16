@@ -3,9 +3,9 @@ import { FaLinkedin } from 'react-icons/fa';
 
 export default function AcademicHeadCard({ image, name, role, description, linkedin }) {
   return (
-    <div className="bg-white rounded-lg shadow-lg p-6 transform transition-transform hover:scale-105 flex flex-col md:flex-row md:justify-between h-full gap-8">
+    <div className="bg-white rounded-lg shadow-lg p-6 transform transition-transform hover:scale-105 flex flex-col md:flex-row md:justify-between h-full md:gap-8">
       {/* Image Section */}
-      <div className="flex flex-col items-center mb-4 md:mb-0 md:w-1/2">
+      <div className="flex flex-col items-center md:w-1/2">
         <img
           src={image}
           alt={name}

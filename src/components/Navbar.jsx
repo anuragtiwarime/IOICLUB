@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
 import { Link } from 'react-router-dom';
-
 import { GoChevronDown } from "react-icons/go";
 
 const Navbar = () => {
@@ -13,52 +12,52 @@ const Navbar = () => {
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > lastScrollY) {
-        // Scrolling down
         setShowNavbar(false);
       } else {
-        // Scrolling up
         setShowNavbar(true);
       }
       lastScrollY = window.scrollY;
     };
 
-    // Adding the scroll event listener
     window.addEventListener('scroll', handleScroll);
-
-    // Cleanup the event listener on component unmount
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };
   }, []);
 
   return (
-    <nav className={`bg-black text-white fixed w-full z-50 shadow-lg transition-all duration-300 ease-in-out ${showNavbar ? 'top-0' : '-top-16'}`}>
+    <nav
+      className={`bg-black text-white fixed w-full z-50 shadow-lg transition-all duration-300 ease-in-out ${
+        showNavbar ? 'top-0' : '-top-16'
+      }`}
+    >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-2">
-            <img src="https://res.cloudinary.com/dkxongd5z/image/upload/v1736950534/logo_v2tpru.png" alt="Logo" className="h-14" />
+            <img
+              src="https://res.cloudinary.com/dkxongd5z/image/upload/v1736950534/logo_v2tpru.png"
+              alt="Logo"
+              className="h-12"
+            />
           </Link>
           {/* Desktop Menu */}
-          <div className="hidden md:flex space-x-8">
+          <div className="hidden md:flex space-x-8 text-[1rem] font-medium tracking-wide">
             <Link
               to="/clubs"
-              className="hover:text-gray-300 transition duration-200 ease-in-out text-lg font-semibold"
-              style={{fontfamily: 'Roboto' }}
+              className="hover:text-gray-300 transition-all duration-200 ease-in-out border-b-2 border-transparent hover:border-gray-300"
             >
               Clubs
             </Link>
             <Link
               to="/policies"
-              className="hover:text-gray-300 transition duration-200 ease-in-out text-lg font-semibold"
-              style={{fontfamily: 'Roboto' }}
+              className="hover:text-gray-300 transition-all duration-200 ease-in-out border-b-2 border-transparent hover:border-gray-300"
             >
               Policies
             </Link>
             <Link
               to="/careers"
-              className="hover:text-gray-300 transition duration-200 ease-in-out text-lg font-semibold"
-              style={{ fontfamily: 'Roboto' }}
+              className="hover:text-gray-300 transition-all duration-200 ease-in-out border-b-2 border-transparent hover:border-gray-300"
             >
               Careers
             </Link>
@@ -69,14 +68,13 @@ const Navbar = () => {
               onMouseLeave={() => setIsDropdownOpen(false)}
             >
               <span
-                className="flex items-center hover:text-gray-300 transition duration-200 ease-in-out text-lg font-semibold cursor-pointer"
-                style={{ fontfamily: 'Roboto' }}
+                className="flex items-center hover:text-gray-300 transition-all duration-200 ease-in-out cursor-pointer border-b-2 border-transparent hover:border-gray-300"
               >
                 Students
                 <GoChevronDown className="ml-1" />
               </span>
               {isDropdownOpen && (
-                <div className="absolute top-full left-0 bg-black shadow-lg mt-0 rounded-md">
+                <div className="absolute top-full left-0 bg-black shadow-lg rounded-md">
                   <Link
                     to="/students/technology"
                     className="block px-4 py-2 text-sm text-white hover:bg-gray-700 transition"
@@ -94,8 +92,7 @@ const Navbar = () => {
             </div>
             <Link
               to="/facultyandstaff"
-              className="hover:text-gray-300 transition duration-200 ease-in-out text-lg font-semibold"
-              style={{ fontfamily: 'Roboto' }}
+              className="hover:text-gray-300 transition-all duration-200 ease-in-out border-b-2 border-transparent hover:border-gray-300"
             >
               Faculty & Staff
             </Link>
@@ -119,28 +116,28 @@ const Navbar = () => {
           <div className="px-4 pt-4 pb-6 space-y-3">
             <Link
               to="/clubs"
-              className="block text-lg font-medium hover:text-gray-300 transition duration-200 ease-in-out"
+              className="block text-lg font-medium hover:text-gray-300 transition-all duration-200"
               onClick={() => setIsOpen(false)}
             >
               Clubs
             </Link>
             <Link
               to="/policies"
-              className="block text-lg font-medium hover:text-gray-300 transition duration-200 ease-in-out"
+              className="block text-lg font-medium hover:text-gray-300 transition-all duration-200"
               onClick={() => setIsOpen(false)}
             >
               Policies
             </Link>
             <Link
               to="/careers"
-              className="block text-lg font-medium hover:text-gray-300 transition duration-200 ease-in-out"
+              className="block text-lg font-medium hover:text-gray-300 transition-all duration-200"
               onClick={() => setIsOpen(false)}
             >
               Careers
             </Link>
             {/* Dropdown in Mobile */}
             <div>
-              <span className="block text-lg font-medium hover:text-gray-300 transition duration-200 ease-in-out">
+              <span className="block text-lg font-medium hover:text-gray-300 transition-all duration-200">
                 Students
               </span>
               <div className="ml-4 mt-2 space-y-2">
@@ -162,7 +159,7 @@ const Navbar = () => {
             </div>
             <Link
               to="/facultyandstaff"
-              className="block text-lg font-medium hover:text-gray-300 transition duration-200 ease-in-out"
+              className="block text-lg font-medium hover:text-gray-300 transition-all duration-200"
               onClick={() => setIsOpen(false)}
             >
               Faculty & Staff
