@@ -1,9 +1,6 @@
 import { useState, useEffect } from 'react';
 import React from 'react';
 import { GoChevronLeft, GoChevronRight } from 'react-icons/go';
-
-
-
 const images = [
   "https://res.cloudinary.com/dkxongd5z/image/upload/v1736949604/img15_jsnpnb.jpg",
   "https://res.cloudinary.com/dkxongd5z/image/upload/v1736949596/img10_pieeo2.jpg",
@@ -46,23 +43,23 @@ export default function ImageSlider() {
           <img
             src={image}
             alt={`Slide ${index + 1}`}
-            className="w-full h-full object-fit rounded-lg shadow-xl filter brightness-90 contrast-110"
+            className="w-full h-full object-cover rounded-lg shadow-xl filter brightness-90 contrast-110"
           />
         </div>
       ))}
 
       {/* Navigation Buttons */}
       <button
-        className="absolute left-5 top-1/2 transform -translate-y-1/2 bg-gray-800 text-white text-3xl p-3 rounded-full focus:outline-none hover:bg-gray-700 transition-transform duration-300 hover:scale-110 shadow-lg"
         onClick={handlePrev}
+        className="absolute left-5 top-1/2 transform -translate-y-1/2  text-white text-3xl p-3 rounded-full focus:outline-none  transition-transform duration-300 hover:scale-110 shadow-lg"
       >
-        <GoChevronLeft />
+        <GoChevronLeft size={40} />
       </button>
       <button
-        className="absolute right-5 top-1/2 transform -translate-y-1/2 bg-gray-800 text-white text-3xl p-3 rounded-full focus:outline-none hover:bg-gray-700 transition-transform duration-300 hover:scale-110 shadow-lg"
         onClick={handleNext}
+        className="absolute right-5 top-1/2 transform -translate-y-1/2 text-white text-3xl p-3 rounded-full focus:outline-none transition-transform duration-300 hover:scale-110 shadow-lg font-bold"
       >
-        <GoChevronRight />
+        <GoChevronRight size={40} />
       </button>
     </div>
   );

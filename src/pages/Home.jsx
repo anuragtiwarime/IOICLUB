@@ -2,16 +2,13 @@ import AccessCard from '../components/AccessCard';
 import ImageSlider from '../components/ImageSlider';
 import COOCard from '../components/COOCard';
 import AcademicHeadCard from '../components/AcademicHeadCard';
-
+import Gallery from '../components/Gallery';
 import Footer from '../components/Footer';
 
-import { useNavigate } from 'react-router-dom';
+
 
 export default function Home() {
-  const navigate = useNavigate();
-  const handleClick = () => {
-    navigate('/lifeatpwioi'); 
-  };
+  
   return (
     <div className="pt-16">
       <ImageSlider />
@@ -92,56 +89,9 @@ export default function Home() {
       </section>
 
       {/* Gallery Section */}
-      <section className="py-16 px-4">
-        <h2 className="text-3xl font-bold text-center text-black mb-12">Life at PW IOI</h2>
-        <div className="max-w-6xl mx-auto grid grid-cols-2 md:grid-cols-3 gap-4">
-          <img
-            src="https://res.cloudinary.com/dkxongd5z/image/upload/v1736949645/img25_j57sn0.jpg"
-            alt="College Campus"
-            className="w-full h-48 object-cover rounded-lg"
-          />
-          <img
-            src="https://res.cloudinary.com/dkxongd5z/image/upload/v1736949608/img16_qo7fvz.jpg"
-            className="w-full h-48 object-cover rounded-lg"
-          />
-          <img
-            src="https://res.cloudinary.com/dkxongd5z/image/upload/v1736949629/img17_jc57om.jpg"
-            className="w-full h-48 object-cover rounded-lg"
-          />
-          <img
-            src="https://res.cloudinary.com/dkxongd5z/image/upload/v1736949638/img18_mjjqru.jpg"
-            className="w-full h-48 object-cover rounded-lg"
-          />
-          <img
-            src="https://res.cloudinary.com/dkxongd5z/image/upload/v1736949593/img9_hk85o8.jpg"
-            className="w-full h-48 object-cover rounded-lg"
-          />
-          <img
-            src="https://res.cloudinary.com/dkxongd5z/image/upload/v1736949942/img19_l0lhs8.jpg"
-            className="w-full h-48 object-cover rounded-lg"
-          />
-          {/* <img
-            src={img20}
-            className="w-full h-48 object-cover rounded-lg"
-          />
-          <img
-            src={img21}
-            className="w-full h-48 object-cover rounded-lg"
-          />
-          <img
-            src={img22}
-            className="w-full h-48 object-cover rounded-lg"
-          /> */}
-        </div>
-        <div className="text-center mt-8">
-          <a
-            onClick={handleClick}
-            className="inline-block bg-black text-white py-2 px-6  hover:bg-gray-800 transition-colors cursor-pointer"
-          >
-            View More
-          </a>
-        </div>
-      </section>
+      <Gallery></Gallery>
+
+      
 
       {/* Footer */}
       <Footer />
