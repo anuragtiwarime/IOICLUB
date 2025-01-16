@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { ChevronLeft, ChevronRight, X } from "lucide-react";
+import Footer from "../components/Footer";
 
 const LifeAtPWIOI = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -134,6 +135,7 @@ const LifeAtPWIOI = () => {
           </button>
         </div>
       )}
+      <Footer />
     </>
   );
 };

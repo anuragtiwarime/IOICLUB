@@ -3,12 +3,7 @@
 import Footer from '../components/Footer';
 const FacultyandStaff = () => {
   const facultyData = [
-    {
-      image: "https://res.cloudinary.com/dkxongd5z/image/upload/v1736947135/Kaibalya_yr4ttd.jpg", 
-      name: "Kaibalya Biswal",
-      about: "He is a highly motivated individual, driven to do the best by applying his technical skills, enthusiasm, dedication, responsibility followed by great work ethic. Professor at PW-Institute of Innovation. Skilled in DSML, Tableau, Statistics. Did his Masters degree in applied physics and after that got hands on 2 years of experience in Data Science and Machine learning. Apart from educational degree and career building, he has represented at district level intra club cricket tournament under vision of Odisha cricket association (OCA) affiliated by BCCI.",
-      
-    },
+    
     {
       image: "https://res.cloudinary.com/dkxongd5z/image/upload/v1736947134/Shubham_ptqlrv.jpg", 
       name: "Shubham Gautam",
@@ -25,6 +20,12 @@ const FacultyandStaff = () => {
       image: "https://res.cloudinary.com/dkxongd5z/image/upload/v1736947822/pic_-_Arjun_Thakur_1_ruypmk.jpg", 
       name: "Arjun Thakur",
       about: "I am a technical trainer and software engineer with over 15 years of experience in teaching and software engineering. I enjoy sharing knowledge to help others grow and have worked with a mix of startups and big tech companies in India and globally. A traveler and chess enthusiast, I also find joy in swimming and reading philosophy. I value simplicity and a thoughtful approach in both work and life.",
+      
+    },
+    {
+      image: "https://res.cloudinary.com/dkxongd5z/image/upload/v1736947135/Kaibalya_yr4ttd.jpg", 
+      name: "Kaibalya Biswal",
+      about: "He is a highly motivated individual, driven to do the best by applying his technical skills, enthusiasm, dedication, responsibility followed by great work ethic. Professor at PW-Institute of Innovation. Skilled in DSML, Tableau, Statistics. Did his Masters degree in applied physics and after that got hands on 2 years of experience in Data Science and Machine learning. Apart from educational degree and career building, he has represented at district level intra club cricket tournament under vision of Odisha cricket association (OCA) affiliated by BCCI.",
       
     },
     {
