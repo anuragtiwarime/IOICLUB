@@ -55,7 +55,7 @@ const FacultyandStaff = () => {
       about:"I am a BTech graduate from VTU, 2014, passed out. I had a lot of liking for developing full-stack applications and was also passionate about teaching. Over the past 10 years, I have worked with tech leads and also been a part of various edtech leaders and trained more than 20,000 students both in online and offline modes. My passion for teaching and making the tough concepts simpler made me take up teaching as a profession."
     },
     {
-      image: "https://res.cloudinary.com/dkxongd5z/image/upload/v1736947822/pic_-_Arjun_Thakur_1_ruypmk.jpg",
+      image: "https://res.cloudinary.com/djbjfsshe/image/upload/v1737257670/120A7613.jpg",
       name:"Saurabh Moharikar",
       about:"I am a data scientist with 17 years of industry experience spanning across 17 years in test prep and Ed-Tech industries. I am a huge fan of regression, classification models and data visualisation. Proficient in tools like python, power bi, Tableau, MS Excel and SQL.I am a self motivated person and an avid reader. I love sharing knowledge and help people become professionally better than what they are and more importantly in the process becoming professionally better myself."
     },

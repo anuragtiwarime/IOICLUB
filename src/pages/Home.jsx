@@ -6,12 +6,14 @@ import Gallery from '../components/Gallery';
 import Footer from '../components/Footer';
 
 
-
 export default function Home() {
   
   return (
     <div className="pt-16">
+      {/* Image Slider */}
       <ImageSlider />
+
+      {/* Meet our Leadership */}
       <section className="py-16 px-4 bg-gray-50">
       <h2 className="text-3xl font-bold text-center text-black mb-12">
         Meet Our Leadership
@@ -28,7 +30,7 @@ export default function Home() {
           />
         </div>
 
-       {/* Academic Heads Section */}
+      
 {/* Academic Heads Section */}
 <div className="flex flex-col gap-4 w-full">
   {/* Academic Head 1 */}
@@ -45,20 +47,18 @@ export default function Home() {
   {/* Academic Head 2 */}
   <div className="flex flex-col w-full">
     <AcademicHeadCard
-      image="https://res.cloudinary.com/dkxongd5z/image/upload/v1736948074/120A1776_-_Sapna_Nibsaiya_ddsbli.jpg"
-      name="Dr. Sapna Nibsaiya"
+      image="https://res.cloudinary.com/djbjfsshe/image/upload/v1737342952/120A7616_sasg6x.jpg"
+      name="Prakash Nimbalkar"
       role="Head, School of Management"
-      description="Experienced academic professional, trainer, and strategist with 17+ years enhancing education, skills, and career prospects."
-      linkedin="https://www.linkedin.com/in/sapnanibsaiya/" // LinkedIn URL
+      description=""
+      linkedin="https://www.linkedin.com/in/prakash-nimbalkar/" // LinkedIn URL
     />
   </div>
 </div>
 
 
       </div>
-    </section>
-
-
+      </section>
 
 
       {/* Student Access Portal Section */}
@@ -90,13 +90,8 @@ export default function Home() {
 
       {/* Gallery Section */}
       <Gallery></Gallery>
-
-      
-
       {/* Footer */}
       <Footer />
-      
-      
     </div>
   );
 }

@@ -1,0 +1,23 @@
+[
+  {
+    "name": "Ankit Raj",
+    "city": "Hazaribagh",
+    "state": "Jharkhand",
+    "photo": "https://res.cloudinary.com/dkxongd5z/image/upload/v1736949303/ankit_mthihl.jpg",
+    "linkedIn": "https://www.linkedin.com/in/ankitraj061"
+  },
+  {
+    "name": "Anuj Kumar",
+    "city": "Varanasi",
+    "state": "Uttar Pradesh",
+    "photo": "Man",
+    "linkedIn": "https://www.linkedin.com/in/anuj-kum"
+  },
+  {
+    "name": "Umesh Sharma",
+    "city": "Mathura",
+    "state": "Uttar Pradesh",
+    "photo": "Man",
+    "linkedIn": "https://www.linkedin.com/in/umesh-sharma--/"
+  }
+]
