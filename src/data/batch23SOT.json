@@ -19,5 +19,246 @@
     "state": "Uttar Pradesh",
     "photo": "Man",
     "linkedIn": "https://www.linkedin.com/in/umesh-sharma--/"
+  },
+  {
+    "name": "Perv Manglani",
+    "city": "xyz",
+    "state": "Madhya Pradesh",
+    "photo": "Man",
+    "linkedIn": "https://www.linkedin.com/in/parv-manglani-a4b876288/"
+  },
+  {
+    "name": "Aman Raj Gupta",
+    "city": "Ranchi",
+    "state": "Jharkhand",
+    "photo": "Man",
+    "linkedIn": "https://www.linkedin.com/in/aman-raj-gupta-"
+  },
+  {
+    "name": "Tushar Pal",
+    "city": "",
+    "state": "Uttar Pradesh",
+    "photo": "Man",
+    "linkedIn": "https://www.linkedin.com/in/tushar-pal-0053a729b/"
+  },
+  {
+    "linkedIn":"www.linkedin.com/in/ravi-soni123/",
+    "name": "Ravi Soni",
+    "state":"Uttar Pradesh",
+    "city":"",
+    "photo":"Man"
+  },
+  {
+    "linkedIn":"https://www.linkedin.com/in/hitendra-kumar-dewangan",
+    "name": "Hitendra Kumar Dewangan",
+    "state":"",
+    "city":"",
+    "photo":"Man"
+  },
+  {
+    "linkedIn":"https://www.linkedin.com/in/balkrishna-suryawanshi369/",
+    "name": "Balkrishna Suryawanshi",
+    "state":"Maharashtra",
+    "city":"Mumbai",
+    "photo":"Man"
+  },
+  {
+    "linkedIn":"https://www.linkedin.com/in/mitesh-agrawal76/",
+    "name": "Mitesh Agrawal",
+    "state":"Gujarat",
+    "city":"",
+    "photo":"Man"
+  },{
+    "name":"Krishna Kishore",
+    "linkedIn":"https://www.linkedin.com/in/krishnakishore1119/",
+    "state":"Andra Pradesh",
+    "city":"",
+    "photo": "Man"
+  },
+  {
+    "name":"Aditya Gupta",
+    "linkedIn":"https://www.linkedin.com/in/aditya-gupta-ug/",
+    "state":"Uttar Pradesh",
+    "city":"",
+    "photo": "Man"
+  },
+  {
+    "name":"Divyanshu Gupta",
+    "linkedIn":"https://www.linkedin.com/in/aditya-https://www.linkedin.com/in/divyanshuji/",
+    "state":"Uttar Pradesh",
+    "city":"Gorakhpur",
+    "photo": "Man"
+  },
+  {
+    "name":"Rohit Kumar Sah",
+    "linkedIn":"https://www.linkedin.com/in/rohitkumarsah45/",
+    "state":"Bihar",
+    "city":"",
+    "photo": "Man"
+  },
+  {
+    "name":"Krish Gupta",
+    "linkedIn":"https://www.linkedin.com/in/krishguptaji/",
+    "state":"Uttar Pradesh",
+    "city":"",
+    "photo": "Man"
+  },
+  {
+    "name":"Satyam Mahato",
+    "linkedIn":"https://www.linkedin.com/in/oksatyam/",
+    "state":"Assam",
+    "city":"Guwahati",
+    "photo": "Man"
+  },{
+    "name":"Aryan Chauhan",
+    "linkedIn":"https://www.linkedin.com/in/arynch/",
+    "state":"Uttar Pradesh",
+    "city":"",
+    "photo": "Man"
+  },
+  {
+    "name":"Rohit Kumar",
+    "linkedIn":"https://www.linkedin.com/in/rohit-kumar-ug/",
+    "state":"Jharkhand",
+    "city":"Hazaribagh",
+    "photo": "Man"
+  },
+  {
+    "name":"Dev Meghwani",
+    "linkedIn":"https://in.linkedin.com/in/devmeghwani",
+    "state":"",
+    "city":"",
+    "photo": "Man"
+  },
+  {
+    "name":"Aditi",
+    "linkedIn":"https://www.linkedin.com/in/aditi-k09/",
+    "state":"",
+    "city":"",
+    "photo": "Woman"
+  },
+  {
+    "name":"Juhi  Dugar",
+    "linkedIn":"https://www.linkedin.com/in/juhi-dugar/",
+    "state":"",
+    "city":"",
+    "photo": "Woman"
+  },
+  {
+    "name":"Vijay Patel",
+    "linkedIn":"https://www.linkedin.com/in/vijaypatel01/",
+    "state":"Bihar",
+    "city":"",
+    "photo": "Man"
+  },
+  {
+    "name":"Deepali Kumari",
+    "linkedIn":"https://www.linkedin.com/in/deepalikumari--/",
+    "state":"Jharkhand",
+    "city":"Ranchi",
+    "photo": "Woman"
+  },
+  {
+    "name":"Yashraj Shrivastava",
+    "linkedIn":"www.linkedin.com/in/yashrajshrivastava17",
+    "state":"Uttar Pradesh",
+    "city":"",
+    "photo": "Man"
+  },
+  {
+    "name":"Vijay Kumar",
+    "linkedIn":"https://www.linkedin.com/in/vijaykumar752/",
+    "state":"Bihar",
+    "city":"",
+    "photo": "Man"
+  },
+  {
+    "name":"Durgesh Shukla",
+    "linkedIn":"https://www.linkedin.com/in/durgeshshukla18/",
+    "state":"",
+    "city":"",
+    "photo": "Man"
+  },
+  {
+    "name":"Arjun Mishra",
+    "linkedIn":"https://www.linkedin.com/in/arjunmishraaa-/",
+    "state":"Uttrakhand",
+    "city":"Rishikesh",
+    "photo": "Man"
+  },
+  {
+    "name":"Jivan Jamdar",
+    "linkedIn":"https://www.linkedin.com/in/jivan-jamdar/",
+    "state":"Maharashtra",
+    "city":"Pune",
+    "photo": "Man"
+  },
+  {
+    "name":"Abhyudaya",
+    "linkedIn":"https://www.linkedin.com/in/abhyudaya-1a0873295/",
+    "state":"Uttar Pradesh",
+    "city":"Agra",
+    "photo": "Man"
+  },
+  {
+    "name":"Vivaan Chheda",
+    "linkedIn":"https://www.linkedin.com/in/vivaanchheda/",
+    "state":"Maharashtra",
+    "city":"Mumbai",
+    "photo": "Man"
+  },
+  {
+    "name":"Praneel Jain",
+    "linkedIn":"https://www.linkedin.com/in/praneeljain/",
+    "state":"Chattishghar",
+    "city":"Raipur",
+    "photo": "Man"
+  },
+  {
+    "name":"Rohit Singh",
+    "linkedIn":"https://www.linkedin.com/in/rohitsingh-/",
+    "state":"Uttar Pradesh",
+    "city":"Chitrakoot",
+    "photo": "Man"
+  },
+  {
+    "name":"Gautam Kumar",
+    "linkedIn":"https://www.linkedin.com/in/raj-gautam-narayan-b5643b29b/",
+    "state":"Bihar",
+    "city":"Sitamarhi",
+    "photo": "Man"
+  },
+  {
+    "name":"Shyeb Ansari",
+    "linkedIn":"https://www.linkedin.com/in/shoyebansari45/",
+    "state":"Gujarat",
+    "city":"Bhuj",
+    "photo": "Man"
+  },
+  {
+    "name":"Alok Gupta",
+    "linkedIn":"https://www.linkedin.com/in/alok-gupta-me/",
+    "state":"Uttar Pradesh",
+    "city":"Gorakhpur",
+    "photo": "Man"
+  },
+  {
+    "name":"Suyash Kumar Singh",
+    "linkedIn":"https://www.linkedin.com/in/suyash-kumar-singh/",
+    "state":"Uttar Pradesh",
+    "city":"Raebareli",
+    "photo": "Man"
   }
+
+
+  
+
+
+
+
+
+
+
+
+
 ]

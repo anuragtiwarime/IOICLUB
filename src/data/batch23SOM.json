@@ -1,16 +1,52 @@
 [
   {
-    "name": "Abhinav Jain",
-    "city": "",
-    "state": "",
+    "name": "Shreyash Pateriya",
+    "city": "Indore",
+    "state": "Madhya Pradesh",
     "photo": "Man",
-    "linkedIn": ""
+    "linkedIn": "https://www.linkedin.com/in/mastershreyash/"
   },
   {
-    "name": "Abhishek Kumar",
+    "name": "Rishabh Jain",
     "city": "",
     "state": "",
     "photo": "Man",
-    "linkedIn": ""
+    "linkedIn": "https://www.linkedin.com/in/rishabh-jain-9a62052a1/"
+  },
+  {
+    "linkedIn":"https://www.linkedin.com/in/anurag-shukla-8210a92a2?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+    "name": "Anurag Shukla",
+    "city": "",
+    "state": "",
+    "photo": "Man"
+  },
+  {
+    "name": "Nithish Sheshagiri",
+    "city": "",
+    "state": "",
+    "photo": "Man",
+    "linkedIn": "https://www.linkedin.com/in/nithish-sheshagiri-23272220a/"
+  },
+  {
+    "name": "Niharika Singh",
+    "city": "",
+    "state": "Uttar Pradesh",
+    "photo": "Woman",
+    "linkedIn": "https://in.linkedin.com/in/niharika-singh-4755aa2a3"
+  },
+  {
+    "name": "Rutik Mane",
+    "city": "",
+    "state": "",
+    "photo": "Man",
+    "linkedIn": "https://www.linkedin.com/in/rutik-mane-83616b2a2"
+  },
+  {
+    "name": "Ashutosh Tiwari",
+    "city": "",
+    "state": "",
+    "photo": "Man",
+    "linkedIn": "https://www.linkedin.com/in/ashutosh-tiwari-97024a2a1/"
   }
+
 ]

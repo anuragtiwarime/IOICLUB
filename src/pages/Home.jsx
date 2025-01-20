@@ -50,7 +50,7 @@ export default function Home() {
       image="https://res.cloudinary.com/djbjfsshe/image/upload/v1737342952/120A7616_sasg6x.jpg"
       name="Prakash Nimbalkar"
       role="Head, School of Management"
-      description=""
+      description="Marketing Consultant, GTM & Startup Advisor, Mentor @ MeitY, Wadhwani, NASSCOM, and Visiting Faculty."
       linkedin="https://www.linkedin.com/in/prakash-nimbalkar/" // LinkedIn URL
     />
   </div>
