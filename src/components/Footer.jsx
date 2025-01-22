@@ -2,8 +2,12 @@ import React from 'react';
 import { FaYoutube, FaInstagram, FaLinkedin } from 'react-icons/fa';
 
 export default function Footer() {
+  function handleHoliday() {
+    window.location.href = "/holydays";
+  }
+
   return (
-    <footer className="bg-black text-white py-12">
+    <footer className="bg-black text-white py-12 font-roboto" style={{ fontFamily: 'Roboto, sans-serif' }}>
       <div className="max-w-7xl mx-auto px-6 md:px-12">
         {/* Footer grid */}
         <div className="grid md:grid-cols-3 gap-12">
@@ -27,7 +31,10 @@ export default function Footer() {
           <div>
             <h3 className="text-2xl font-bold mb-6">Quick Links</h3>
             <ul className="space-y-4">
-              {['Holidays', 'About Us', 'Admissions', 'Academic Programs', 'Campus Life'].map((link, idx) => (
+              <li>
+                <a onClick={handleHoliday} className="cursor-pointer">Holidays</a>
+              </li>
+              {['About Us', 'Admissions', 'Academic Programs', 'Campus Life'].map((link, idx) => (
                 <li key={idx}>
                   <a
                     href="https://pwioi.com/"
@@ -45,9 +52,8 @@ export default function Footer() {
           {/* Follow Us */}
           <div>
             <h3 className="text-2xl font-bold mb-6">Follow Us</h3>
-            <ul className=" flex items-center gap-4">
+            <ul className="flex items-center gap-4">
               <li className="flex items-center">
-                
                 <a
                   href="https://www.youtube.com/@PW-IOI"
                   target="_blank"
@@ -58,25 +64,23 @@ export default function Footer() {
                 </a>
               </li>
               <li className="flex items-center gap-3">
-                
                 <a
                   href="https://www.instagram.com/pw_ioi/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="hover:text-gray-300 transition-colors"
                 >
-                 <FaInstagram className="text-pink-500 text-2xl" />
+                  <FaInstagram className="text-pink-500 text-2xl" />
                 </a>
               </li>
               <li className="flex items-center gap-3">
-               
                 <a
                   href="https://www.linkedin.com/school/pw-ioi/posts/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="hover:text-gray-300 transition-colors"
                 >
-                   <FaLinkedin className="text-blue-500 text-2xl" />
+                  <FaLinkedin className="text-blue-500 text-2xl" />
                 </a>
               </li>
             </ul>

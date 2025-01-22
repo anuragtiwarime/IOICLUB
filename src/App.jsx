@@ -13,6 +13,7 @@ import PageNotFound from './pages/PageNotFound';
 import SOT from './pages/SOT';
 import SOM from './pages/SOM.jsx';
 import LifeAtPWIOI from './pages/LifeAtPWIOI.jsx';
+import Holydays from "./pages/Holidays.jsx"
 
 const App = () => (
   <Router>
@@ -31,6 +32,7 @@ const App = () => (
         <Route path="/sot" element={<SOT />} />
         <Route path='/som' element={<SOM></SOM>}></Route>
         <Route path="/lifeatpwioi" element={<LifeAtPWIOI />} />
+        <Route path = "/holydays" element={<Holydays/>}></Route>
 
 
       </Routes>

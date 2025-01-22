@@ -8,6 +8,7 @@ const images = [
   "https://res.cloudinary.com/dkxongd5z/image/upload/v1736949640/img23_awsttv.jpg",
   "https://res.cloudinary.com/dkxongd5z/image/upload/v1737381150/img.e_uikamz.png",
   "https://res.cloudinary.com/dkxongd5z/image/upload/v1736949612/img14_hcgyzj.jpg",
+  "https://res.cloudinary.com/dkxongd5z/image/upload/v1737436401/Hackwinner_ggj2gt.jpg"
   
 ];
 

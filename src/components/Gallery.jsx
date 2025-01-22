@@ -11,7 +11,7 @@ const Gallery = () => {
     "https://res.cloudinary.com/dkxongd5z/image/upload/v1736949645/img25_j57sn0.jpg",
     "https://res.cloudinary.com/dkxongd5z/image/upload/v1736949608/img16_qo7fvz.jpg",
     "https://res.cloudinary.com/dkxongd5z/image/upload/v1736949629/img17_jc57om.jpg",
-    "https://res.cloudinary.com/dkxongd5z/image/upload/v1736949638/img18_mjjqru.jpg",
+    "https://res.cloudinary.com/dkxongd5z/image/upload/v1737440055/img18_mjjqru-min_jmglju.jpg",
     "https://res.cloudinary.com/dkxongd5z/image/upload/v1736949593/img9_hk85o8.jpg",
     "https://res.cloudinary.com/dkxongd5z/image/upload/v1736949942/img19_l0lhs8.jpg",
   ];
