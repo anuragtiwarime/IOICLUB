@@ -9,7 +9,10 @@ const FacultyandStaff = () => {
   return (
     <>
     <div className="pt-24 pb-16 px-4 max-w-7xl mx-auto">
-  <h1 className="text-3xl font-bold text-black mb-8 text-center">Faculty and Staff</h1>
+    <h1 className="text-4xl text-center font-bold text-gray-800 mb-3">
+            Our Faculty and Staff
+          </h1>
+          <div className="w-24 h-1 bg-black mx-auto rounded-full mb-8"></div>
 
   <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
     {facultyData.map((faculty, index) => (

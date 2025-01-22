@@ -36,7 +36,10 @@ export default function Policies() {
   return (
     <>
     <div className="pt-24 pb-16 px-4 max-w-7xl mx-auto">
-      <h1 className="text-3xl font-bold text-black mb-8 text-center">Our Academic Policies</h1>
+    <h1 className="text-4xl text-center font-bold text-gray-800 mb-3">
+            Our Acadmic Policies
+          </h1>
+          <div className="w-24 h-1 bg-black mx-auto rounded-full mb-8"></div>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6"> {/* Added gap-6 */}
         {policies.map((policy, index) => (
           <div

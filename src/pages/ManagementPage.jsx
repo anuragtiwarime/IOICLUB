@@ -17,26 +17,35 @@ const MangagementPage = () => {
   return (
     <>
       <div className="pt-24 pb-16 px-4 max-w-7xl mx-auto">
-        <h1 className="text-3xl font-bold text-black mb-8 text-center">Our SOM Students</h1>
+        <div className="text-center mb-12">
+          <h1 className="text-4xl font-bold text-gray-800 mb-3">
+            Our SOM Students
+          </h1>
+          <div className="w-24 h-1 bg-black mx-auto rounded-full mb-8"></div>
 
-        {/* Buttons to toggle between batches */}
-        <div className="flex justify-center gap-4 mb-8">
-          <button
-            className={`px-4 py-2 font-medium transition-colors ${
-              activeBatch === '23' ? 'bg-black text-white' : 'bg-gray-200 text-black'
-            }`}
-            onClick={() => setActiveBatch('23')}
-          >
-            23 Batch
-          </button>
-          <button
-            className={`px-4 py-2 font-medium transition-colors ${
-              activeBatch === '24' ? 'bg-black text-white' : 'bg-gray-200 text-black'
-            }`}
-            onClick={() => setActiveBatch('24')}
-          >
-            24 Batch
-          </button>
+          {/* Batch Toggle Buttons */}
+          <div className="inline-flex gap-2 bg-gray-100 p-1 rounded-xl mb-12">
+            <button
+              className={`px-6 py-2 rounded-lg font-medium transition-all duration-300 ${
+                activeBatch === '23'
+                  ? 'bg-black text-white shadow-lg'
+                  : 'hover:bg-gray-200'
+              }`}
+              onClick={() => setActiveBatch('23')}
+            >
+              23 Batch
+            </button>
+            <button
+              className={`px-6 py-2 rounded-lg font-medium transition-all duration-300 ${
+                activeBatch === '24'
+                  ? 'bg-black text-white shadow-lg'
+                  : 'hover:bg-gray-200'
+              }`}
+              onClick={() => setActiveBatch('24')}
+            >
+              24 Batch
+            </button>
+          </div>
         </div>
 
         {/* Students Grid */}
@@ -47,21 +56,39 @@ const MangagementPage = () => {
               href={student.linkedIn}
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-white p-6 rounded-lg shadow-lg text-center flex flex-col items-center transform transition-transform hover:scale-105"
+              className="group relative bg-white p-6 rounded-2xl shadow-sm hover:shadow-xl transform transition-all duration-300 hover:-translate-y-1"
             >
-              <img
-                src={student.photo}
-                alt={student.name}
-                className="w-32 h-32 rounded-full mb-4"
-              />
-              <div className="flex items-center justify-center gap-2">
-                <p className="text-xl font-semibold">{student.name}</p>
-                <FaLinkedin
-                  className="text-black text-xl hover:text-gray-800 transition-colors"
-                  title="LinkedIn Profile"
-                />
+              <div className="relative">
+                {/* Image Container */}
+                <div className="relative mb-4">
+                  <div className="w-32 h-32 mx-auto rounded-full overflow-hidden border-4 border-gray-50 shadow-md group-hover:border-gray-200 transition-all duration-300">
+                    <img
+                      src={student.photo}
+                      alt={student.name}
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
+                  {/* LinkedIn Icon Overlay */}
+                  <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    <div className="w-10 h-10 bg-black bg-opacity-70 rounded-full flex items-center justify-center">
+                      <FaLinkedin className="text-white text-xl" />
+                    </div>
+                  </div>
+                </div>
+
+                {/* Student Info */}
+                <div className="text-center">
+                  <h3 className="text-lg font-semibold text-gray-800 mb-1">
+                    {student.name}
+                  </h3>
+                  <p className="text-sm text-gray-500">
+                    {student.city}, {student.state}
+                  </p>
+                </div>
               </div>
-              <p className="text-gray-700">{student.city}, {student.state}</p>
+
+              {/* Hover Effect Overlay */}
+              <div className="absolute inset-0 rounded-2xl bg-gradient-to-b from-transparent to-gray-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
             </a>
           ))}
         </div>

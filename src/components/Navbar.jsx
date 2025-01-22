@@ -8,14 +8,13 @@ const Navbar = () => {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   const [showNavbar, setShowNavbar] = useState(true);
   const [activeLink, setActiveLink] = useState("");
-  const location = useLocation(); // For detecting current route
+  const location = useLocation();
   let lastScrollY = 0;
 
   const handleLinkClick = (link) => {
     setActiveLink(link);
   };
 
-  // Update active link on route change
   useEffect(() => {
     const currentPath = location.pathname;
     setActiveLink(currentPath.includes("/students") ? "/students" : currentPath);
@@ -37,10 +36,23 @@ const Navbar = () => {
     };
   }, []);
 
+  const NavLink = ({ to, children }) => (
+    <Link
+      to={to}
+      onClick={() => handleLinkClick(to)}
+      className={`relative group hover:text-gray-300 transition-all duration-200 ease-in-out py-1
+                ${activeLink === to ? 'text-white' : 'text-gray-300'}`}
+    >
+      {children}
+      <span className={`absolute bottom-0 left-0 w-full h-0.5 bg-white transform origin-left transition-transform duration-300 ease-out
+                     ${activeLink === to ? 'scale-x-100' : 'scale-x-0 group-hover:scale-x-100'}`} />
+    </Link>
+  );
+
   return (
     <nav
-      className={`bg-black text-white fixed w-full z-50 shadow-lg transition-all duration-300 ease-in-out ${
-        showNavbar ? "top-0" : "-top-16"
+      className={`bg-black backdrop-blur-md text-white fixed w-full z-50 shadow-lg transition-all duration-300 ease-in-out ${
+        showNavbar ? "top-0" : "-top-20"
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -49,7 +61,7 @@ const Navbar = () => {
           <Link
             to="/"
             onClick={() => handleLinkClick("/")}
-            className="flex items-center space-x-2"
+            className="flex items-center space-x-2 transform transition-transform duration-200 hover:scale-105"
           >
             <img
               src="https://res.cloudinary.com/dkxongd5z/image/upload/v1736950534/logo_v2tpru.png"
@@ -59,165 +71,126 @@ const Navbar = () => {
           </Link>
 
           {/* Desktop Menu */}
-          <div className="hidden md:flex space-x-8 text-[1rem] font-medium tracking-wide">
-            <Link
-              to="/clubs"
-              onClick={() => handleLinkClick("/clubs")}
-              className={`hover:text-gray-300 transition-all duration-200 ease-in-out border-b-2 ${
-                activeLink === "/clubs" ? "border-white" : "border-transparent"
-              }`}
-            >
-              Clubs
-            </Link>
-            <Link
-              to="/policies"
-              onClick={() => handleLinkClick("/policies")}
-              className={`hover:text-gray-300 transition-all duration-200 ease-in-out border-b-2 ${
-                activeLink === "/policies" ? "border-white" : "border-transparent"
-              }`}
-            >
-              Policies
-            </Link>
-            <Link
-              to="/careers"
-              onClick={() => handleLinkClick("/careers")}
-              className={`hover:text-gray-300 transition-all duration-200 ease-in-out border-b-2 ${
-                activeLink === "/careers" ? "border-white" : "border-transparent"
-              }`}
-            >
-              Careers
-            </Link>
-            {/* Dropdown for Students */}
+          <div className="hidden md:flex items-center space-x-8 text-[1rem] font-medium">
+            <NavLink to="/clubs">Clubs</NavLink>
+            <NavLink to="/policies">Policies</NavLink>
+            <NavLink to="/careers">Careers</NavLink>
+            
+            {/* Students Dropdown */}
             <div
-              className="relative"
+              className="relative group"
               onMouseEnter={() => setIsDropdownOpen(true)}
               onMouseLeave={() => setIsDropdownOpen(false)}
             >
               <span
-                onClick={() => handleLinkClick("/students")}
-                className={`flex items-center hover:text-gray-300 transition-all duration-200 ease-in-out cursor-pointer border-b-2 ${
-                  activeLink === "/students" ? "border-white" : "border-transparent"
-                }`}
+                className={`flex items-center cursor-pointer group relative py-1
+                         ${activeLink === "/students" ? 'text-white' : 'text-gray-300 hover:text-gray-300'}`}
               >
                 Students
-                <GoChevronDown className="ml-1" />
+                <GoChevronDown className={`ml-1 transform transition-transform duration-200 
+                                      ${isDropdownOpen ? 'rotate-180' : ''}`} />
+                <span className={`absolute bottom-0 left-0 w-full h-0.5 bg-white transform origin-left transition-transform duration-300 ease-out
+                              ${activeLink === "/students" ? 'scale-x-100' : 'scale-x-0 group-hover:scale-x-100'}`} />
               </span>
-              {isDropdownOpen && (
-                <div className="absolute top-full left-0 bg-black shadow-lg rounded-md">
-                  <Link
-                    to="/students/technology"
-                    onClick={() => handleLinkClick("/students")}
-                    className="block px-4 py-2 text-sm text-white hover:bg-gray-700 transition"
-                  >
-                    School of Technology
-                  </Link>
-                  <Link
-                    to="/students/management"
-                    onClick={() => handleLinkClick("/students")}
-                    className="block px-4 py-2 text-sm text-white hover:bg-gray-700 transition"
-                  >
-                    School of Management
-                  </Link>
+              
+              <div className={`absolute top-full -left-4 pt-2 transition-all duration-200 ease-in-out transform
+                           ${isDropdownOpen ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-2 pointer-events-none'}`}>
+                <div className="bg-black/95 backdrop-blur-md rounded-lg shadow-xl border border-gray-800 overflow-hidden min-w-[200px]">
+                  {[ 
+                    { to: "/students/technology", label: "School of Technology" },
+                    { to: "/students/management", label: "School of Management" }
+                  ].map((item) => (
+                    <Link
+                      key={item.to}
+                      to={item.to}
+                      onClick={() => handleLinkClick("/students")}
+                      className="block px-6 py-3 text-sm text-gray-300 hover:text-white hover:bg-gray-800/50 transition-all duration-200"
+                    >
+                      {item.label}
+                    </Link>
+                  ))}
                 </div>
-              )}
+              </div>
             </div>
-            <Link
-              to="/facultyandstaff"
-              onClick={() => handleLinkClick("/facultyandstaff")}
-              className={`hover:text-gray-300 transition-all duration-200 ease-in-out border-b-2 ${
-                activeLink === "/facultyandstaff" ? "border-white" : "border-transparent"
-              }`}
-            >
-              Faculty & Staff
-            </Link>
+
+            <NavLink to="/facultyandstaff">Faculty & Staff</NavLink>
           </div>
 
           {/* Mobile Menu Button */}
-          <div className="md:hidden">
-            <button
-              onClick={() => setIsOpen(!isOpen)}
-              className="text-white hover:text-gray-300 focus:outline-none"
-            >
-              {isOpen ? <X size={28} /> : <Menu size={28} />}
-            </button>
-          </div>
+          <button
+            onClick={() => setIsOpen(!isOpen)}
+            className="md:hidden text-white hover:text-gray-300 focus:outline-none transition-transform duration-200 hover:scale-110"
+          >
+            {isOpen ? <X size={28} /> : <Menu size={28} />}
+          </button>
         </div>
       </div>
 
       {/* Mobile Menu */}
-      {isOpen && (
-        <div className="md:hidden bg-black transition-all duration-300 ease-in-out">
-          <div className="px-4 pt-4 pb-6 space-y-3">
+      <div
+        className={`md:hidden bg-black/95 backdrop-blur-md overflow-hidden transition-all duration-300 ease-in-out
+                 ${isOpen ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'}`}
+      >
+        <div className="px-4 py-2 space-y-1">
+          {[ 
+            { to: "/clubs", label: "Clubs" },
+            { to: "/policies", label: "Policies" },
+            { to: "/careers", label: "Careers" }
+          ].map((item) => (
             <Link
-              to="/clubs"
+              key={item.to}
+              to={item.to}
               onClick={() => {
                 setIsOpen(false);
-                handleLinkClick("/clubs");
+                handleLinkClick(item.to);
               }}
-              className="block text-lg font-medium hover:text-gray-300 transition-all duration-200"
+              className={`block py-2 px-4 text-lg font-medium rounded-lg transition-all duration-200
+                       ${activeLink === item.to 
+                         ? 'bg-gray-800/50 text-white' 
+                         : 'text-gray-300 hover:bg-gray-800/30 hover:text-white'}`}
             >
-              Clubs
+              {item.label}
             </Link>
-            <Link
-              to="/policies"
-              onClick={() => {
-                setIsOpen(false);
-                handleLinkClick("/policies");
-              }}
-              className="block text-lg font-medium hover:text-gray-300 transition-all duration-200"
-            >
-              Policies
-            </Link>
-            <Link
-              to="/careers"
-              onClick={() => {
-                setIsOpen(false);
-                handleLinkClick("/careers");
-              }}
-              className="block text-lg font-medium hover:text-gray-300 transition-all duration-200"
-            >
-              Careers
-            </Link>
-            <div>
-              <span className="block text-lg font-medium hover:text-gray-300 transition-all duration-200">
-                Students
-              </span>
-              <div className="ml-4 mt-2 space-y-2">
+          ))}
+
+          {/* Mobile Students Section */}
+          <div className="py-2 px-4">
+            <span className="block text-lg font-medium text-gray-300 mb-2">Students</span>
+            <div className="ml-4 space-y-1">
+              {[ 
+                { to: "/students/technology", label: "School of Technology" },
+                { to: "/students/management", label: "School of Management" }
+              ].map((item) => (
                 <Link
-                  to="/students/technology"
+                  key={item.to}
+                  to={item.to}
                   onClick={() => {
                     setIsOpen(false);
                     handleLinkClick("/students");
                   }}
-                  className="block text-sm font-medium hover:text-gray-300 transition"
+                  className="block py-2 px-4 text-sm font-medium text-gray-400 hover:text-white hover:bg-gray-800/30 rounded-lg transition-all duration-200"
                 >
-                  School of Technology
+                  {item.label}
                 </Link>
-                <Link
-                  to="/students/management"
-                  onClick={() => {
-                    setIsOpen(false);
-                    handleLinkClick("/students");
-                  }}
-                  className="block text-sm font-medium hover:text-gray-300 transition"
-                >
-                  School of Management
-                </Link>
-              </div>
+              ))}
             </div>
-            <Link
-              to="/facultyandstaff"
-              onClick={() => {
-                setIsOpen(false);
-                handleLinkClick("/facultyandstaff");
-              }}
-              className="block text-lg font-medium hover:text-gray-300 transition-all duration-200"
-            >
-              Faculty & Staff
-            </Link>
           </div>
+
+          <Link
+            to="/facultyandstaff"
+            onClick={() => {
+              setIsOpen(false);
+              handleLinkClick("/facultyandstaff");
+            }}
+            className={`block py-2 px-4 text-lg font-medium rounded-lg transition-all duration-200
+                     ${activeLink === "/facultyandstaff" 
+                       ? 'bg-gray-800/50 text-white' 
+                       : 'text-gray-300 hover:bg-gray-800/30 hover:text-white'}`}
+          >
+            Faculty & Staff
+          </Link>
         </div>
-      )}
+      </div>
     </nav>
   );
 };

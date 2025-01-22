@@ -1,29 +1,34 @@
 import React from 'react';
-import { FaLinkedin } from 'react-icons/fa';
+import { Linkedin } from 'lucide-react';
 
-export default function COOCard({ image, name, role, description, linkedin }) {
+const COOCard = ({ image, name, role, description, linkedin }) => {
   return (
-    <div className="bg-white rounded-lg shadow-lg p-6 transform transition-transform hover:scale-105 flex flex-col justify-between h-full items-center">
-      {/* Adjusted image size */}
-      <img
-        src={image}
-        alt={name}
-        className="w-52 h-52 rounded-full mx-auto mb-4 object-cover" // Increased size here
-      />
-      <h3 className="text-xl font-semibold text-center text-black mb-2">{name}</h3>
-      <p className="text-gray-600 text-center font-medium mb-2">{role}</p>
-      <p className="text-gray-500 text-center mb-4">{description}</p>
-
-      {/* LinkedIn Button with width of the icon */}
-      <a
-        href={linkedin}
-        className="bg-black text-white p-2 rounded-full hover:bg-gray-800  items-center"
-        target="_blank"
-        rel="noopener noreferrer"
-        style={{ width: '2.5rem', padding: '0.5rem' }} // Adjust padding and width to icon size
-      >
-        <FaLinkedin size={24} />
-      </a>
+    <div className="w-full h-full glass-effect rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300">
+      <div className="relative">
+        <img 
+          src={image} 
+          alt={name} 
+          className="w-full h-[300px] object-cover object-center"
+        />
+        <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-6">
+          <h3 className="text-2xl font-bold text-white">{name}</h3>
+          <p className="text-white/90">{role}</p>
+        </div>
+      </div>
+      <div className="p-6">
+        <p className="text-gray-600 mb-4">{description}</p>
+        <a 
+          href={linkedin}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-flex items-center gap-2 text-black hover:text-gray-700 transition-colors"
+        >
+          <Linkedin className="w-5 h-5" />
+          <span>Connect on LinkedIn</span>
+        </a>
+      </div>
     </div>
   );
-}
+};
+
+export default COOCard;

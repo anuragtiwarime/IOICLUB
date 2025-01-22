@@ -114,7 +114,7 @@
     "name":"Aryan Chauhan",
     "linkedIn":"https://www.linkedin.com/in/arynch/",
     "state":"Uttar Pradesh",
-    "city":"",
+    "city":"Ghaziput",
     "photo": "Man"
   },
   {
@@ -127,8 +127,8 @@
   {
     "name":"Dev Meghwani",
     "linkedIn":"https://in.linkedin.com/in/devmeghwani",
-    "state":"",
-    "city":"",
+    "state":"Madhya Pradesh",
+    "city":"Khandwa",
     "photo": "Man"
   },
   {
@@ -149,7 +149,7 @@
     "name":"Vijay Patel",
     "linkedIn":"https://www.linkedin.com/in/vijaypatel01/",
     "state":"Bihar",
-    "city":"",
+    "city":"Gopalganj",
     "photo": "Man"
   },
   {
@@ -170,7 +170,7 @@
     "name":"Vijay Kumar",
     "linkedIn":"https://www.linkedin.com/in/vijaykumar752/",
     "state":"Bihar",
-    "city":"",
+    "city":"Madhubani",
     "photo": "Man"
   },
   {
@@ -261,8 +261,8 @@
     "name":"Nandini Molgara",
     "linkedIn":"https://www.linkedin.com/in/nandini-molgara-b5b1812a3/",
     "state":"Andhra Pradesh",
-    "city":"",
-    "photo": "Woman"
+    "city":"Hyderabad",
+    "photo": "https://res.cloudinary.com/dkxongd5z/image/upload/v1737471117/Avatar2_Female_ydzckw.png"
   },
   {
     "name":"Harish Sharma",
@@ -275,21 +275,21 @@
     "name":"Dushyant Sharma",
     "linkedIn":"https://www.linkedin.com/in/dushyant-sharma-pandit/",
     "state":"Haryana",
-    "city":"",
+    "city":"Sirsa",
     "photo": "Man"
   },
   {
     "name":"Rohit Makani",
     "linkedIn":"https://www.linkedin.com/in/rrohit-makani-rohitji/",
     "state":"Haryana",
-    "city":"",
+    "city":"Sirsa",
     "photo": "Man"
   },
   {
     "name":"Aman Kumar Ayush",
     "linkedIn":"https://www.linkedin.com/in/aman-kumar-ayush/",
     "state":"Bihar",
-    "city":"",
+    "city":"Chhapra",
     "photo": "Man"
   },{
     "name":"Harsh Bharwani",
@@ -308,15 +308,15 @@
   {
     "name":"Deepak Jalumoori",
     "linkedIn":"https://www.linkedin.com/in/deepak-jalumoori/",
-    "state":"",
-    "city":"",
+    "state":"Andhra Pradesh",
+    "city":"Visakhapatnam",
     "photo": "Man"
   },
   {
     "name":"Aniket Kumar",
     "linkedIn":"https://www.linkedin.com/in/aniket-kumar-2506782a4/",
     "state":"West Bengal",
-    "city":"",
+    "city":"Siliguri",
     "photo": "Man"
   },
   {
@@ -327,11 +327,11 @@
     "photo": "Man"
   },
   {
-    "name":"Raj Kumar Saw",
+    "name":"Rajkumar Saw",
     "linkedIn":"https://www.linkedin.com/in/rajkumar963/",
-    "city":"Hazaribagh",
+    "city":"Ranchi",
     "state":"Jharkhand",
-    "photo": "Man"
+    "photo": "https://res.cloudinary.com/dkxongd5z/image/upload/v1737445586/Avatar_i4xb7l.png"
   },
   {
     "name":"Vivek Kumar",
@@ -357,7 +357,7 @@
   {
     "name":"Kishan Singh",
     "linkedIn":"https://www.linkedin.com/in/kishan-singh-7a788529b/",
-    "city":"",
+    "city":"Gopalganj",
     "state":"Bihar",
     "photo": "Man"
   },
@@ -378,22 +378,22 @@
   {
     "name":"Harsh Kumar",
     "linkedIn":"https://www.linkedin.com/in/harshkumar045/",
-    "city":"",
+    "city":"Samastipur",
     "state":"Bihar",
     "photo": "Man"
   },
   {
     "name":"Harshit Raj",
     "linkedIn":"https://www.linkedin.com/in/harshit-raj-67a2682a4/",
-    "city":"",
+    "city":"Koderma",
     "state":"Jharkhand",
     "photo": "Man"
   },
   {
     "name":"Priya Saha",
     "linkedIn":"https://www.linkedin.com/in/priya-saha-14b7a5295/",
-    "city":"",
-    "state":"West Bengal",
+    "city":"Dhubri",
+    "state":"Assam",
     "photo": "https://res.cloudinary.com/dkxongd5z/image/upload/v1737471117/Avatar2_Female_ydzckw.png"
   },
   {
@@ -456,15 +456,15 @@
   {
     "name":"Ankur Kumar",
     "linkedIn":"https://www.linkedin.com/in/ankur-kumar-prajapati/",
-    "city":"",
-    "state":"",
+    "city":"Muzaffarnagar",
+    "state":"Uttar Pradesh",
     "photo": "Man"
   },
   {
     "name":"Natansh Khurana",
     "linkedIn":"https://www.linkedin.com/in/natansh-khurana/",
-    "city":"",
-    "state":"",
+    "city":"Sirsa",
+    "state":"Haryana",
     "photo": "Man"
   },
   {
@@ -478,7 +478,7 @@
     "name":"Pranjal Bramhankar",
     "linkedIn":"https://www.linkedin.com/in/pranjal-bramhankar-6aaba4265/",
     "city":"",
-    "state":"",
+    "state":"Maharashtra",
     "photo": "https://res.cloudinary.com/dkxongd5z/image/upload/v1737471117/Avatar2_Female_ydzckw.png"
   },
   
@@ -486,13 +486,13 @@
     "name":"Keerthi JK",
     "linkedIn":"https://www.linkedin.com/in/keerthi-jk/",
     "city":"",
-    "state":"",
+    "state":"Karnataka",
     "photo": "https://res.cloudinary.com/dkxongd5z/image/upload/v1737471117/Avatar2_Female_ydzckw.png"
   },
   {
     "name":"Dinkar Thakur",
     "linkedIn":"https://www.linkedin.com/in/dinkarthakur5197/",
-    "city":"",
+    "city":"Aara",
     "state":"Bihar",
     "photo": "Man"
   },
@@ -506,20 +506,20 @@
   {
     "name":"Sofikul Sk",
     "linkedIn":"https://www.linkedin.com/in/sofikul-sk-a01457313/",
-    "city":"",
-    "state":"",
+    "city":"Murshidabad",
+    "state":"West Bengal",
     "photo": "Man"
   },
   {
     "name":"Najma Khatun",
     "linkedIn":"https://www.linkedin.com/in/najma-khatun/",
-    "city":"",
+    "city":"Krishnanagar",
     "state":"West Bengal",
     "photo": "https://res.cloudinary.com/dkxongd5z/image/upload/v1737471117/Avatar2_Female_ydzckw.png"
   },
   {
-    "name":"Prahlad ",
-    "linkedIn":"https://www.linkedin.com/in/najma-khatun/",
+    "name":"Prahlad Kumar Das",
+    "linkedIn":"https://www.linkedin.com/in/prahladdas84/",
     "city":"Madhubani",
     "state":"Bihar",
     "photo": "Man"
@@ -562,9 +562,9 @@
   {
     "name":"Adishwar Raj",
     "linkedIn":"https://www.linkedin.com/in/adishwar-raj-b40247298/",
-    "city":"Bokaro",
+    "city":"Bokaro Steel City",
     "state":"Jharkhand",
-    "photo": "Man"
+    "photo": "https://res.cloudinary.com/dkxongd5z/image/upload/v1737445586/Avatar_i4xb7l.png"
   },
   {
     "name":"Akanksha Priyadarshinee Rath",
@@ -642,7 +642,104 @@
     "city":"",
     "state":"Karnataka",
     "photo": "Man"
+  },
+ 
+  {
+    "name":"Hemant Sharma",
+    "linkedIn":"https://www.linkedin.com/in/hemant-sharmame/",
+    "city":"Sirsa",
+    "state":"Karnataka",
+    "photo": "Man"
+  },
+  {
+    "name":"Karthikeya Bendi",
+    "linkedIn":"https://www.linkedin.com/in/karthikeyabendi/",
+    "city":"Srikakulam",
+    "state":"Andhra Pradesh",
+    "photo": "Man"
+  },
+  {
+    "name":"Akhil Yeddu",
+    "linkedIn":"https://www.linkedin.com/in/akhil-yeddu/",
+    "city":"Visakhapatnam",
+    "state":"Andhra Pradesh",
+    "photo": "Man"
+  },
+  {
+    "name":"Ujwala Karri",
+    "linkedIn":"https://www.linkedin.com/in/ujwalakarri/",
+    "city":"Vijayawada",
+    "state":"Andhra Pradesh",
+    "photo": "https://res.cloudinary.com/dkxongd5z/image/upload/v1737471117/Avatar2_Female_ydzckw.png"
+  },
+  {
+    "name":"Venkatesh Upadhyay",
+    "linkedIn":"https://www.linkedin.com/in/venkatesh-upadhyay-87052928a/",
+    "city":"Hyderabad",
+    "state":"Andhra Pradesh",
+    "photo": "https://res.cloudinary.com/dkxongd5z/image/upload/v1737471130/Avatar3_Male_dvztet.png"
+  },
+  {
+    "name":"Awadh Kishor Singh",
+    "linkedIn":"https://www.linkedin.com/in/imawadh/",
+    "city":"Gorakhpur",
+    "state":"Uttar Pradesh",
+    "photo": "https://res.cloudinary.com/dkxongd5z/image/upload/v1737442156/Purple_Pink_Gradient_Man_3D_Avatar_wa2ato.png"
+  },
+  {
+    "name":"Mansi Sharma",
+    "linkedIn":"https://www.linkedin.com/in/mansisharmame/",
+    "city":"Delhi",
+    "state":"Delhi",
+    "photo": "https://res.cloudinary.com/dkxongd5z/image/upload/v1737471117/Avatar2_Female_ydzckw.png"
+  },
+  {
+    "name":"Ankit Singh",
+    "linkedIn":"",
+    "city":"",
+    "state":"Uttrakhand",
+    "photo": "https://res.cloudinary.com/dkxongd5z/image/upload/v1737445586/Avatar_i4xb7l.png"
+  },
+  {
+    "name":"Akash Dangwal",
+    "linkedIn":"https://www.linkedin.com/in/akashdangwal07/",
+    "city":"",
+    "state":"Uttrakhand",
+    "photo": "https://res.cloudinary.com/dkxongd5z/image/upload/v1737442156/Purple_Pink_Gradient_Man_3D_Avatar_wa2ato.png"
+  },
+  {
+    "name":"Abhishek Sharma",
+    "linkedIn":"https://www.linkedin.com/in/abhishek1729/",
+    "city":"Guwahati",
+    "state":"Assam",
+    "photo": "https://res.cloudinary.com/dkxongd5z/image/upload/v1737471130/Avatar3_Male_dvztet.png"
+  },
+  {
+    "name":"Satyabrata Mohanty",
+    "linkedIn":"https://www.linkedin.com/in/satyabratame/",
+    "city":"Bhuneshwar",
+    "state":"Odisha",
+    "photo": "https://res.cloudinary.com/dkxongd5z/image/upload/v1737445586/Avatar_i4xb7l.png"
+  },
+  {
+    "name":"Md Shoaib Anwar",
+    "linkedIn":"https://www.linkedin.com/in/shoaib2004/",
+    "city":"Bhuneshwar",
+    "state":"",
+    "photo": "https://res.cloudinary.com/dkxongd5z/image/upload/v1737471130/Avatar3_Male_dvztet.png"
+  },
+  {
+    "name":"Md Rayyan",
+    "linkedIn":"https://www.linkedin.com/in/md-rayyan-/",
+    "city":"Buldhana",
+    "state":"Maharashtra",
+    "photo": "https://res.cloudinary.com/dkxongd5z/image/upload/v1737445586/Avatar_i4xb7l.png"
   }
+
+
+
+
+
 
  
 
