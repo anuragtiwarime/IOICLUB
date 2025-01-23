@@ -73,6 +73,7 @@ const Navbar = () => {
           {/* Desktop Menu */}
           <div className="hidden md:flex items-center space-x-8 text-[1rem] font-medium">
             <NavLink to="/clubs">Clubs</NavLink>
+            <NavLink to="/events">Events</NavLink>
             <NavLink to="/policies">Policies</NavLink>
             <NavLink to="/careers">Careers</NavLink>
             
@@ -134,6 +135,7 @@ const Navbar = () => {
         <div className="px-4 py-2 space-y-1">
           {[ 
             { to: "/clubs", label: "Clubs" },
+            {to:"/events" , label : "Events"},
             { to: "/policies", label: "Policies" },
             { to: "/careers", label: "Careers" }
           ].map((item) => (

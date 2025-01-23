@@ -24,7 +24,10 @@ export default function Home() {
       
 
       {/* Gallery Section */}
+      <div className="min-h-screen bg-gradient-to-br from-black via-gray-700 to-gray-900">
       <Gallery></Gallery>
+    </div>
+      
       {/* Footer */}
       <Footer />
     </div>

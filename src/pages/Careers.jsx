@@ -10,7 +10,8 @@ const positions = [
     description: "Join our frontend team and work on exciting projects using modern technologies like React, TypeScript, and Tailwind CSS.",
     status: "closed",
     department: "Engineering",
-    duration: "3 months"
+    duration: "3 months",
+    formLink:""
   },
   {
     title: "Student Brand Strategist Intern",
@@ -19,7 +20,8 @@ const positions = [
     description: "Help shape our brand identity and create impactful marketing strategies for our educational initiatives.",
     status: "closed",
     department: "Marketing",
-    duration: "6 months"
+    duration: "6 months",
+    formLink:""
   },
   {
     title: "Teaching Assistant Intern",
@@ -28,23 +30,43 @@ const positions = [
     description: "Support our faculty in delivering high-quality education and assist students in their learning journey.",
     status: "closed",
     department: "Education",
-    duration: "4 months"
-  }
+    duration: "4 months",
+    formLink:""
+  },
+  // {
+  //   title: "Teaching Assistant Intern",
+  //   vacancies: 1,
+  //   salary: 8000,
+  //   description: "Support our faculty in delivering high-quality education and assist students in their learning journey.",
+  //   status: "open",
+  //   department: "Education",
+  //   duration: "4 months",
+  //   formLink:"https://forms.gle/jVTfzpFhXcZSmCft6"
+  // }
 ];
 
 export default function Careers() {
+function handleApply(formLink){
+  if(formLink){
+    window.open(formLink,"_blank");
+  }
+  else{
+    console.error("No form link provided!");
+  }
+}
+  
   return (
     <>
       <div className="min-h-screen bg-gray-50">
         {/* Hero Section */}
-        <div className="relative py-24 px-4">
+        <div className="relative pt-24 px-4">
           <div className="absolute inset-0 bg-gradient-to-br from-blue-50 to-purple-50 opacity-50" />
           <div className="relative max-w-7xl mx-auto">
           <h1 className="text-4xl text-center font-bold text-gray-800 mb-3">
             Careers
           </h1>
           <div className="w-24 h-1 bg-black mx-auto rounded-full mb-2"></div>
-            <p className="text-gray-600 text-center max-w-2xl mx-auto text-lg">
+            <p className="text-gray-600 text-center max-w-2xl mx-auto text-lg mb-4">
             "Empowering Your Future with Exceptional Career Opportunities"
             </p>
           </div>
@@ -71,9 +93,10 @@ export default function Careers() {
                     <button
                       className={`mt-4 md:mt-0 px-6 py-2 rounded-full font-medium transition-all duration-300 flex items-center gap-2
                                 ${position.status === "open" 
-                                  ? "bg-black text-white hover:bg-gray-800" 
-                                  : "bg-gray-100 text-gray-500 cursor-not-allowed"}`}
+                                  ? "bg-green-500 text-white hover:bg-green-400" 
+                                  : "bg-red-500 text-gray-black cursor-not-allowed"}`}
                       disabled={position.status === "closed"}
+                      onClick={position.status==="open" ?  () => handleApply(position.formLink):undefined}
                     >
                       {position.status === "open" ? (
                         <>

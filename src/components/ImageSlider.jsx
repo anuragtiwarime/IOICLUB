@@ -44,7 +44,7 @@ export default function ImageSlider() {
   };
 
   return (
-    <div className="relative group h-[300px] md:h-[600px] overflow-hidden rounded-2xl">
+    <div className="relative group h-[300px] md:h-[850px] overflow-hidden rounded-2xl">
       {/* Gradient Overlays */}
       <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent z-10 pointer-events-none"></div>
       <div className="absolute inset-0 bg-gradient-to-b from-black/30 to-transparent z-10 pointer-events-none"></div>

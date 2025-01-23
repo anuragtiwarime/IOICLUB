@@ -67,13 +67,13 @@
     "linkedIn":"https://www.linkedin.com/in/mitesh-agrawal76/",
     "name": "Mitesh Agrawal",
     "state":"Gujarat",
-    "city":"",
+    "city":"Surat",
     "photo":"Man"
   },{
     "name":"Krishna Kishore",
     "linkedIn":"https://www.linkedin.com/in/krishnakishore1119/",
     "state":"Andra Pradesh",
-    "city":"",
+    "city":"Hyderabad",
     "photo": "Man"
   },
   {
@@ -141,8 +141,8 @@
   {
     "name":"Juhi  Dugar",
     "linkedIn":"https://www.linkedin.com/in/juhi-dugar/",
-    "state":"",
-    "city":"",
+    "state":"Delhi",
+    "city":"Delhi",
     "photo": "https://res.cloudinary.com/dkxongd5z/image/upload/v1737471117/Avatar2_Female_ydzckw.png"
   },
   {
@@ -230,7 +230,7 @@
     "photo": "Man"
   },
   {
-    "name":"Shyeb Ansari",
+    "name":"Shoyeb Ansari",
     "linkedIn":"https://www.linkedin.com/in/shoyebansari45/",
     "state":"Gujarat",
     "city":"Bhuj",
@@ -364,8 +364,8 @@
   {
     "name":"Ashutosh Rai",
     "linkedIn":"https://www.linkedin.com/in/ashusomehow/",
-    "city":"",
-    "state":"",
+    "city":"Prayagraj",
+    "state":"Uttar Pradesh",
     "photo": "Man"
   },
   {
@@ -406,7 +406,7 @@
   {
     "name":"Abhay Sharma",
     "linkedIn":"https://www.linkedin.com/in/abhay-sharma2/",
-    "city":"",
+    "city":"Indore",
     "state":"Madhya Pradesh",
     "photo": "Man"
   },
@@ -485,7 +485,7 @@
   {
     "name":"Keerthi JK",
     "linkedIn":"https://www.linkedin.com/in/keerthi-jk/",
-    "city":"",
+    "city":"Bengaluru",
     "state":"Karnataka",
     "photo": "https://res.cloudinary.com/dkxongd5z/image/upload/v1737471117/Avatar2_Female_ydzckw.png"
   },
@@ -734,7 +734,30 @@
     "city":"Buldhana",
     "state":"Maharashtra",
     "photo": "https://res.cloudinary.com/dkxongd5z/image/upload/v1737445586/Avatar_i4xb7l.png"
+  },
+  {
+    "name":"Nischal Mainali",
+    "linkedIn":"",
+    "city":"Imphal",
+    "state":"Manipur",
+    "photo": "https://res.cloudinary.com/dkxongd5z/image/upload/v1737442156/Purple_Pink_Gradient_Man_3D_Avatar_wa2ato.png"
+  },
+  {
+    "name":"Kumar Shivam",
+    "linkedIn":"https://www.linkedin.com/in/shivam017/",
+    "city":"Saharsa",
+    "state":"Bihar",
+    "photo": "https://res.cloudinary.com/dkxongd5z/image/upload/v1737471130/Avatar3_Male_dvztet.png"
+  },
+  {
+    "name":"Keerthana Yadlapalli",
+    "linkedIn":"https://www.linkedin.com/in/keerthana-yadlapalli/",
+    "city":"Bengaluru",
+    "state":"Karnataka",
+    "photo": "https://res.cloudinary.com/dkxongd5z/image/upload/v1737471117/Avatar2_Female_ydzckw.png"
   }
+
+
 
 
 

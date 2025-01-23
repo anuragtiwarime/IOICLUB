@@ -14,7 +14,7 @@ const MeetOurLeadership = () => {
           {/* COO Section */}
           <div className="flex flex-col items-center md:items-start h-full">
             <COOCard
-              image="https://res.cloudinary.com/dkxongd5z/image/upload/v1736947135/CTO_rmphg5.jpg"
+              image="https://res.cloudinary.com/dkxongd5z/image/upload/v1737619426/IMG_4763_jtxlag.jpg"
               name="Gopal Sharma"
               role="Chief Operating Officer"
               description="Gold Medalist from IIT-BHU, COO at Physics Wallah, passionate about learning, growth, and revolutionizing education."
