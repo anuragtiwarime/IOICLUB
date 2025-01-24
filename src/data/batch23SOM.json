@@ -14,23 +14,23 @@
     "linkedIn": "https://www.linkedin.com/in/rishabh-jain-9a62052a1/"
   },
   {
-    "linkedIn":"https://www.linkedin.com/in/anurag-shukla-8210a92a2?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+    "linkedIn":"https://www.linkedin.com/in/anurag-shukla-8210a92a2",
     "name": "Anurag Shukla",
-    "city": "",
-    "state": "",
+    "city": "Lucknow",
+    "state": "Uttar Pradesh",
     "photo": "Man"
   },
   {
     "name": "Nithish Sheshagiri",
-    "city": "",
-    "state": "",
+    "city": "Bengaluru",
+    "state": "Karnataka",
     "photo": "Man",
     "linkedIn": "https://www.linkedin.com/in/nithish-sheshagiri-23272220a/"
   },
   {
     "name": "Niharika Singh",
-    "city": "",
-    "state": "Uttar Pradesh",
+    "city": "Delhi",
+    "state": "Delhi",
     "photo": "https://res.cloudinary.com/dkxongd5z/image/upload/v1737471117/Avatar2_Female_ydzckw.png",
     "linkedIn": "https://in.linkedin.com/in/niharika-singh-4755aa2a3"
   },
@@ -47,6 +47,13 @@
     "state": "",
     "photo": "Man",
     "linkedIn": "https://www.linkedin.com/in/ashutosh-tiwari-97024a2a1/"
+  },
+  {
+    "name": "Nikita Yadav",
+    "city": "Lucknow",
+    "state": "Uttar Pradesh",
+    "photo": "https://res.cloudinary.com/dkxongd5z/image/upload/v1737471117/Avatar2_Female_ydzckw.png",
+    "linkedIn": "https://www.linkedin.com/in/nikita-yadav-1968252a3/"
   }
 
 ]
