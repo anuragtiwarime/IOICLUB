@@ -16,9 +16,11 @@ import LifeAtPWIOI from './pages/LifeAtPWIOI.jsx';
 import Holydays from "./pages/Holidays.jsx"
 import Events from './pages/Events.jsx';
 
+
 const App = () => (
   <Router>
     <div className="min-h-screen bg-gray-100">
+      
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />

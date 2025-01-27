@@ -7,9 +7,14 @@ import batch23SOT from '../data/batch23SOT.json';
 import batch24SOT from '../data/batch24SOT.json';
 
 const TechnologyPage = () => {
+  const sortedBatch23SOT= [...batch23SOT].sort((a, b) => a.name.localeCompare(b.name));
+  const sortedBatch24SOT= [...batch24SOT].sort((a, b) => a.name.localeCompare(b.name));
+
+  
+
   const [activeBatch, setActiveBatch] = useState('23'); // Default batch is 23
 
-  const students = (activeBatch === '23' ? batch23SOT : batch24SOT).map(student => ({
+  const students = (activeBatch === '23' ? sortedBatch23SOT : sortedBatch24SOT).map(student => ({
     ...student,
     photo: student.photo === "Man" ? Man : student.photo === "Woman" ? Woman : student.photo
   }));
