@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { FaLinkedin } from 'react-icons/fa';
-import Man from '../assets/man.webp';
-import Woman from '../assets/women.jpeg';
+
 import Footer from '../components/Footer';
 import batch23SOT from '../data/batch23SOT.json';
 import batch24SOT from '../data/batch24SOT.json';
@@ -14,10 +13,7 @@ const TechnologyPage = () => {
 
   const [activeBatch, setActiveBatch] = useState('23'); // Default batch is 23
 
-  const students = (activeBatch === '23' ? sortedBatch23SOT : sortedBatch24SOT).map(student => ({
-    ...student,
-    photo: student.photo === "Man" ? Man : student.photo === "Woman" ? Woman : student.photo
-  }));
+  const students = activeBatch === '23' ? sortedBatch23SOT : sortedBatch24SOT;
 
   return (
     <>
