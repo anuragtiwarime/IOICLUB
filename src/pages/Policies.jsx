@@ -64,7 +64,7 @@ export default function Policies() {
             <div className="bg-white rounded-lg shadow-lg p-6 w-full max-w-4xl relative">
               <button
                 onClick={closeModal}
-                className="text-gray-800 font-bold text-3xl absolute top-2 right-4 hover:text-gray-600 transition-all duration-200"
+                className="text-gray-800 font-bold text-3xl absolute top-0 right-1 hover:text-gray-600 transition-all duration-200"
               >
                 ×
               </button>

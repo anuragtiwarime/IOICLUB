@@ -16,7 +16,7 @@ const Events = () => {
       allowed: "Only PWIOI Students",
     },
     {
-      title: "Freshers Party Batch 2024",
+      title: "Freshers Party for Batch 2024",
       date: "Yet to be announced",
       location: "Yet to be announced",
       time: "Yet to be announced",

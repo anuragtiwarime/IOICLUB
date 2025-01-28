@@ -1,10 +1,13 @@
 import React from 'react';
 import { FaYoutube, FaInstagram, FaLinkedin } from 'react-icons/fa';
+import { useNavigate } from 'react-router-dom';
 
 export default function Footer() {
-  function handleHoliday() {
-    window.location.href = "/holydays";
-  }
+  const navigate = useNavigate();
+
+  const handleHoliday = () => {
+    navigate("/holidays");
+  };
 
   return (
     <footer className="bg-black text-white py-12 font-roboto" style={{ fontFamily: 'Roboto, sans-serif' }}>

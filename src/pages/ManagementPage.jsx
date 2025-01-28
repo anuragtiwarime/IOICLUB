@@ -19,7 +19,7 @@ const MangagementPage = () => {
        <div className="pt-24 pb-16 px-4 max-w-7xl mx-auto">
          <div className="text-center mb-12">
            <h1 className="text-4xl font-bold text-white mb-3">
-             Our SOT Students
+             Our SOM Students
            </h1>
            <div className="w-24 h-1 bg-black mx-auto rounded-full mb-8"></div>
            

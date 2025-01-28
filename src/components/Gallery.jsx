@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { ChevronLeft, ChevronRight, X } from "lucide-react";
-
+import { useNavigate } from "react-router-dom";
 const Gallery = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
@@ -51,9 +51,12 @@ const Gallery = () => {
     handleImageTransition(newIndex, "right");
   };
 
-  const handleViewMore = () => {
-    window.location.href = "/lifeatpwioi";
-  };
+  const navigate = useNavigate();
+
+const handleViewMore = () => {
+  navigate("/lifeatpwioi");
+};
+
 
   const getSlideAnimation = () => {
     if (!isAnimating) return "translate-x-0 scale-100 opacity-100";

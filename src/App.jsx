@@ -13,42 +13,37 @@ import PageNotFound from './pages/PageNotFound';
 import SOT from './pages/SOT';
 import SOM from './pages/SOM.jsx';
 import LifeAtPWIOI from './pages/LifeAtPWIOI.jsx';
-import Holydays from "./pages/Holidays.jsx"
+import Holidays from "./pages/Holidays.jsx";
 import Events from './pages/Events.jsx';
-
+import ScrollToTop from './components/ScrollToTop';
 
 const App = () => (
   <Router>
+    <ScrollToTop /> {/* Add ScrollToTop here */}
     <div className="min-h-screen bg-gray-100">
-      
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/clubs" element={<Clubs />} />
-        <Route path="/policies" element={
-      <Policies />
-    } />
+        <Route path="/policies" element={<Policies />} />
         <Route path="/careers" element={<Careers />} />
         <Route path="/students/technology" element={<div className="min-h-screen bg-gradient-to-br from-black via-gray-700 to-gray-900">
-      <TechnologyPage />
-    </div>} />
-<Route path="/students/management" element={<div className="min-h-screen bg-gradient-to-br from-black via-gray-700 to-gray-900">
-      <ManagementPage />
-    </div>} />
-
-        <Route path ='/facultyandstaff' element={<FacultyandStaff/>}></Route>
+          <TechnologyPage />
+        </div>} />
+        <Route path="/students/management" element={<div className="min-h-screen bg-gradient-to-br from-black via-gray-700 to-gray-900">
+          <ManagementPage />
+        </div>} />
+        <Route path="/facultyandstaff" element={<FacultyandStaff />} />
         <Route path="*" element={<PageNotFound />} />
         <Route path="/sot" element={<SOT />} />
-        <Route path='/som' element={<SOM></SOM>}></Route>
+        <Route path="/som" element={<SOM />} />
         <Route path="/lifeatpwioi" element={<LifeAtPWIOI />} />
-        <Route path = "/holydays" element={<div className="min-h-screen bg-gradient-to-br from-black via-gray-700 to-gray-900">
-      <Holydays />
-    </div>}></Route>
+        <Route path="/holidays" element={<div className="min-h-screen bg-gradient-to-br from-black via-gray-700 to-gray-900">
+          <Holidays />
+        </div>} />
         <Route path="/events" element={<div className="min-h-screen bg-gradient-to-br from-black via-gray-700 to-gray-900">
-      <Events />
-    </div>}></Route>
-
-
+          <Events />
+        </div>} />
       </Routes>
     </div>
   </Router>
