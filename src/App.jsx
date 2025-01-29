@@ -2,7 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Home from './pages/Home';
-import Clubs from './pages/Clubs';
+// import Clubs from './pages/Clubs';
 import Policies from './pages/Policies';
 import Careers from './pages/Careers.jsx';
 import FacultyandStaff from './pages/FacultyandStaff.jsx';
@@ -24,7 +24,7 @@ const App = () => (
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/clubs" element={<Clubs />} />
+        {/* <Route path="/clubs" element={<Clubs />} /> */}
         <Route path="/policies" element={<Policies />} />
         <Route path="/careers" element={<Careers />} />
         <Route path="/students/technology" element={<div className="min-h-screen bg-gradient-to-br from-black via-gray-700 to-gray-900">

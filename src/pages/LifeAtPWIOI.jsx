@@ -30,7 +30,8 @@ const LifeAtPWIOI = () => {
     "https://res.cloudinary.com/dkxongd5z/image/upload/v1736949604/img15_jsnpnb.jpg",
     "https://res.cloudinary.com/dkxongd5z/image/upload/v1736949603/img13_deelc9.jpg",
     "https://res.cloudinary.com/dkxongd5z/image/upload/v1737436401/Hackwinner2_ni3yes.jpg",
-    "https://res.cloudinary.com/dkxongd5z/image/upload/v1737436401/Hackwinner_ggj2gt.jpg"
+    "https://res.cloudinary.com/dkxongd5z/image/upload/v1737436401/Hackwinner_ggj2gt.jpg",
+    "https://res.cloudinary.com/dkxongd5z/image/upload/v1738126617/1737109006740_rrrdyy.jpg"
   ];
 
   const handleImageClick = (index) => {

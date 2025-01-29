@@ -1,7 +1,7 @@
 [
   {
     "name": "Tech Club",
-    "description": "Explore the frontiers of technology through coding, robotics, and innovation.",
+    "description": "Organizes events, builds and supports the team, communicates effectively, and ensures a collaborative environment.",
     "icon": "Code2",
     "image": "https://images.unsplash.com/photo-1573164713714-d95e436ab8d6?auto=format&fit=crop&q=80&w=1200",
     "gradient": "from-cyan-500 to-blue-500",
@@ -9,7 +9,7 @@
   },
   {
     "name": "Cultural Club",
-    "description": "Celebrate diversity through art, music, dance, and cultural exhibitions.",
+    "description": "Organizes festivals and talent shows, supports members, and fosters a sense of community and creative expression.",
     "icon": "Palette",
     "image": "https://images.unsplash.com/photo-1514525253161-7a46d19cd819?auto=format&fit=crop&q=80&w=1200",
     "gradient": "from-purple-500 to-pink-500",
@@ -17,7 +17,7 @@
   },
   {
     "name": "Creators Club",
-    "description": "Transform ideas into reality through design, content creation, and digital media.",
+    "description": "Organizes art and design challenges, inspires members to explore creativity, and helps bring their ideas to life.",
     "icon": "Rocket",
     "image": "https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&q=80&w=1200",
     "gradient": "from-orange-500 to-red-500",
@@ -25,7 +25,7 @@
   },
   {
     "name": "Sports Club",
-    "description": "Excel in athletics, team sports, and fitness activities.",
+    "description": "Organizes tournaments and fitness challenges, motivates the team, and represents the club. Sports develop leadership, discipline, and confidence while improving mental and physical health.",
     "icon": "Dumbbell",
     "image": "https://images.unsplash.com/photo-1461896836934-ffe607ba8211?auto=format&fit=crop&q=80&w=1200",
     "gradient": "from-green-500 to-emerald-500",
@@ -33,7 +33,7 @@
   },
   {
     "name": "Filmy Drama Club",
-    "description": "Express yourself through theater, film-making, and dramatic performances.",
+    "description": "Organizes film screenings and theater performances, mentors members, and enhances acting, communication, and teamwork skills.",
     "icon": "Clapperboard",
     "image": "https://images.unsplash.com/photo-1478720568477-152d9b164e26?auto=format&fit=crop&q=80&w=1200",
     "gradient": "from-yellow-500 to-amber-500",
@@ -41,7 +41,7 @@
   },
   {
     "name": "Business Club",
-    "description": "Develop entrepreneurial skills, business acumen, and leadership qualities.",
+    "description": "Hosts workshops and networking sessions, inspires entrepreneurial skills, and prepares members for successful careers.",
     "icon": "Briefcase",
     "image": "https://images.unsplash.com/photo-1600880292203-757bb62b4baf?auto=format&fit=crop&q=80&w=1200",
     "gradient": "from-indigo-500 to-violet-500",
@@ -49,7 +49,7 @@
   },
   {
     "name": "Social Welfare Club",
-    "description": "Make a positive impact through community service and social initiatives.",
+    "description": "Organizes charity drives and awareness campaigns, motivates members, and promotes social responsibility to make a real impact.",
     "icon": "Heart",
     "image": "https://images.unsplash.com/photo-1559027615-cd4628902d4a?auto=format&fit=crop&q=80&w=1200",
     "gradient": "from-rose-500 to-pink-500",
