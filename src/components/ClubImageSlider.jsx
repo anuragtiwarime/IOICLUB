@@ -1,15 +1,13 @@
 import { useState, useEffect } from 'react';
-import React from 'react';
 import { GoChevronLeft, GoChevronRight } from 'react-icons/go';
 
 const images = [
-  "https://res.cloudinary.com/dkxongd5z/image/upload/v1736949622/img24_yzf6ry.jpg",
-  "https://res.cloudinary.com/dkxongd5z/image/upload/v1736949596/img10_pieeo2.jpg",
-  "https://res.cloudinary.com/dkxongd5z/image/upload/v1736949598/img11_jvdvmh.jpg",
-  "https://res.cloudinary.com/dkxongd5z/image/upload/v1736949640/img23_awsttv.jpg",
-  "https://res.cloudinary.com/dkxongd5z/image/upload/v1737381150/img.e_uikamz.png",
-  "https://res.cloudinary.com/dkxongd5z/image/upload/v1736949612/img14_hcgyzj.jpg",
-  "https://res.cloudinary.com/dkxongd5z/image/upload/v1737436401/Hackwinner_ggj2gt.jpg"
+  "https://res.cloudinary.com/dkxongd5z/image/upload/v1737527177/img25_j57sn0-min_ij6s18.jpg",
+  "https://res.cloudinary.com/dkxongd5z/image/upload/v1738081694/DSC02660_bohvbb.jpg",
+  "https://res.cloudinary.com/dkxongd5z/image/upload/v1736949612/img21_mjrrsx.jpg",
+  "https://res.cloudinary.com/dkxongd5z/image/upload/v1736949636/img29_neubpf.jpg",
+  "https://res.cloudinary.com/dkxongd5z/image/upload/v1736949942/img19_l0lhs8.jpg",
+  "https://res.cloudinary.com/dkxongd5z/image/upload/v1737436401/Hackwinner_ggj2gt.jpg",
 ];
 
 export default function ImageSlider() {
@@ -44,16 +42,12 @@ export default function ImageSlider() {
   };
 
   return (
-    <div className="group relative h-[300px] md:h-[800px] overflow-hidden rounded-2xl">
-      {/* Gradient Overlays */}
-      <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent z-10 pointer-events-none"></div>
-      <div className="absolute inset-0 bg-gradient-to-b from-black/30 to-transparent z-10 pointer-events-none"></div>
-
+    <div className="absolute inset-0 group">
       {/* Images */}
       {images.map((image, index) => (
         <div
           key={index}
-          className={`absolute w-full h-full transition-all duration-700 ease-in-out transform ${
+          className={`absolute inset-0 transition-all duration-700 ease-in-out transform ${
             index === currentIndex
               ? 'opacity-100 scale-100'
               : 'opacity-0 scale-110'

@@ -1,0 +1,58 @@
+[
+  {
+    "name": "Tech Club",
+    "description": "Explore the frontiers of technology through coding, robotics, and innovation.",
+    "icon": "Code2",
+    "image": "https://images.unsplash.com/photo-1573164713714-d95e436ab8d6?auto=format&fit=crop&q=80&w=1200",
+    "gradient": "from-cyan-500 to-blue-500",
+    "link": "/tech-club"
+  },
+  {
+    "name": "Cultural Club",
+    "description": "Celebrate diversity through art, music, dance, and cultural exhibitions.",
+    "icon": "Palette",
+    "image": "https://images.unsplash.com/photo-1514525253161-7a46d19cd819?auto=format&fit=crop&q=80&w=1200",
+    "gradient": "from-purple-500 to-pink-500",
+    "link": "/cultural-club"
+  },
+  {
+    "name": "Creators Club",
+    "description": "Transform ideas into reality through design, content creation, and digital media.",
+    "icon": "Rocket",
+    "image": "https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&q=80&w=1200",
+    "gradient": "from-orange-500 to-red-500",
+    "link": "/creators-club"
+  },
+  {
+    "name": "Sports Club",
+    "description": "Excel in athletics, team sports, and fitness activities.",
+    "icon": "Dumbbell",
+    "image": "https://images.unsplash.com/photo-1461896836934-ffe607ba8211?auto=format&fit=crop&q=80&w=1200",
+    "gradient": "from-green-500 to-emerald-500",
+    "link": "/sports-club"
+  },
+  {
+    "name": "Filmy Drama Club",
+    "description": "Express yourself through theater, film-making, and dramatic performances.",
+    "icon": "Clapperboard",
+    "image": "https://images.unsplash.com/photo-1478720568477-152d9b164e26?auto=format&fit=crop&q=80&w=1200",
+    "gradient": "from-yellow-500 to-amber-500",
+    "link": "/filmy-drama-club"
+  },
+  {
+    "name": "Business Club",
+    "description": "Develop entrepreneurial skills, business acumen, and leadership qualities.",
+    "icon": "Briefcase",
+    "image": "https://images.unsplash.com/photo-1600880292203-757bb62b4baf?auto=format&fit=crop&q=80&w=1200",
+    "gradient": "from-indigo-500 to-violet-500",
+    "link": "/business-club"
+  },
+  {
+    "name": "Social Welfare Club",
+    "description": "Make a positive impact through community service and social initiatives.",
+    "icon": "Heart",
+    "image": "https://images.unsplash.com/photo-1559027615-cd4628902d4a?auto=format&fit=crop&q=80&w=1200",
+    "gradient": "from-rose-500 to-pink-500",
+    "link": "/social-welfare-club"
+  }
+]
