@@ -1,38 +1,17 @@
 import React, { useState } from "react";
 import { ChevronLeft, ChevronRight, X } from "lucide-react";
 import Footer from "../components/Footer";
+import jsonImages from "../data/lifeAtPWIOI.json"
 
 const LifeAtPWIOI = () => {
+
+  const images = jsonImages;
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const [direction, setDirection] = useState("right");
   const [isAnimating, setIsAnimating] = useState(false);
 
-  const images = [
-    "https://res.cloudinary.com/dkxongd5z/image/upload/v1737527177/img25_j57sn0-min_ij6s18.jpg",
-    "https://res.cloudinary.com/dkxongd5z/image/upload/v1736949608/img16_qo7fvz.jpg",
-    "https://res.cloudinary.com/dkxongd5z/image/upload/v1737527641/img17_jc57om-min_e2ilvn.jpg",
-    "https://res.cloudinary.com/dkxongd5z/image/upload/v1737440055/img18_mjjqru-min_jmglju.jpg",
-    "https://res.cloudinary.com/dkxongd5z/image/upload/v1736949593/img9_hk85o8.jpg",
-    "https://res.cloudinary.com/dkxongd5z/image/upload/v1736949942/img19_l0lhs8.jpg",
-    "https://res.cloudinary.com/dkxongd5z/image/upload/v1737527041/img30_vjvwoa-min_tohwfm.jpg",
-    "https://res.cloudinary.com/dkxongd5z/image/upload/v1736949647/img31_minlu7.jpg",
-    "https://res.cloudinary.com/dkxongd5z/image/upload/v1737527309/img27_scdcg1-min_jz2zg2.jpg",
-    "https://res.cloudinary.com/dkxongd5z/image/upload/v1737527436/img23_awsttv-min_ze0b7a.jpg",
-    "https://res.cloudinary.com/dkxongd5z/image/upload/v1736949639/img28_mcjbkt.jpg",
-    "https://res.cloudinary.com/dkxongd5z/image/upload/v1736949636/img29_neubpf.jpg",
-    "https://res.cloudinary.com/dkxongd5z/image/upload/v1737527543/img26_rx0pgh-min_mqy4av.jpg",
-    "https://res.cloudinary.com/dkxongd5z/image/upload/v1736949622/img24_yzf6ry.jpg",
-    "https://res.cloudinary.com/dkxongd5z/image/upload/v1736949620/img22_cymqhj.jpg",
-    "https://res.cloudinary.com/dkxongd5z/image/upload/v1737475319/img20_hr9oor-min_qpgx87.jpg",
-    "https://res.cloudinary.com/dkxongd5z/image/upload/v1736949612/img21_mjrrsx.jpg",
-    "https://res.cloudinary.com/dkxongd5z/image/upload/v1736949612/img14_hcgyzj.jpg",
-    "https://res.cloudinary.com/dkxongd5z/image/upload/v1736949604/img15_jsnpnb.jpg",
-    "https://res.cloudinary.com/dkxongd5z/image/upload/v1736949603/img13_deelc9.jpg",
-    "https://res.cloudinary.com/dkxongd5z/image/upload/v1737436401/Hackwinner2_ni3yes.jpg",
-    "https://res.cloudinary.com/dkxongd5z/image/upload/v1737436401/Hackwinner_ggj2gt.jpg",
-    "https://res.cloudinary.com/dkxongd5z/image/upload/v1738126617/1737109006740_rrrdyy.jpg"
-  ];
+
 
   const handleImageClick = (index) => {
     setCurrentImageIndex(index);

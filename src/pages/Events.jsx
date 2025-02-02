@@ -1,32 +1,9 @@
 import React from 'react';
 import { Calendar, Globe, MapPin, Clock, ArrowUpRight, UserCheck, Award, Users, Timer } from "lucide-react";
+import events from "../data/events.json";
 
 const Events = () => {
-  const events = [
-    {
-      title: "D2C Hackathon 2024",
-      date: "Dec 27-28, 2024",
-      location: "PWIOI Campus",
-      time: "24 Hours",
-      description:
-        "Join us for an exciting hackathon focused on Direct-to-Consumer innovations. Build the next generation of D2C solutions and compete for amazing prizes!",
-      image: "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&q=80&w=1740",
-      website: "https://d2c-hackathon.dev",
-      status: "Completed",
-      allowed: "Only PWIOI Students",
-    },
-    {
-      title: "Freshers Party for Batch 2024",
-      date: "Yet to be announced",
-      location: "Yet to be announced",
-      time: "Yet to be announced",
-      description:
-        "Join us for an exciting Freshers Party for Batch 2024. Get to know your batchmates and have a great time!",
-      image: "https://res.cloudinary.com/dkxongd5z/image/upload/v1737969860/Blue_Party_Night_Dj_Music_Flyer_uvbatd.png",
-      status: "Upcoming",
-      allowed: "Only PWIOI Students",
-    },
-  ];
+
 
   return (
     <div className="min-h-screen bg-gray-900">

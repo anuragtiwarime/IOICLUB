@@ -1,9 +1,9 @@
 
 import { FaLinkedin } from 'react-icons/fa'; 
 import Footer from '../components/Footer';
-import FacultyAndStaff from '../data/facultyAndStaff.json'
+import facultyData from '../data/facultyAndStaff.json'
 const FacultyandStaff = () => {
-  const facultyData = FacultyAndStaff.facultyData;
+
  
 
   return (

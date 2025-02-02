@@ -1,20 +1,14 @@
 import React, { useState } from "react";
 import { ChevronLeft, ChevronRight, X } from "lucide-react";
 import { useNavigate } from "react-router-dom";
+import jsonImages from "../data/lifeAtPWIOI.json";
 const Gallery = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const [direction, setDirection] = useState("right");
   const [isAnimating, setIsAnimating] = useState(false);
 
-  const images = [
-    "https://res.cloudinary.com/dkxongd5z/image/upload/v1737527177/img25_j57sn0-min_ij6s18.jpg",
-    "https://res.cloudinary.com/dkxongd5z/image/upload/v1736949608/img16_qo7fvz.jpg",
-    "https://res.cloudinary.com/dkxongd5z/image/upload/v1737527641/img17_jc57om-min_e2ilvn.jpg",
-    "https://res.cloudinary.com/dkxongd5z/image/upload/v1737440055/img18_mjjqru-min_jmglju.jpg",
-    "https://res.cloudinary.com/dkxongd5z/image/upload/v1736949593/img9_hk85o8.jpg",
-    "https://res.cloudinary.com/dkxongd5z/image/upload/v1736949942/img19_l0lhs8.jpg",
-  ];
+  const images = jsonImages.slice(0, 6);
 
   const handleImageClick = (index) => {
     setCurrentImageIndex(index);

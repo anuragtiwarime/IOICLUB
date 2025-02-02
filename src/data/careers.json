@@ -1,0 +1,32 @@
+[
+  {
+    "title": "Frontend Developer Intern",
+    "vacancies": 2,
+    "salary": 8000,
+    "description": "Join our frontend team and work on exciting projects using modern technologies like React, TypeScript, and Tailwind CSS.",
+    "status": "closed",
+    "department": "Engineering",
+    "duration": "3 months",
+    "formLink": ""
+  },
+  {
+    "title": "Student Brand Strategist Intern",
+    "vacancies": 1,
+    "salary": 8000,
+    "description": "Help shape our brand identity and create impactful marketing strategies for our educational initiatives.",
+    "status": "closed",
+    "department": "Marketing",
+    "duration": "6 months",
+    "formLink": ""
+  },
+  {
+    "title": "Teaching Assistant Intern",
+    "vacancies": 1,
+    "salary": 8000,
+    "description": "Support our faculty in delivering high-quality education and assist students in their learning journey.",
+    "status": "closed",
+    "department": "Education",
+    "duration": "4 months",
+    "formLink": ""
+  }
+]

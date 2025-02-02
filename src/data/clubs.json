@@ -1,4 +1,13 @@
 [
+  
+  {
+    "name": "Social Welfare Club",
+    "description": "Organizes charity drives and awareness campaigns, motivates members, and promotes social responsibility to make a real impact.",
+    "icon": "Heart",
+    "image": "https://images.unsplash.com/photo-1559027615-cd4628902d4a?auto=format&fit=crop&q=80&w=1200",
+    "gradient": "from-rose-500 to-pink-500",
+    "link": "/social-welfare-club"
+  },
   {
     "name": "Tech Club",
     "description": "Organizes events, builds and supports the team, communicates effectively, and ensures a collaborative environment.",
@@ -46,13 +55,5 @@
     "image": "https://images.unsplash.com/photo-1600880292203-757bb62b4baf?auto=format&fit=crop&q=80&w=1200",
     "gradient": "from-indigo-500 to-violet-500",
     "link": "/business-club"
-  },
-  {
-    "name": "Social Welfare Club",
-    "description": "Organizes charity drives and awareness campaigns, motivates members, and promotes social responsibility to make a real impact.",
-    "icon": "Heart",
-    "image": "https://images.unsplash.com/photo-1559027615-cd4628902d4a?auto=format&fit=crop&q=80&w=1200",
-    "gradient": "from-rose-500 to-pink-500",
-    "link": "/social-welfare-club"
   }
 ]
