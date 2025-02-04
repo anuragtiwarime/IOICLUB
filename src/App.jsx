@@ -24,7 +24,9 @@ const App = () => (
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/clubs" element={<Clubs />} />
+        <Route path="/clubs" element={<div className="min-h-screen bg-gradient-to-br from-black via-gray-700 to-gray-900">
+          <Clubs />
+        </div>} />
         <Route path="/policies" element={<Policies />} />
         <Route path="/careers" element={<Careers />} />
         <Route path="/students/technology" element={<div className="min-h-screen bg-gradient-to-br from-black via-gray-700 to-gray-900">

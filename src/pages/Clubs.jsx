@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Code2, Palette, Rocket, Dumbbell, Clapperboard, Briefcase, Heart } from "lucide-react";
 import clubsData from "../data/clubs.json";
 import ClubImageSlider from "../components/ClubImageSlider";
+import Footer from "../components/Footer";
 
 const icons = {
   Code2: <Code2 className="w-12 h-12 text-cyan-500" />,
@@ -17,7 +18,7 @@ function Clubs() {
   const [displayText, setDisplayText] = useState("");
   const [isAnimating, setIsAnimating] = useState(true);
   const staticText = "Student ";
-  const highlightedText = "Bodies";
+  const highlightedText = "<Bodies/>";
 
   useEffect(() => {
     const fullText = staticText + highlightedText;
@@ -92,7 +93,9 @@ function Clubs() {
           </div>
         ))}
       </div>
+      <Footer></Footer>
     </div>
+    
   );
 }
 
