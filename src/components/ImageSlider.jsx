@@ -6,7 +6,7 @@ const images = [
   "https://res.cloudinary.com/dkxongd5z/image/upload/v1736949622/img24_yzf6ry.jpg",
   "https://res.cloudinary.com/dkxongd5z/image/upload/v1736949596/img10_pieeo2.jpg",
   "https://res.cloudinary.com/dkxongd5z/image/upload/v1736949598/img11_jvdvmh.jpg",
-  "https://res.cloudinary.com/dkxongd5z/image/upload/v1736949640/img23_awsttv.jpg",
+  "https://res.cloudinary.com/dkxongd5z/image/upload/v1737527436/img23_awsttv-min_ze0b7a.jpg",
   "https://res.cloudinary.com/dkxongd5z/image/upload/v1737381150/img.e_uikamz.png",
   "https://res.cloudinary.com/dkxongd5z/image/upload/v1736949612/img14_hcgyzj.jpg",
   "https://res.cloudinary.com/dkxongd5z/image/upload/v1737436401/Hackwinner_ggj2gt.jpg"
