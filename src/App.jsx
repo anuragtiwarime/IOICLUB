@@ -17,11 +17,13 @@ import Holidays from "./pages/Holidays.jsx";
 import Events from './pages/Events.jsx';
 import ScrollToTop from './components/ScrollToTop';
 
+
 const App = () => (
   <Router>
     <ScrollToTop /> {/* Add ScrollToTop here */}
     <div className="min-h-screen bg-gray-100">
       <Navbar />
+
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/clubs" element={<div className="min-h-screen bg-gradient-to-br from-black via-gray-700 to-gray-900">
