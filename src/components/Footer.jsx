@@ -32,7 +32,9 @@ export default function Footer() {
 
           {/* Quick Links */}
           <div>
-            <h3 className="text-2xl font-bold mb-6">Quick Links</h3>
+            <h3 className="text-2xl font-bold mb-2">Quick Links</h3>
+            <div className="w-18 h-1 bg-gray-500 mx-auto rounded-full mb-6"></div>
+            <div className="quick_links grid grid-cols-2">
             <ul className="space-y-4">
               <li>
                 <a onClick={handleHoliday} className="cursor-pointer">Holidays</a>
@@ -50,10 +52,14 @@ export default function Footer() {
                 </li>
               ))}
             </ul>
+            <ul>
+              <li><a href="https://script.google.com/a/macros/pw.live/s/AKfycbzhNlzoHsj7fiCgkan688qkDSgg4ievMOkBnWifwqvYdt5dUUWrPlzgzxcDWCnv3Y8iUQ/exec" target="_blank" rel="noopener noreferrer" className="hover:text-gray-300 transition-colors">Rank Predictor</a></li>
+            </ul>
+            </div>
           </div>
 
           {/* Follow Us */}
-          <div>
+          <div className="md:ml-5">
             <h3 className="text-2xl font-bold mb-6">Follow Us</h3>
             <ul className="flex items-center gap-4">
               <li className="flex items-center">
@@ -63,7 +69,7 @@ export default function Footer() {
                   rel="noopener noreferrer"
                   className="hover:text-gray-300 transition-colors"
                 >
-                  <FaYoutube className="text-red-500 text-2xl" />
+                  <FaYoutube className="text-white text-3xl" />
                 </a>
               </li>
               <li className="flex items-center gap-3">
@@ -73,7 +79,7 @@ export default function Footer() {
                   rel="noopener noreferrer"
                   className="hover:text-gray-300 transition-colors"
                 >
-                  <FaInstagram className="text-pink-500 text-2xl" />
+                  <FaInstagram className="text-white text-2xl" />
                 </a>
               </li>
               <li className="flex items-center gap-3">
@@ -83,7 +89,7 @@ export default function Footer() {
                   rel="noopener noreferrer"
                   className="hover:text-gray-300 transition-colors"
                 >
-                  <FaLinkedin className="text-blue-500 text-2xl" />
+                  <FaLinkedin className="text-white text-2xl" />
                 </a>
               </li>
             </ul>
