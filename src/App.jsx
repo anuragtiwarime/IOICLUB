@@ -16,6 +16,8 @@ import LifeAtPWIOI from './pages/LifeAtPWIOI.jsx';
 import Holidays from "./pages/Holidays.jsx";
 import Events from './pages/Events.jsx';
 import ScrollToTop from './components/ScrollToTop';
+import RankPredictor from './pages/RankPredictor';
+
 
 
 const App = () => (
@@ -48,6 +50,7 @@ const App = () => (
         <Route path="/events" element={<div className="min-h-screen bg-gradient-to-br from-black via-gray-700 to-gray-900">
           <Events />
         </div>} />
+        <Route path="/rank-predictor" element={<RankPredictor />} />
       </Routes>
     </div>
   </Router>

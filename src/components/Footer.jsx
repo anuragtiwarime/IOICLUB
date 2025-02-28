@@ -1,14 +1,7 @@
 import React, { useState } from 'react';
 import { FaYoutube, FaInstagram, FaLinkedin } from 'react-icons/fa';
 import { useNavigate } from 'react-router-dom';
-import {
-  Dialog,
-  DialogContent,
-  DialogDescription,
-  DialogHeader,
-  DialogTitle,
-  DialogTrigger,
-} from "@/components/ui/dialog"
+
 
 
 
@@ -68,26 +61,13 @@ export default function Footer() {
                 </li>
               </ul>
               <ul>
-                <li>
-                  <Dialog open={isDialogOpen} onOpenChange={setIsDialogOpen}>
-                    <DialogTrigger asChild>
-                      <button className="hover:text-gray-300 transition-colors">
-                        Rank Predictor
-                      </button>
-                    </DialogTrigger>
-                    <DialogContent className="sm:max-w-[650px]">
-                      <DialogHeader>
-                        <DialogTitle>Rank Predictor</DialogTitle>
-                        <DialogDescription>
-                          <iframe
-                            src="https://script.google.com/a/macros/pw.live/s/AKfycbzhNlzoHsj7fiCgkan688qkDSgg4ievMOkBnWifwqvYdt5dUUWrPlzgzxcDWCnv3Y8iUQ/exec"
-                            title="Rank Predictor"
-                            className="w-full h-96"
-                          />
-                        </DialogDescription>
-                      </DialogHeader>
-                    </DialogContent>
-                  </Dialog>
+              <li>
+                  <button
+                    onClick={() => navigate("/rank-predictor")}
+                    className="hover:text-gray-300 transition-colors cursor-pointer"
+                  >
+                    Rank Predictor
+                  </button>
                 </li>
               </ul>
             </div>

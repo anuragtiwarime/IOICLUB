@@ -1,4 +1,25 @@
  [
+  {
+    "image": "https://res.cloudinary.com/dkxongd5z/image/upload/v1736947135/CTO_rmphg5.jpg",
+    "name": "Gopal Sharma",
+    "subject": "Business Thinking",
+    "about": "",
+    "linkedin": "https://www.linkedin.com/in/gopal-sharma-344290293/"
+  },
+  {
+    "image": "https://res.cloudinary.com/dkxongd5z/image/upload/v1736948072/ali_z1qegf.png",
+    "name": "Janishar Ali Anwar",
+    "subject": "HOP-SOT",
+    "about": "My name is Ali, and I graduated from IIT-BHU (2010-2015) with a Dual Degree. I am a programmer and tech entrepreneur. Starting as a self-taught coder, I went on to found companies like Mindorks and CuriousJr, impacting over 10 million users. Over the past 10 years of my career, I have witnessed technology evolve and have helped companies solve their most challenging problems.",
+    "linkedin": "https://www.linkedin.com/in/janishar-ali/"
+  },
+  {
+    "image": "https://res.cloudinary.com/djbjfsshe/image/upload/v1737342952/120A7616_sasg6x.jpg",
+    "name": "Prakash Nimbalkar",
+    "subject": "HOP-SOM",
+    "about": "",
+    "linkedin": "https://www.linkedin.com/in/prakash-nimbalkar/"
+  },
     {
       "image": "https://res.cloudinary.com/dkxongd5z/image/upload/v1736948981/120A8008_cnpqzn.jpg",
       "name": "Satya Sai Neerukonda",
@@ -6,20 +27,8 @@
       "about": "",
       "linkedin": ""
     },
-    {
-      "image": "https://res.cloudinary.com/djbjfsshe/image/upload/v1737342952/120A7616_sasg6x.jpg",
-      "name": "Prakash Nimbalkar",
-      "subject": "HOP-SOM",
-      "about": "",
-      "linkedin": "https://www.linkedin.com/in/prakash-nimbalkar/"
-    },
-    {
-      "image": "https://res.cloudinary.com/dkxongd5z/image/upload/v1736947135/CTO_rmphg5.jpg",
-      "name": "Gopal Sharma",
-      "subject": "Business Thinking",
-      "about": "",
-      "linkedin": "https://www.linkedin.com/in/gopal-sharma-344290293/"
-    },
+   
+    
     {
       "image": "https://res.cloudinary.com/dkxongd5z/image/upload/v1736947134/Shubham_ptqlrv.jpg",
       "name": "Shubham Gautam",
@@ -97,13 +106,7 @@
       "about": "7 Years of imparting Technical Education | Certified FSD Instructor | Enabling Graduates secure Employment in Tech Roles.A Software Engineer by Qualification, A Technical-Training Specialist by Profession, A Technocrat by Choice, A Technophile by Passion and lastly, A GURU by Heart.",
       "linkedin": "https://www.linkedin.com/in/syedzaabii/"
     },
-    {
-      "image": "https://res.cloudinary.com/dkxongd5z/image/upload/v1736948072/ali_z1qegf.png",
-      "name": "Janishar Ali Anwar",
-      "subject": "HOP-SOT",
-      "about": "My name is Ali, and I graduated from IIT-BHU (2010-2015) with a Dual Degree. I am a programmer and tech entrepreneur. Starting as a self-taught coder, I went on to found companies like Mindorks and CuriousJr, impacting over 10 million users. Over the past 10 years of my career, I have witnessed technology evolve and have helped companies solve their most challenging problems.",
-      "linkedin": "https://www.linkedin.com/in/janishar-ali/"
-    },
+   
     {
       "image": "https://res.cloudinary.com/dkxongd5z/image/upload/v1737351700/Anukul_ia8tpl.jpg",
       "name": "Anukul Nitin Narkhede",
