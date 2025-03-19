@@ -39,7 +39,7 @@ export default function Footer() {
             <div className="quick_links grid grid-cols-2">
               <ul className="space-y-4">
                 <li>
-                  <a onClick={handleHoliday} className="cursor-pointer">Holidays</a>
+                  <a onClick={handleHoliday} className="cursor-pointer hover:text-blue-400">Holidays</a>
                 </li>
                 {['About Us', 'Admissions', 'Academic Programs'].map((link, idx) => (
                   <li key={idx}>
