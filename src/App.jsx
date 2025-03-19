@@ -17,6 +17,7 @@ import Holidays from "./pages/Holidays.jsx";
 import Events from './pages/Events.jsx';
 import ScrollToTop from './components/ScrollToTop';
 import RankPredictor from './pages/RankPredictor';
+import Attendence from './components/Attendance.jsx';
 
 
 
@@ -51,6 +52,7 @@ const App = () => (
           <Events />
         </div>} />
         <Route path="/rank-predictor" element={<RankPredictor />} />
+        <Route path="/attendance-report" element={<Attendence />} />
       </Routes>
     </div>
   </Router>

@@ -17,7 +17,18 @@
     "time": "04:00 PM",
     "description": "Join us for an exciting Freshers Party for Batch 2024. Get to know your batchmates and have a great time!",
     "image": "https://res.cloudinary.com/dkxongd5z/image/upload/v1737969860/Blue_Party_Night_Dj_Music_Flyer_uvbatd.png",
-    "status": "Upcoming",
+    "status": "Completed",
     "allowed": "Only PWIOI Students"
+  },
+ 
+  {
+    "title":"E-sports Tournament",
+    "date":"7th March 2025",
+    "location":"PWIOI Campus",
+    "time":"05:00 PM",
+    "description":"Register for the E-sports Tournament and compete with your friends in a variety of games. Amazing prizes to be won!",
+    "image":"https://res.cloudinary.com/dkxongd5z/image/upload/v1742322265/Untitled_design_uavf7y.png",
+    "status":"Completed",
+    "allowed":"Only PWIOI Students"
   }
 ]
