@@ -51,7 +51,7 @@ const App = () => (
         <Route path="/events" element={<div className="min-h-screen bg-gradient-to-br from-black via-gray-700 to-gray-900">
           <Events />
         </div>} />
-        <Route path="/rank-predictor" element={<RankPredictor />} />
+        <Route path="/college-predictor" element={<RankPredictor />} />
         <Route path="/attendance-report" element={<Attendence />} />
       </Routes>
     </div>

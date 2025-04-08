@@ -62,10 +62,10 @@ export default function Footer() {
               <ul className="space-y-4">
                 <li>
                   <button
-                    onClick={() => navigate("/rank-predictor")}
+                    onClick={() => navigate("/college-predictor")}
                     className="hover:text-blue-400 transition-all duration-300 ease-in-out cursor-pointer"
                   >
-                    Rank Predictor
+                    College Predictor
                   </button>
                 </li>
                 <li>
