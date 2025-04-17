@@ -24,7 +24,7 @@ export default function CeeLayout() {
     const generateBreadcrumbs = () => {
         const paths = location.pathname.split('/').filter(Boolean);
         return paths.map((path, index) => {
-            const formattedPath = path.charAt(0).toUpperCase() + path.slice(1).replace(/-/g, ' ');
+            const formattedPath = path.replace(/-/g, ' ');
             return {
                 label: formattedPath,
                 path: '/' + paths.slice(0, index + 1).join('/')
@@ -36,7 +36,7 @@ export default function CeeLayout() {
 
     const navigationItems = [
         {
-            label: "CEE Exam",
+            label: "CEE Exam Prep",
             to: "/cee/exam",
             icon: <BookOpen size={16}/>,
             subItems: [
@@ -47,7 +47,7 @@ export default function CeeLayout() {
             ]
         },
         {
-            label: "CEE Interview",
+            label: "CEE Interview Prep",
             to: "/cee/interview",
             icon: <Award size={16}/>,
             subItems: [
