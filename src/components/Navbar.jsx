@@ -115,6 +115,14 @@ const Navbar = () => {
             </div>
 
             <NavLink to="/facultyandstaff">Faculty & Staff</NavLink>
+
+            <Link
+                to="/cee"
+                className="px-4 py-2 rounded-xl text-white bg-gradient-to-r from-blue-500 to-indigo-600 hover:from-blue-600 hover:to-indigo-700 transition-all shadow-md hover:shadow-lg"
+            >
+              CEE
+            </Link>
+
           </div>
 
           {/* Mobile Menu Button */}
