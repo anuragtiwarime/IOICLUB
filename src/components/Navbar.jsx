@@ -138,7 +138,7 @@ const Navbar = () => {
       {/* Mobile Menu */}
       <div
         className={`md:hidden bg-black/95 backdrop-blur-md overflow-hidden transition-all duration-300 ease-in-out
-                 ${isOpen ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'}`}
+                 ${isOpen ? 'max-h-screen opacity-100' : 'max-h-0 opacity-0'}`}
       >
         <div className="px-4 py-2 space-y-1">
           {[ 
@@ -199,6 +199,17 @@ const Navbar = () => {
           >
             Faculty & Staff
           </Link>
+          <Link
+                to="/cee"
+                onClick={() => {
+                  setIsOpen(false);
+                  handleLinkClick("/cee");
+                }}
+                className="block py-2 px-4 text-lg font-medium rounded-lg text-white bg-gradient-to-r from-blue-500 to-indigo-600 hover:from-blue-600 hover:to-indigo-700 transition-all shadow-md hover:shadow-lg text-center"
+            >
+              CEE
+            </Link>
+          
         </div>
       </div>
     </nav>
