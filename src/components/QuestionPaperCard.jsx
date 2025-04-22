@@ -2,7 +2,7 @@ export default function QuestionPaperCard({ paper, onClick }) {
     return (
         <button
             onClick={onClick}
-            className="relative min-w-[260px] rounded-2xl overflow-hidden bg-neutral-900 border border-neutral-800 hover:border-sky-600 hover:shadow-md transition-all duration-200"
+            className="relative min-w-[200px] max-w-full rounded-2xl overflow-hidden bg-neutral-900 border border-neutral-800 hover:border-sky-600 hover:shadow-md transition-all duration-200 w-full sm:max-w-xs md:max-w-sm lg:max-w-md"
         >
             {/* Main Content */}
             <div className="px-5 py-6 space-y-4">
@@ -29,4 +29,4 @@ export default function QuestionPaperCard({ paper, onClick }) {
             </div>
         </button>
     );
-};
+}

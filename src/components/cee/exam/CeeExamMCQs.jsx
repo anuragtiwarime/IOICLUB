@@ -1,5 +1,5 @@
 import { useState } from "react";
-import {Outlet, useMatch, useNavigate} from "react-router-dom";
+import { Outlet, useMatch, useNavigate } from "react-router-dom";
 import QuestionPaperCard from "@/components/QuestionPaperCard.jsx";
 import { cn } from "@/lib/utils.js";
 
@@ -216,7 +216,6 @@ const aptitude = [
         ]
     }
 ];
-
 export const categories = {
     coding: { id: "coding", title: "Ability to Code", papers: abilityToCode },
     language: { id: "language", title: "Language Reasoning", papers: languageReasoning },
@@ -272,6 +271,7 @@ export default function CeeExamMCQs() {
                         key={idx}
                         paper={paper}
                         onClick={() => handlePaperClick(paper)}
+                        className="w-full max-w-xs mx-auto" // Added responsiveness to card size
                     />
                 ))}
             </div>
