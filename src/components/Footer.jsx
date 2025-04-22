@@ -122,7 +122,7 @@ export default function Footer() {
         <div className="border-t border-gray-800 mt-12 opacity-50"></div>
         <div className="mt-6 text-center text-gray-400">
           <p className="text-sm hover:text-gray-300 transition-colors duration-300">
-            &copy; 2024 PW Institute of Innovation. All rights reserved.
+            &copy; 2025 PW Institute of Innovation. All rights reserved.
           </p>
         </div>
       </div>

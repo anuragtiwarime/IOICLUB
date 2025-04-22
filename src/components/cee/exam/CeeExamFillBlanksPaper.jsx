@@ -1,13 +1,12 @@
 import { useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import { cn } from "@/lib/utils.js";
-import {fillBlankCategories} from "@/components/cee/exam/CeeExamFillBlanks.jsx";
+import { fillBlankCategories } from "@/components/cee/exam/CeeExamFillBlanks.jsx";
 
 export default function CeeExamFillBlanksPaper() {
     const navigate = useNavigate();
     const { paperId } = useParams();
 
-    // Find the paper from data
     const paper = Object.values(fillBlankCategories)
         .flatMap((cat) => cat.papers)
         .find((p) => p.id === paperId);
@@ -22,8 +21,6 @@ export default function CeeExamFillBlanksPaper() {
 
     const handleInputChange = (e) => {
         const { name, value } = e.target;
-
-        // Clear error when user starts typing
         if (validationErrors[name] && value.trim() !== "") {
             setValidationErrors((prev) => {
                 const newErrors = { ...prev };
@@ -31,18 +28,12 @@ export default function CeeExamFillBlanksPaper() {
                 return newErrors;
             });
         }
-
-        setAnswers((prev) => ({
-            ...prev,
-            [name]: value,
-        }));
+        setAnswers((prev) => ({ ...prev, [name]: value }));
     };
 
     const handleSubmit = (e) => {
         e.preventDefault();
         const newErrors = {};
-
-        // Validation
         paper.questions.forEach((q) => {
             const key = `q${q.id}`;
             const value = answers[key]?.trim();
@@ -57,8 +48,6 @@ export default function CeeExamFillBlanksPaper() {
         }
 
         setValidationErrors({});
-
-        // Check answers
         let correctCount = 0;
         const feedback = paper.questions.map((q) => {
             const userAnswer = answers[`q${q.id}`]?.trim().toLowerCase() || "";
@@ -80,12 +69,12 @@ export default function CeeExamFillBlanksPaper() {
     };
 
     return (
-        <div className="space-y-6">
-            <div className="flex justify-between items-center mb-6">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-10 space-y-8">
+            <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4">
                 <h2 className="text-2xl font-bold text-white">{paper.title}</h2>
                 <button
-                    onClick={() => navigate(-1)} // Go back to the previous page
-                    className="text-sm text-neutral-400 hover:text-white border border-neutral-700 px-4 py-1 rounded"
+                    onClick={() => navigate(-1)}
+                    className="text-sm text-neutral-400 hover:text-white border border-neutral-700 px-4 py-2 rounded"
                 >
                     ← Back
                 </button>
@@ -108,10 +97,10 @@ export default function CeeExamFillBlanksPaper() {
                                     value={answers[key] || ""}
                                     onChange={handleInputChange}
                                     className={cn(
-                                        "w-full px-4 py-2 rounded bg-neutral-800 text-white border",
+                                        "w-full px-4 py-2 rounded bg-neutral-800 text-white border transition-colors duration-200",
                                         hasError
                                             ? "border-red-600 focus:outline-red-500"
-                                            : "border-neutral-700"
+                                            : "border-neutral-700 focus:border-blue-600"
                                     )}
                                 />
                                 {hasError && (
@@ -125,7 +114,7 @@ export default function CeeExamFillBlanksPaper() {
 
                     <button
                         type="submit"
-                        className="px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-xl"
+                        className="w-full sm:w-auto px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-xl transition-colors"
                     >
                         Submit Answers
                     </button>
@@ -140,13 +129,13 @@ export default function CeeExamFillBlanksPaper() {
                         <div
                             key={index}
                             className={cn(
-                                "border rounded-xl p-4",
+                                "border rounded-xl p-4 space-y-1",
                                 item.isCorrect
                                     ? "border-green-600 bg-green-900/20"
                                     : "border-red-600 bg-red-900/20"
                             )}
                         >
-                            <p className="mb-1 font-medium text-white">
+                            <p className="font-medium text-white">
                                 {index + 1}. {item.question.replace("____", "_____")}
                             </p>
                             <p className="text-sm text-neutral-300">
@@ -169,8 +158,8 @@ export default function CeeExamFillBlanksPaper() {
                     ))}
 
                     <button
-                        onClick={() => navigate(-1)} // Go back to the previous page
-                        className="mt-6 px-6 py-2 bg-neutral-800 text-white rounded-lg hover:bg-neutral-700"
+                        onClick={() => navigate(-1)}
+                        className="w-full sm:w-auto mt-6 px-6 py-2 bg-neutral-800 text-white rounded-lg hover:bg-neutral-700 transition"
                     >
                         Try Another Paper
                     </button>
@@ -178,4 +167,4 @@ export default function CeeExamFillBlanksPaper() {
             )}
         </div>
     );
-};
+}
