@@ -16,12 +16,12 @@ const StudentAccessPortal = () => {
             image="https://res.cloudinary.com/dkxongd5z/image/upload/v1736950547/leave_dcshti.jpg"
             buttonLink="https://pw.jotform.com/242621898990067"
           />
-          <AccessCard
+          {/* <AccessCard
             title="Concession Form"
             description="Please fill out the form below to apply for a concession. Ensure all information is correct for timely approval of your request."
             image="https://res.cloudinary.com/dkxongd5z/image/upload/v1736950544/concession_utyvyt.jpg"
             buttonLink="https://pw.jotform.com/242623356705961"
-          />
+          /> */}
           <AccessCard
             title="Internship and Event"
             description="Please complete the form below to register for an internship or event. Accurate details will help us process your application efficiently."

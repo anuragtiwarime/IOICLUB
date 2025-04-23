@@ -18,8 +18,8 @@ export default function Home() {
   {/* Meet our Leadership */}
   <MeetOurLeaderShip />
 
-  {/* Student Access Portal Section */}
-  <StudentAccessPortal />
+  { /*Student Access Portal Section */}
+  {<StudentAccessPortal />}
 
 
       

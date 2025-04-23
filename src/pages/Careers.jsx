@@ -1,18 +1,31 @@
-import React from "react";
+import React, { useState } from "react";
 import Footer from "../components/Footer";
-import { Calendar, Users, IndianRupee, ArrowRight } from "lucide-react";
+import { ArrowRight, FileText } from "lucide-react";
 import positions from "../data/careers.json";
 
 export default function Careers() {
-function handleApply(formLink){
-  if(formLink){
-    window.open(formLink,"_blank");
+  const [modalContent, setModalContent] = useState(null);
+
+  function handleApply(formLink) {
+    if (formLink) {
+      window.open(formLink, "_blank");
+    } else {
+      console.error("No form link provided!");
+    }
   }
-  else{
-    console.error("No form link provided!");
+
+  function openModal(pdfLink) {
+    if (pdfLink) {
+      setModalContent(pdfLink);
+    } else {
+      console.error("No PDF link provided!");
+    }
   }
-}
-  
+
+  function closeModal() {
+    setModalContent(null);
+  }
+
   return (
     <>
       <div className="min-h-screen bg-gray-50">
@@ -20,12 +33,12 @@ function handleApply(formLink){
         <div className="relative pt-24 px-4">
           <div className="absolute inset-0 bg-gradient-to-br from-blue-50 to-purple-50 opacity-50" />
           <div className="relative max-w-7xl mx-auto">
-          <h1 className="text-4xl text-center font-bold text-gray-800 mb-3">
-            Careers
-          </h1>
-          <div className="w-24 h-1 bg-black mx-auto rounded-full mb-2"></div>
+            <h1 className="text-4xl text-center font-bold text-gray-800 mb-3">
+              Careers
+            </h1>
+            <div className="w-24 h-1 bg-black mx-auto rounded-full mb-2"></div>
             <p className="text-gray-600 text-center max-w-2xl mx-auto text-lg mb-4">
-            "Empowering Your Future with Exceptional Career Opportunities"
+              "Empowering Your Future with Exceptional Career Opportunities"
             </p>
           </div>
         </div>
@@ -48,52 +61,50 @@ function handleApply(formLink){
                         {position.title}
                       </h2>
                     </div>
-                    <button
-                      className={`mt-4 md:mt-0 px-6 py-2 rounded-full font-medium transition-all duration-300 flex items-center gap-2
-                                ${position.status === "open" 
-                                  ? "bg-green-500 text-white hover:bg-green-400" 
-                                  : "bg-red-500 text-gray-black cursor-not-allowed"}`}
-                      disabled={position.status === "closed"}
-                      onClick={position.status==="open" ?  () => handleApply(position.formLink):undefined}
-                    >
-                      {position.status === "open" ? (
-                        <>
-                          Apply Now
-                          <ArrowRight className="w-4 h-4" />
-                        </>
-                      ) : (
-                        "Closed"
+                    <div className="flex flex-col md:flex-row gap-3 mt-4 md:mt-0">
+                      {position.status === "open" && (
+                        <button
+                          className="px-6 py-2 rounded-full font-medium bg-gray-200 text-gray-800 hover:bg-gray-300 transition-all duration-300 flex items-center justify-center gap-2"
+                          onClick={() => openModal(position.pdf)}
+                        >
+                          <FileText className="w-4 h-4" />
+                          Details
+                        </button>
                       )}
-                    </button>
-                  </div>
-
-                  <p className="text-gray-600 mb-6">
-                    {position.description}
-                  </p>
-
-                  <div className="flex flex-wrap gap-6 text-gray-500">
-                    <div className="flex items-center gap-2">
-                      <Users className="w-5 h-5" />
-                      <span>{position.vacancies} position{position.vacancies > 1 ? 's' : ''}</span>
-                    </div>
-                    <div className="flex items-center gap-2">
-                      <Calendar className="w-5 h-5" />
-                      <span>{position.duration}</span>
-                    </div>
-                    <div className="flex items-center gap-2">
-                      <IndianRupee className="w-5 h-5" />
-                      <span>{position.salary.toLocaleString('en-IN')}/month</span>
+                      <button
+                        className={`px-6 py-2 rounded-full font-medium transition-all duration-300 flex items-center justify-center gap-2 ${
+                          position.status === "open"
+                            ? "bg-green-500 text-white hover:bg-green-400"
+                            : "bg-red-500 text-white cursor-not-allowed"
+                        }`}
+                        disabled={position.status === "closed"}
+                        onClick={
+                          position.status === "open"
+                            ? () => handleApply(position.formLink)
+                            : undefined
+                        }
+                      >
+                        {position.status === "open" ? (
+                          <>
+                            Apply Now
+                            <ArrowRight className="w-4 h-4" />
+                          </>
+                        ) : (
+                          "Closed"
+                        )}
+                      </button>
                     </div>
                   </div>
                 </div>
 
                 {/* Progress Bar */}
                 <div className="h-1 w-full bg-gray-100 group-hover:bg-gray-200 transition-colors duration-300">
-                  <div 
-                    className={`h-full transition-all duration-500 ease-out
-                              ${position.status === "open" 
-                                ? "bg-black group-hover:bg-gray-800 w-full" 
-                                : "bg-gray-300 w-0"}`}
+                  <div
+                    className={`h-full transition-all duration-500 ease-out ${
+                      position.status === "open"
+                        ? "bg-black group-hover:bg-gray-800 w-full"
+                        : "bg-gray-300 w-0"
+                    }`}
                   />
                 </div>
               </div>
@@ -101,6 +112,27 @@ function handleApply(formLink){
           </div>
         </div>
       </div>
+
+      {/* Modal */}
+      {modalContent && (
+        <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-50">
+          <div className="bg-white rounded-lg shadow-lg p-6 w-full max-w-4xl relative">
+            <button
+              onClick={closeModal}
+              className="text-gray-800 font-bold text-3xl absolute top-0 right-1 hover:text-gray-600 transition-all duration-200"
+            >
+              ×
+            </button>
+            <iframe
+              src={modalContent}
+              title="Job Description"
+              className="w-full h-[60vh] md:h-[75vh] rounded-lg border border-gray-300"
+              frameBorder="0"
+            ></iframe>
+          </div>
+        </div>
+      )}
+
       <Footer />
     </>
   );

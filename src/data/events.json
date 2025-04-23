@@ -30,5 +30,25 @@
     "image":"https://res.cloudinary.com/dkxongd5z/image/upload/v1742322265/Untitled_design_uavf7y.png",
     "status":"Completed",
     "allowed":"Only PWIOI Students"
+  },
+  {
+    "title":"Ethnic Day 2025",
+    "date":"28th Feb 2025",
+    "location":"PWIOI Campus",
+    "time":"09:00 AM - 06:00 PM",
+    "description":"Join us for an exciting Ethnic Day 2025. Get to know your batchmates and have a great time!",
+    "image":"https://res.cloudinary.com/dkxongd5z/image/upload/v1745337847/Ethnic_day_ryppal.png",
+    "status":"Completed",
+    "allowed":"Only PWIOI Students"
+  },
+  {
+    "title":"The Last Mile 2025",
+    "date":"26th March 2025-27th March 2025",
+    "location":"PWIOI Hostel (Yellow Living)",
+    "time":"02:00 PM-10:00 PM(Both Days)",
+    "description":"Get ready for a flavorful experience at The Last Mile 2025 — an unforgettable two-day food fiesta by SOM students, serving up tasty delights and vibrant vibes for all!",
+    "image":"https://res.cloudinary.com/dkxongd5z/image/upload/v1745384890/last_mile_v6gc01.jpg",
+    "status":"Completed",
+    "allowed":"Anyone can join"
   }
 ]

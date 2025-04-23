@@ -39,21 +39,6 @@
     "image": "https://images.unsplash.com/photo-1461896836934-ffe607ba8211?auto=format&fit=crop&q=80&w=1200",
     "gradient": "from-green-500 to-emerald-500",
     "link": "/sports-club"
-  },
-  {
-    "name": "Filmy Drama Club",
-    "description": "Organizes film screenings and theater performances, mentors members, and enhances acting, communication, and teamwork skills.",
-    "icon": "Clapperboard",
-    "image": "https://images.unsplash.com/photo-1478720568477-152d9b164e26?auto=format&fit=crop&q=80&w=1200",
-    "gradient": "from-yellow-500 to-amber-500",
-    "link": "/filmy-drama-club"
-  },
-  {
-    "name": "Business Club",
-    "description": "Hosts workshops and networking sessions, inspires entrepreneurial skills, and prepares members for successful careers.",
-    "icon": "Briefcase",
-    "image": "https://images.unsplash.com/photo-1600880292203-757bb62b4baf?auto=format&fit=crop&q=80&w=1200",
-    "gradient": "from-indigo-500 to-violet-500",
-    "link": "/business-club"
   }
+  
 ]
