@@ -9,7 +9,7 @@ const StudentAccessPortal = () => {
         <h2 className="text-4xl font-bold text-center text-black mb-12">
           Student Access Portal
         </h2>
-        <div className="max-w-6xl mx-auto grid md:grid-cols-2 max-w-3xl gap-8">
+        <div className="mx-auto grid md:grid-cols-2 max-w-3xl gap-8">
 
           <AccessCard
             title="Leave Request Form"
