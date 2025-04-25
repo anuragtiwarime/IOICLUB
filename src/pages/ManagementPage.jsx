@@ -75,9 +75,14 @@ const MangagementPage = () => {
                   <h3 className="text-lg font-semibold text-white mb-1">
                     {student.name}
                   </h3>
-                  <p className="text-sm text-gray-300">
-                    {student.city}, {student.state}
-                  </p>
+                  {
+                    student.city && student.state && (
+                      <p className="text-sm text-gray-300 mb-1">
+                        {student.city}, {student.state}
+                      </p>
+                    )
+                  }
+                 
                 </div>
               </div>
 
