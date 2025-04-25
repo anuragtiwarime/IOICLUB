@@ -58,6 +58,9 @@ export default function Policies() {
           ))}
         </div>
 
+        <h1 className="text-4xl text-center font-bold text-gray-800 mt-12 mb-3">Our Other Policies</h1>
+        <div className="w-24 h-1 bg-black mx-auto rounded-full mb-8"></div>
+
         {/* Modal */}
         {modalContent && (
           <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-50">

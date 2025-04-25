@@ -10,7 +10,7 @@ const Holidays = () => {
       <div className="pt-24 pb-16 px-4 max-w-7xl mx-auto">
         <div className="mb-12 text-center">
           <h1 className="text-4xl font-bold text-white mb-2">
-            Academic Holiday List
+            Academic Holiday List 2025
           </h1>
           <div className="w-24 h-1 bg-black mx-auto rounded-full"></div>
         </div>

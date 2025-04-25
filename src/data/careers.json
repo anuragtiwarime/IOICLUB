@@ -2,14 +2,70 @@
   {
     "title": "Frontend Developer Intern",
     "vacancies": 2,
-    "salary": 8000,
+    "salary": "8000 - 15000",
     "link": "https://www.example.com",
-    "status": "open",
+    "status": "closed",
     "department": "Engineering",
-    "duration": "3 months",
+    "duration": "6 months",
     "formLink": "",
     "pdf": "../AP.pdf"
   },
+  {
+    "title": "Backend Developer Intern",
+    "vacancies": 1,
+    "salary": "8000 - 15000",
+    "link": "https://www.example.com",
+    "status": "closed",
+    "department": "Engineering",
+    "duration": "6 months",
+    "formLink": "",
+    "pdf": "../AP.pdf"
+  },
+  {
+    "title": "Mobile App Developer Intern",
+    "vacancies": 1,
+    "salary": "8000 - 15000",
+    "link": "https://www.example.com",
+    "status": "closed",
+    "department": "Engineering",
+    "duration": "6 months",
+    "formLink": "",
+    "pdf": "../AP.pdf"
+  },
+  {
+    "title": "Machine Learning Intern",
+    "vacancies": 1,
+    "salary": "8000 - 15000",
+    "link": "https://www.example.com",
+    "status": "closed",
+    "department": "Engineering",
+    "duration": "6 months",
+    "formLink": "",
+    "pdf": "../AP.pdf"
+  },
+  {
+    "title": "Product Manager Intern",
+    "vacancies": 1,
+    "salary": "8000 - 15000",
+    "link": "https://www.example.com",
+    "status": "closed",
+    "department": "Product",
+    "duration": "6 months",
+    "formLink": "",
+    "pdf": "../AP.pdf"
+  },
+  {
+    "title": "Frontend Developer Intern",
+    "vacancies": 2,
+    "salary": "8000",
+    "link": "https://www.example.com",
+    "status": "closed",
+    "department": "Engineering",
+    "duration": "6 months",
+    "formLink": "",
+    "pdf": "../AP.pdf"
+  },
+
   {
     "title": "Student Brand Strategist Intern",
     "vacancies": 1,

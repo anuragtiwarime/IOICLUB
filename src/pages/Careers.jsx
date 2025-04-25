@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Footer from "../components/Footer";
-import { ArrowRight, FileText } from "lucide-react";
+import { ArrowRight, FileText, IndianRupee, Timer, Users } from "lucide-react";
 import positions from "../data/careers.json";
 
 export default function Careers() {
@@ -57,10 +57,27 @@ export default function Careers() {
                       <span className="inline-block px-3 py-1 rounded-full text-sm font-medium bg-purple-100 text-purple-800 mb-4">
                         {position.department}
                       </span>
-                      <h2 className="text-2xl font-bold text-gray-900 mb-2">
+                      <h2 className="text-2xl font-bold text-gray-900 mb-4">
                         {position.title}
                       </h2>
+
+                      <div className="flex flex-wrap items-center gap-x-6 gap-y-2 text-sm text-gray-600 mt-2">
+  <div className="flex items-center gap-1">
+    <Users className="w-4 h-4 text-purple-600" />
+    <span>{position.vacancies}</span>
+  </div>
+  <div className="flex items-center gap-1">
+    <IndianRupee className="w-4 h-4 text-green-600" />
+    <span>{position.salary}</span>
+  </div>
+  <div className="flex items-center gap-1">
+    <Timer className="w-4 h-4 text-blue-600" />
+    <span>{position.duration}</span>
+  </div>
+</div>
+
                     </div>
+
                     <div className="flex flex-col md:flex-row gap-3 mt-4 md:mt-0">
                       {position.status === "open" && (
                         <button

@@ -120,11 +120,8 @@ const Events = () => {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {highlights.map((highlight, index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, y: 40 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5, delay: index * 0.1 }}
+              <div
+                
                 className="bg-gray-800/60 backdrop-blur-md rounded-2xl overflow-hidden shadow-lg transform hover:scale-105 transition-all"
               >
                 <div className="relative aspect-video cursor-pointer group" onClick={() => openVideo(highlight.id)}>
@@ -161,7 +158,7 @@ const Events = () => {
                     </div>
                   )}
                 </div>
-              </motion.div>
+              </div>
             ))}
           </div>
         </div>

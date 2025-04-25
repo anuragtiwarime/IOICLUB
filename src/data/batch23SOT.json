@@ -35,13 +35,7 @@
     "photo": "https://res.cloudinary.com/dkxongd5z/image/upload/v1737445586/Avatar_i4xb7l.png",
     "linkedIn": "https://www.linkedin.com/in/aman-raj-gupta-"
   },
-  {
-    "name": "Tushar Pal",
-    "city": "Muzaffarnagar",
-    "state": "Uttar Pradesh",
-    "photo": "https://res.cloudinary.com/dkxongd5z/image/upload/v1737890949/Artboard_8_hoyfxo.png",
-    "linkedIn": "https://www.linkedin.com/in/tushar-pal-0053a729b/"
-  },
+  
   {
     "linkedIn":"www.linkedin.com/in/ravi-soni123/",
     "name": "Ravi Soni",
@@ -117,13 +111,7 @@
     "city":"Ghaziput",
     "photo": "https://res.cloudinary.com/dkxongd5z/image/upload/v1737890950/Artboard_7_upgkrr.png"
   },
-  {
-    "name":"Rohit Kumar",
-    "linkedIn":"https://www.linkedin.com/in/rohit-kumar-ug/",
-    "state":"Jharkhand",
-    "city":"Hazaribagh",
-    "photo": "https://res.cloudinary.com/dkxongd5z/image/upload/v1737471130/Avatar3_Male_dvztet.png"
-  },
+ 
   {
     "name":"Dev Meghwani",
     "linkedIn":"https://in.linkedin.com/in/devmeghwani",
@@ -271,13 +259,7 @@
     "city":"Bhiwani",
     "photo": "https://res.cloudinary.com/dkxongd5z/image/upload/v1737890949/Artboard_3_eflepj.png"
   },
-  {
-    "name":"Dushyant Sharma",
-    "linkedIn":"https://www.linkedin.com/in/dushyant-sharma-pandit/",
-    "state":"Haryana",
-    "city":"Sirsa",
-    "photo": "https://res.cloudinary.com/dkxongd5z/image/upload/v1737890949/Artboard_8_hoyfxo.png"
-  },
+ 
   {
     "name":"Rohit Makani",
     "linkedIn":"https://www.linkedin.com/in/rrohit-makani-rohitji/",
@@ -403,13 +385,7 @@
     "state":"West Bengal",
     "photo": "https://res.cloudinary.com/dkxongd5z/image/upload/v1737442156/Purple_Pink_Gradient_Man_3D_Avatar_wa2ato.png"
   },
-  {
-    "name":"Abhay Sharma",
-    "linkedIn":"https://www.linkedin.com/in/abhay-sharma2/",
-    "city":"Indore",
-    "state":"Madhya Pradesh",
-    "photo": "https://res.cloudinary.com/dkxongd5z/image/upload/v1737890950/Artboard_7_upgkrr.png"
-  },
+ 
   {
     "name":"Divya Musahib",
     "linkedIn":"https://www.linkedin.com/in/divyamusahib/",
@@ -467,13 +443,7 @@
     "state":"Haryana",
     "photo": "https://res.cloudinary.com/dkxongd5z/image/upload/v1737471130/Avatar3_Male_dvztet.png"
   },
-  {
-    "name":"Abhijeet Bisen",
-    "linkedIn":"https://www.linkedin.com/in/abhijeetbisenme/",
-    "city":"Balaghat",
-    "state":"Madhya Pradesh",
-    "photo": "https://res.cloudinary.com/dkxongd5z/image/upload/v1737445586/Avatar_i4xb7l.png"
-  },
+ 
   {
     "name":"Pranjal Bramhankar",
     "linkedIn":"https://www.linkedin.com/in/pranjal-bramhankar-6aaba4265/",
@@ -496,13 +466,7 @@
     "state":"Bihar",
     "photo": "https://res.cloudinary.com/dkxongd5z/image/upload/v1737890949/Artboard_3_eflepj.png"
   },
-  {
-    "name":"Ramesh Das",
-    "linkedIn":"https://www.linkedin.com/in/rameshiitg/",
-    "city":"Contai",
-    "state":"West Bengal",
-    "photo": "https://res.cloudinary.com/dkxongd5z/image/upload/v1737890949/Artboard_8_hoyfxo.png"
-  },
+ 
   {
     "name":"Sofikul Sk",
     "linkedIn":"https://www.linkedin.com/in/sofikul-sk-a01457313/",
@@ -538,20 +502,8 @@
     "state":"Odisha",
     "photo": "https://res.cloudinary.com/dkxongd5z/image/upload/v1737890949/Artboard_4_ykrsye.png"
   },
-  {
-    "name":"Raghav Mehra",
-    "linkedIn":"https://www.linkedin.com/in/raghav-mehra-/",
-    "city":"Jalandhar",
-    "state":"Punjab",
-    "photo": "https://res.cloudinary.com/dkxongd5z/image/upload/v1737890949/Artboard_8_hoyfxo.png"
-  },
-  {
-    "name":"Ritik Mehra",
-    "linkedIn":"https://www.linkedin.com/in/raghav-mehra-/",
-    "city":"Jalandhar",
-    "state":"Punjab",
-    "photo": "https://res.cloudinary.com/dkxongd5z/image/upload/v1737890950/Artboard_7_upgkrr.png"
-  },
+ 
+ 
   {
     "name":"Sudhanshu Shekhar",
     "linkedIn":"https://www.linkedin.com/in/sudhanshu-shekhar-01916b2a3/",
@@ -587,13 +539,7 @@
     "state":"Haryana",
     "photo": "https://res.cloudinary.com/dkxongd5z/image/upload/v1737442156/Purple_Pink_Gradient_Man_3D_Avatar_wa2ato.png"
   },
-  {
-    "name":"Navneet Sharma",
-    "linkedIn":"https://www.linkedin.com/in/navneetsharmame/",
-    "city":"Bhiwani",
-    "state":"Haryana",
-    "photo": "https://res.cloudinary.com/dkxongd5z/image/upload/v1737890949/Artboard_8_hoyfxo.png"
-  },
+ 
   {
     "name":"Vansh Balani",
     "linkedIn":"https://www.linkedin.com/in/vansh-balani/",
@@ -707,13 +653,7 @@
     "state":"Uttrakhand",
     "photo": "https://res.cloudinary.com/dkxongd5z/image/upload/v1737442156/Purple_Pink_Gradient_Man_3D_Avatar_wa2ato.png"
   },
-  {
-    "name":"Abhishek Sharma",
-    "linkedIn":"https://www.linkedin.com/in/abhishek1729/",
-    "city":"Guwahati",
-    "state":"Assam",
-    "photo": "https://res.cloudinary.com/dkxongd5z/image/upload/v1737890950/Artboard_7_upgkrr.png"
-  },
+ 
   {
     "name":"Satyabrata Mohanty",
     "linkedIn":"https://www.linkedin.com/in/satyabratame/",
