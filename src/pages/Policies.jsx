@@ -2,6 +2,12 @@ import React, { useState } from 'react';
 import COC from '../assets/COC.pdf';
 import AP from '../assets/AP.pdf';
 import SP from '../assets/SP.pdf';
+import LP from '../assets/LP.pdf';
+import KlibRule from '../assets/KlibRule.pdf';
+import SexualHarassment from '../assets/SexualHarassment.pdf';
+import AntiRaggingPolicy from '../assets/AntiRaggingPolicy.pdf';
+import SocailMediaPolicy from '../assets/SocialMedia.pdf';
+import CSP from '../assets/CSP.pdf';
 import Footer from '../components/Footer';
 
 export default function Policies() {
@@ -23,6 +29,44 @@ export default function Policies() {
       description: 'Explore the eligibility requirements and benefits of our scholarship programs.',
       file: SP,
     },
+   
+  ];
+
+  const otherPolicies = [
+    {
+      title: 'Library Policy',
+      description: 'Discover the rules and guidelines for using our library resources effectively.',
+      
+      file: LP,
+    },
+    {
+      title: 'Klib Rule',
+      description: 'Learn about the rules and regulations for the use of Klib.',
+      file: KlibRule,
+    },
+    {
+      title : 'Sexual Harassment Policy',
+      description: 'Learn about our commitment to preventing and addressing sexual harassment in the academic environment.',
+      file: SexualHarassment,
+    },
+    {
+      title: 'Anti-Ragging Policy',
+      description: 'Understand our strict stance against ragging and the measures in place to prevent it.',
+      file: AntiRaggingPolicy,
+    },
+    {
+      title: 'Social Media Policy',
+      description: 'Explore the guidelines for responsible social media use within our academic community.',
+      file: SocailMediaPolicy,
+    },
+    {
+      title: 'Career Services Policy',
+      description: 'Learn about the resources and support available for career development and job placement.',
+      
+      file: CSP,
+    }
+
+
   ];
 
   const openModal = (file) => {
@@ -58,8 +102,25 @@ export default function Policies() {
           ))}
         </div>
 
-        <h1 className="text-4xl text-center font-bold text-gray-800 mt-12 mb-3">Our Other Policies</h1>
+        <h1 className="text-4xl text-center font-bold text-gray-800 mt-12 mb-3">Other Policies</h1>
         <div className="w-24 h-1 bg-black mx-auto rounded-full mb-8"></div>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          {otherPolicies.map((policy, index) => (
+            <div
+              key={index}
+              className="bg-white p-6 rounded-lg shadow-lg text-center flex flex-col items-center transform transition-transform hover:scale-105 hover:shadow-xl"
+            >
+              <p className="text-xl font-semibold mb-4 text-gray-900">{policy.title}</p>
+              <p className="text-gray-700 mb-6">{policy.description}</p>
+              <button
+                onClick={() => openModal(policy.file)}
+                className="px-6 py-2 bg-black text-white font-semibold rounded-lg shadow hover:bg-gray-800 hover:shadow-md transition-all duration-200"
+              >
+                View
+              </button>
+            </div>
+          ))}
+        </div>
 
         {/* Modal */}
         {modalContent && (
