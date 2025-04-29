@@ -97,7 +97,7 @@ export default function CeeExamMCQPaper() {
                 <form onSubmit={handleSubmit} className="space-y-6">
                     {paper.questions.map((q, idx) => (
                         <div key={q.id} className="space-y-3">
-                            <p className="font-semibold text-white">
+                            <p className="font-semibold text-white whitespace-pre-wrap">
                                 {idx + 1}. {q.question}
                             </p>
 
@@ -122,7 +122,7 @@ export default function CeeExamMCQPaper() {
                                                 onChange={() => handleOptionChange(q.id, opt)}
                                                 className="h-4 w-4 accent-sky-500"
                                             />
-                                            <span className="text-white">{opt}</span>
+                                            <span className="text-white whitespace-pre-wrap">{opt}</span>
                                         </label>
                                     );
                                 })}
@@ -157,7 +157,7 @@ export default function CeeExamMCQPaper() {
                                     : "border-red-600 bg-red-900/20"
                             )}
                         >
-                            <p className="text-white font-medium mb-2">
+                            <p className="text-white font-medium mb-2 whitespace-pre-wrap">
                                 {idx + 1}. {item.question}
                             </p>
 
@@ -177,7 +177,7 @@ export default function CeeExamMCQPaper() {
                                                         : "border-neutral-700"
                                             )}
                                         >
-                                            <span className="text-white">{opt}</span>
+                                            <span className="text-white whitespace-pre-wrap">{opt}</span>
                                             {isCorrect && (
                                                 <span className="text-green-400 ml-auto text-xs">✅ Correct</span>
                                             )}
