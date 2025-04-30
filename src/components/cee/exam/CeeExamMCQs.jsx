@@ -3,6 +3,7 @@ import { Outlet, useMatch, useNavigate } from "react-router-dom";
 import QuestionPaperCard from "@/components/QuestionPaperCard.jsx";
 import { cn } from "@/lib/utils.js";
 
+// Modifying the structure to ensure scenarios are properly grouped and visible
 const abilityToCode = [
     {
         title: "Paper 1",
@@ -63,35 +64,128 @@ const abilityToCode = [
         ]
     }
 ];
-
 const languageReasoning = [
     {
         title: "Paper 1",
         id: "language-paper-1",
+        scenarios: [
+            {
+                id: "statement-1",
+                title: "9. Statement:",
+                description: "Some cats are animals. All animals have eyes."
+            }
+        ],
         questions: [
             {
                 id: 1,
-                question: "What is the antonym of 'generous'?",
-                options: ["Kind", "Greedy", "Friendly", "Gentle"],
-                answer: "Greedy"
+                question: "Ravi ___ to school every day.",
+                options: ["go", "goes", "gone", "going"],
+                answer: "goes"
             },
             {
                 id: 2,
-                question: "Choose the correct spelling:",
-                options: ["Accomodate", "Acommodate", "Accommodate", "Acomodate"],
-                answer: "Accommodate"
+                question: "Choose the synonym for 'generous':",
+                options: ["Stingy", "Kind", "Mean", "Rude"],
+                answer: "Kind"
             },
             {
                 id: 3,
-                question: "The plural of 'crisis' is:",
-                options: ["Crisis", "Crises", "Crisises", "Crisis'"],
-                answer: "Crises"
+                question: "Identify the error:\n“She have completed the task.”",
+                options: ["She", "have", "completed", "the"],
+                answer: "have"
+            },
+            {
+                id: 4,
+                question: "Fill in the blank: “He is good ___ maths.”",
+                options: ["on", "in", "at", "by"],
+                answer: "at"
+            },
+            {
+                id: 5,
+                question: "Which is a cause and effect pair?",
+                options: [
+                    "It rained – the match was cancelled",
+                    "He is tall – he eats rice",
+                    "She sings – she dances",
+                    "They won – they cried"
+                ],
+                answer: "It rained – the match was cancelled"
+            },
+            {
+                id: 6,
+                question: "Which best describes the mood?",
+                options: ["Sad", "Tense", "Joyful", "Angry"],
+                answer: "Joyful"
+            },
+            {
+                id: 7,
+                question: "Odd one out:",
+                options: ["Knife", "Fork", "Spoon", "Plate"],
+                answer: "Plate"
+            },
+            {
+                id: 8,
+                question: "Teacher: Classroom :: Doctor : ?",
+                options: ["Medicine", "Nurse", "Hospital", "Patient"],
+                answer: "Hospital"
+            },
+            {
+                id: "9.1",
+                scenarioRef: "statement-1",
+                question: "Conclusion:",
+                options: [
+                    "All cats have eyes",
+                    "Some animals are cats",
+                    "Both A and B",
+                    "None"
+                ],
+                answer: "Both A and B"
+            },
+            {
+                id: 10,
+                question: "Correct sentence:",
+                options: ["They was running", "He are happy", "I am going", "She were dancing"],
+                answer: "I am going"
+            },
+            {
+                id: 11,
+                question: "Synonym of “brief”:",
+                options: ["Long", "Short", "Deep", "Vast"],
+                answer: "Short"
+            },
+            {
+                id: 12,
+                question: "Choose correct analogy: Book is to Reading as Fork is to:",
+                options: ["Drawing", "Eating", "Stirring", "Cooking"],
+                answer: "Eating"
             }
         ]
     },
     {
         title: "Paper 2",
         id: "language-paper-2",
+        scenarios: [
+            {
+                id: "stack-operations",
+                title: "4. Scenario 1: Stack Operations",
+                description: "You are simulating a browser with tabs. The browser maintains a stack of pages where each new page is opened on top. You can: Open a new page (push to stack), Close current tab (pop from stack), View current tab (peek top), Check if browser is empty. Initial State: Stack is empty. Sequence of Operations: 1. Open 'Home', 2. Open 'Profile', 3. Open 'Settings', 4. View current tab, 5. Close current tab, 6. Open 'Help', 7. Close current tab, 8. Close current tab, 9. View current tab"
+            },
+            {
+                id: "queue-simulation",
+                title: "5. Scenario 2: Queue Simulation",
+                description: "You are managing a print queue. The printer prints in FIFO order. Users A, B, C, D, and E send print jobs. Operations: 1. A sends a job, 2. B sends a job, 3. Print a job, 4. C sends a job, 5. D sends a job, 6. Print a job, 7. E sends a job, 8. Print a job"
+            },
+            {
+                id: "array-manipulation",
+                title: "6. Scenario 3: Array Manipulation",
+                description: "You are managing a 1D array of size 6. Initialize with zeros. Operations: 1. Set arr[2] = 9, 2. Set arr[5] = arr[2] + 1, 3. Set arr[0] = arr[5] - 3, 4. Set arr[1] = arr[0] + arr[2], 5. Set arr[4] = arr[1] - arr[5], 6. Print arr"
+            },
+            {
+                id: "linked-list",
+                title: "7. Scenario 4: Linked List Modification",
+                description: "You're managing a singly linked list with operations: Add at head, Add after a specific node, Delete a node by value, Traverse list. Operations: 1. Add 50 at head, 2. Add 30 at head, 3. Add 40 after 30, 4. Add 60 after 50, 5. Delete 30, 6. Traverse the list (Head to Tail)"
+            }
+        ],
         questions: [
             {
                 id: 1,
@@ -110,11 +204,94 @@ const languageReasoning = [
                 question: "Which of the following is a conjunction?",
                 options: ["Run", "Beautiful", "And", "Happy"],
                 answer: "And"
+            },
+            {
+                id: "4.1",
+                scenarioRef: "stack-operations",
+                question: "What page is currently open after step 4?",
+                options: ["Home", "Profile", "Settings", "Help"],
+                answer: "Settings"
+            },
+            {
+                id: "4.2",
+                scenarioRef: "stack-operations",
+                question: "What page is on top after step 9?",
+                options: ["Home", "Profile", "Help", "Empty"],
+                answer: "Home"
+            },
+            {
+                id: "4.3",
+                scenarioRef: "stack-operations",
+                question: "What is the stack content after all 9 steps (bottom to top)?",
+                options: ["[Home]", "[Home, Profile]", "[Profile]", "[]"],
+                answer: "[Home]"
+            },
+            {
+                id: "5.1",
+                scenarioRef: "queue-simulation",
+                question: "Whose job was printed second?",
+                options: ["A", "B", "C", "D"],
+                answer: "B"
+            },
+            {
+                id: "5.2",
+                scenarioRef: "queue-simulation",
+                question: "Whose jobs are still in the queue?",
+                options: ["D and E", "C, D, E", "B, C", "C, E"],
+                answer: "D and E"
+            },
+            {
+                id: "5.3",
+                scenarioRef: "queue-simulation",
+                question: "What is the order of the remaining jobs?",
+                options: ["D, E", "E, D", "C, D", "E, C"],
+                answer: "D, E"
+            },
+            {
+                id: "6.1",
+                scenarioRef: "array-manipulation",
+                question: "What is the value at index 5?",
+                options: ["10", "9", "12", "11"],
+                answer: "10"
+            },
+            {
+                id: "6.2",
+                scenarioRef: "array-manipulation",
+                question: "What is the final value of arr[1]?",
+                options: ["9", "15", "13", "17"],
+                answer: "16"
+            },
+            {
+                id: "6.3",
+                scenarioRef: "array-manipulation",
+                question: "What is the array after step 6?",
+                options: ["[7, 16, 9, 0, 6, 10]", "[6, 15, 9, 0, 5, 10]", "[7, 16, 9, 0, 6, 11]", "[7, 15, 9, 0, 5, 10]"],
+                answer: "[7, 16, 9, 0, 6, 10]"
+            },
+            {
+                id: "7.1",
+                scenarioRef: "linked-list",
+                question: "What is the head node after all operations?",
+                options: ["30", "40", "50", "60"],
+                answer: "40"
+            },
+            {
+                id: "7.2",
+                scenarioRef: "linked-list",
+                question: "What is the full list after traversal?",
+                options: ["30 -> 40 -> 50 -> 60", "40 -> 50 -> 60", "30 -> 40 -> 60", "40 -> 60 -> 50"],
+                answer: "40 -> 50 -> 60"
+            },
+            {
+                id: "7.3",
+                scenarioRef: "linked-list",
+                question: "Which node(s) were directly affected by deletion?",
+                options: ["30 only", "30 and 40", "30 and 50", "30 and 60"],
+                answer: "30 and 40"
             }
         ]
     }
 ];
-
 const analyticalReasoning = [
     {
         title: "Paper 1",
