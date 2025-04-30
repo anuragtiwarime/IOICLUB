@@ -80,8 +80,9 @@ export default function CeeLayout() {
                             </h1>
                         </div>
                         <div className="hidden md:flex items-center space-x-4">
-                            <div className="bg-blue-500/10 border border-blue-500/20 px-3 py-1.5 rounded-full text-xs text-blue-400">
-                                Beta Access
+                            <div className="bg-zinc-700/30 px-3 py-1.5 rounded-md text-sm flex items-center gap-1">
+                                <div className="w-2 h-2 rounded-full bg-green-400"></div>
+                                <span className="text-zinc-300">Ready for Exam</span>
                             </div>
                         </div>
                     </div>
@@ -181,11 +182,48 @@ export default function CeeLayout() {
                         {/* Content */}
                         <div className="bg-zinc-800/80 backdrop-blur-sm rounded-xl shadow-lg border border-zinc-700/50 p-4 sm:p-6 md:p-8 min-h-[70vh]">
                             {isCeeRoute ? (
-                                <div className="text-center text-zinc-300 text-lg sm:text-xl py-12 space-y-8">
+                                <div className="text-center text-lg sm:text-xl py-12 space-y-8">
                                     <h2 className="text-3xl sm:text-4xl font-extrabold text-white mb-6">
                                         Welcome to the CEE Preparation Portal!
                                     </h2>
+
+                                    <p className="max-w-3xl mx-auto">
+                                        Your one-stop solution to crack the Common Entrance Exam (CEE) with confidence and clarity.
+                                        Whether you're just getting started or brushing up on concepts, this portal provides all the tools you need.
+                                    </p>
+
+                                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                                        <div className="bg-zinc-800 p-6 rounded-2xl shadow-md">
+                                            <h3 className="font-bold text-xl mb-2">🎥 Video Lectures</h3>
+                                            <p>Comprehensive lessons by subject experts to build your concepts topic-by-topic.</p>
+                                        </div>
+
+                                        <div className="bg-zinc-800 p-6 rounded-2xl shadow-md">
+                                            <h3 className="font-bold text-xl mb-2">📘 Reading Materials</h3>
+                                            <p>Well-curated notes and downloadable PDFs for effective self-study and revision.</p>
+                                        </div>
+
+                                        <div className="bg-zinc-800 p-6 rounded-2xl shadow-md">
+                                            <h3 className="font-bold text-xl mb-2">📝 Practice MCQs</h3>
+                                            <p>Thousands of multiple choice questions across all subjects with instant feedback and solutions.</p>
+                                        </div>
+
+                                        <div className="bg-zinc-800 p-6 rounded-2xl shadow-md">
+                                            <h3 className="font-bold text-xl mb-2">✍️ Fill in the Blanks</h3>
+                                            <p>Test your memory and understanding with interactive gap-filling exercises.</p>
+                                        </div>
+
+                                        <div className="bg-zinc-800 p-6 rounded-2xl shadow-md">
+                                            <h3 className="font-bold text-xl mb-2">🎤 Interview Prep</h3>
+                                            <p>Crack your CEE personal interview with mock sessions, tips, and common Q&As.</p>
+                                        </div>
+                                    </div>
+
+                                    <p className="italic text-sm text-neutral-400">
+                                        Stay consistent. Stay curious. Let’s crack CEE together.
+                                    </p>
                                 </div>
+
                             ) : (
                                 <Outlet />
                             )}
