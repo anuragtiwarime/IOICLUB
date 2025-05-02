@@ -1,6 +1,7 @@
 import { useState } from "react";
 import ReadingCard from "@/components/ReadingCard.jsx";
 import { cn } from "@/lib/utils.js";
+import ComingSoon from "@/components/ComingSoon.jsx";
 
 export default function CeeExamReading() {
     const [activeCategory, setActiveCategory] = useState("coding");
@@ -103,11 +104,12 @@ export default function CeeExamReading() {
             </div>
 
             {/* Reading Cards */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-                {categories[activeCategory].readings.map((reading, idx) => (
-                    <ReadingCard reading={reading} key={idx} />
-                ))}
-            </div>
+            {/*<div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">*/}
+            {/*    {categories[activeCategory].readings.map((reading, idx) => (*/}
+            {/*        <ReadingCard reading={reading} key={idx} />*/}
+            {/*    ))}*/}
+            {/*</div>*/}
+            <ComingSoon />
         </div>
     );
 }

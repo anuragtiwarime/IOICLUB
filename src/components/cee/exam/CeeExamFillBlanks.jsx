@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Outlet, useMatch, useNavigate } from "react-router-dom";
 import QuestionPaperCard from "@/components/QuestionPaperCard.jsx";
 import { cn } from "@/lib/utils.js";
+import ComingSoon from "@/components/ComingSoon.jsx";
 
 // Sample Fill in the Blanks Data
 const codingFillBlanks = [
@@ -277,15 +278,16 @@ export default function CeeExamFillBlanks() {
             </div>
 
             {/* Question Papers Grid */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-                {fillBlankCategories[activeCategory].papers.map((paper, idx) => (
-                    <QuestionPaperCard
-                        key={idx}
-                        paper={paper}
-                        onClick={() => handlePaperClick(paper)}
-                    />
-                ))}
-            </div>
+            {/*<div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">*/}
+            {/*    {fillBlankCategories[activeCategory].papers.map((paper, idx) => (*/}
+            {/*        <QuestionPaperCard*/}
+            {/*            key={idx}*/}
+            {/*            paper={paper}*/}
+            {/*            onClick={() => handlePaperClick(paper)}*/}
+            {/*        />*/}
+            {/*    ))}*/}
+            {/*</div>*/}
+            <ComingSoon />
         </div>
     );
 }
