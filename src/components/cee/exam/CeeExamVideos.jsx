@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import VideoCard from "@/components/VideoCard.jsx";
 import { cn } from "@/lib/utils.js";
+import ComingSoon from "@/components/ComingSoon.jsx";
 
 export default function CeeExamVideos() {
     const [activeCategory, setActiveCategory] = useState('coding');
@@ -72,11 +73,12 @@ export default function CeeExamVideos() {
             </div>
 
             {/* Video Grid */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-                {categories[activeCategory].videos.map((video, idx) => (
-                    <VideoCard video={video} key={idx} />
-                ))}
-            </div>
+            {/*<div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">*/}
+            {/*    {categories[activeCategory].videos.map((video, idx) => (*/}
+            {/*        <VideoCard video={video} key={idx} />*/}
+            {/*    ))}*/}
+            {/*</div>*/}
+            <ComingSoon />
         </div>
     );
 }
