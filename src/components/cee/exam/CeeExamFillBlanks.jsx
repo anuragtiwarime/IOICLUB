@@ -2,14 +2,11 @@ import { useState } from "react";
 import { Outlet, useMatch, useNavigate } from "react-router-dom";
 import QuestionPaperCard from "@/components/QuestionPaperCard.jsx";
 import { cn } from "@/lib/utils.js";
-<<<<<<< HEAD
 import codingFillBlanks from "@/data/codingFillBlanks.json";
 import languageFillBlanks from "@/data/languageFillBlanks.json";
 import reasoningFillBlanks from "@/data/reasoningFillBlanks.json";
 import aptitudeFillBlanks from "@/data/aptitudeFillBlanks.json";
-=======
 import ComingSoon from "@/components/ComingSoon.jsx";
->>>>>>> 59857560549f5bd221b72558ef873044fd02001f
 
 // Sample Fill in the Blanks Data
 
