@@ -46,7 +46,7 @@ export default function Policies() {
       file: LP,
     },
     {
-      title: 'Klib Rule',
+      title: 'Klib Rules',
       description: 'Learn about the rules and regulations for the use of Klib.',
       file: KlibRule,
     },
