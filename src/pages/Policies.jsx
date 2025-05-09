@@ -9,6 +9,7 @@ import AntiRaggingPolicy from '../assets/AntiRaggingPolicy.pdf';
 import SocailMediaPolicy from '../assets/SocialMedia.pdf';
 import CSP from '../assets/CSP.pdf';
 import Footer from '../components/Footer';
+import ExamPolicy from '../assets/ExamPolicy.pdf';
 
 export default function Policies() {
   const [modalContent, setModalContent] = useState(null);
@@ -28,6 +29,11 @@ export default function Policies() {
       title: 'Scholarship Policy',
       description: 'Explore the eligibility requirements and benefits of our scholarship programs.',
       file: SP,
+    },
+    {
+      title: 'Examination Policy',
+      description: 'Learn about the rules and regulations for the conduct of examinations.',
+      file: ExamPolicy,
     },
    
   ];
