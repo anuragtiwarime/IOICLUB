@@ -11,41 +11,28 @@ export default function CeeExamVideos() {
             id: 'coding',
             title: 'Ability to Code',
             videos: [
-                { id: 'W6NZfCO5SIk', title: 'JavaScript Crash Course', author: 'Programming with Mosh' },
-                { id: 'Tn6-PIqc4UM', title: 'React in 100 Seconds', author: 'Fireship' },
-                { id: '8hly31xKli0', title: 'Clean Code Principles', author: 'Coding Tech' },
-                { id: 'rfscVS0vtbw', title: 'Python Full Course', author: 'freeCodeCamp' },
-                // Add more videos as needed
+                { id: 'rJN8CaDr8vk', title: 'All About CEE | Crack Coding Aptitude 🔥| Live With Ali Sir', author: 'PW Institute of Innovation' },
             ]
         },
         language: {
             id: 'language',
             title: 'Language Reasoning',
             videos: [
-                { id: '8S0FDjFBj8o', title: 'Natural Language Processing', author: 'Stanford Online' },
-                { id: 'BJZcRs8K_EU', title: 'Semantic Analysis', author: 'Learn With' },
-                { id: 'rS_4YlbQy0k', title: 'Linguistics Explained', author: 'NativLang' },
-                { id: 'A5OniA4rNzc', title: 'Language Structure', author: 'Education Portal' }
+                { id: 'L2dQH0LUn0E', title: 'All About CEE | Crack English Comprehension 🔥 | Live With Kinjal Ma\'am', author: 'PW Institute of Innovation' },
             ]
         },
         analytical: {
             id: 'analytical',
             title: 'Analytical Reasoning',
             videos: [
-                { id: 'pbB0GrVX_uY', title: 'Logic and Critical Thinking', author: 'TED-Ed' },
-                { id: '9TlHLpv9zx4', title: 'Problem Solving Techniques', author: 'MindTools' },
-                { id: 'pN4vYDqHIbo', title: 'Analytical Reasoning Tutorial', author: 'Academic Hub' },
-                { id: 'ubvV498Ut2o', title: 'Data Analysis Methods', author: 'Statistics Course' }
+                { id: 'y3JuTcjdNWA', title: 'All About CEE | Crack CEE Reasoning & Aptitude 🔥 | Live With Saurabh Sir', author: 'PW Institute of Innovation' },
             ]
         },
         aptitude: {
             id: 'aptitude',
             title: 'Aptitude',
             videos: [
-                { id: 'r_C2NlJ49Dw', title: 'Quantitative Aptitude Tricks', author: 'Math Simplified' },
-                { id: 'V6yiMyUjZkU', title: 'Spatial Reasoning Test', author: 'CareerVidz' },
-                { id: 'hVimVzgtD6w', title: 'Pattern Recognition', author: 'Brilliant' },
-                { id: 'CT8Xai0cQz0', title: 'Mathematical Aptitude', author: 'Logical Academy' }
+                { id: 'y3JuTcjdNWA', title: 'All About CEE | Crack CEE Reasoning & Aptitude 🔥 | Live With Saurabh Sir', author: 'PW Institute of Innovation' },
             ]
         }
     };
@@ -73,12 +60,11 @@ export default function CeeExamVideos() {
             </div>
 
             {/* Video Grid */}
-            {/*<div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">*/}
-            {/*    {categories[activeCategory].videos.map((video, idx) => (*/}
-            {/*        <VideoCard video={video} key={idx} />*/}
-            {/*    ))}*/}
-            {/*</div>*/}
-            <ComingSoon />
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+                {categories[activeCategory].videos.map((video, idx) => (
+                    <VideoCard video={video} key={idx} />
+                ))}
+            </div>
         </div>
     );
 }
