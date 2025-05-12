@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import VideoCard from "@/components/VideoCard.jsx";
 import { cn } from "@/lib/utils.js";
-import ComingSoon from "@/components/ComingSoon.jsx";
 
 export default function CeeExamVideos() {
     const [activeCategory, setActiveCategory] = useState('coding');
