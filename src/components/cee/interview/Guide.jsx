@@ -7,8 +7,6 @@ const video = {
 };
 
 export default function Guide() {
-  console.log("Guide component rendered");
-
   return (
     <div className="space-y-6">
       <div className="aspect-video w-full rounded-xl overflow-hidden shadow-md">
