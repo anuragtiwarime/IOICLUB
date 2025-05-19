@@ -1,40 +1,11 @@
 import React, { useState } from 'react';
 import VideoCard from "@/components/VideoCard.jsx";
 import { cn } from "@/lib/utils.js";
+import categories from '@/data/categories.json';
 
 export default function CeeExamVideos() {
     const [activeCategory, setActiveCategory] = useState('coding');
 
-    const categories = {
-        coding: {
-            id: 'coding',
-            title: 'Ability to Code',
-            videos: [
-                { id: 'rJN8CaDr8vk', title: 'All About CEE | Crack Coding Aptitude 🔥| Live With Ali Sir', author: 'PW Institute of Innovation' },
-            ]
-        },
-        language: {
-            id: 'language',
-            title: 'Language Reasoning',
-            videos: [
-                { id: 'L2dQH0LUn0E', title: 'All About CEE | Crack English Comprehension 🔥 | Live With Kinjal Ma\'am', author: 'PW Institute of Innovation' },
-            ]
-        },
-        analytical: {
-            id: 'analytical',
-            title: 'Analytical Reasoning',
-            videos: [
-                { id: 'y3JuTcjdNWA', title: 'All About CEE | Crack CEE Reasoning & Aptitude 🔥 | Live With Saurabh Sir', author: 'PW Institute of Innovation' },
-            ]
-        },
-        aptitude: {
-            id: 'aptitude',
-            title: 'Aptitude',
-            videos: [
-                { id: 'y3JuTcjdNWA', title: 'All About CEE | Crack CEE Reasoning & Aptitude 🔥 | Live With Saurabh Sir', author: 'PW Institute of Innovation' },
-            ]
-        }
-    };
 
     return (
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">

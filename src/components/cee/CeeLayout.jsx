@@ -52,7 +52,7 @@ export default function CeeLayout() {
             to: "/cee/interview",
             icon: <Award size={16} />,
             subItems: [
-                { label: "Coming Soon", to: "/cee/interview", icon: <ChevronRight size={14} /> }
+                { label: "Guide", to: "/cee/interview/guide", icon: <ChevronRight size={14} /> }
             ]
         },
     ];

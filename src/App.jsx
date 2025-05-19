@@ -26,7 +26,9 @@ import CeeExamMCQs from "@/components/cee/exam/CeeExamMCQs.jsx";
 import CeeExamMCQPaper from "@/components/cee/exam/CeeExamMCQPaper.jsx";
 import CeeExamFillBlanks from "@/components/cee/exam/CeeExamFillBlanks.jsx";
 import CeeExamFillBlanksPaper from "@/components/cee/exam/CeeExamFillBlanksPaper.jsx";
-import ComingSoon from "@/components/ComingSoon.jsx";
+import CeeInterviewLayout from "@/components/cee/interview/CeeInterviewLayout.jsx";
+import Guide from './components/cee/interview/Guide.jsx';
+
 
 
 
@@ -75,7 +77,10 @@ const App = () => (
                       <Route path=":paperId" element={<CeeExamFillBlanksPaper/>} />
                   </Route>
               </Route>
-              <Route path="interview" element={<ComingSoon />} />
+              <Route path="interview" element={<CeeInterviewLayout/>} >
+                  <Route path="guide" element={<Guide/>} />
+              </Route>
+              
           </Route>
       </Routes>
     </div>

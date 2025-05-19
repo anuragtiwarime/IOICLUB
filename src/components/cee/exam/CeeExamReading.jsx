@@ -104,12 +104,12 @@ export default function CeeExamReading() {
             </div>
 
             {/* Reading Cards */}
-            {/*<div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">*/}
-            {/*    {categories[activeCategory].readings.map((reading, idx) => (*/}
-            {/*        <ReadingCard reading={reading} key={idx} />*/}
-            {/*    ))}*/}
-            {/*</div>*/}
-            <ComingSoon />
+            {/* <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+             {categories[activeCategory].readings.map((reading, idx) => (
+                    <ReadingCard reading={reading} key={idx} />
+                ))}
+            </div> */}
+            <ComingSoon /> 
         </div>
     );
 }
