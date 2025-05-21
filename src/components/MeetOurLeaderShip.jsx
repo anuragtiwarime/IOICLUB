@@ -36,7 +36,7 @@ const MeetOurLeadership = () => {
 
             <div className="flex flex-col w-full">
               <AcademicHeadCard
-                image="https://res.cloudinary.com/djbjfsshe/image/upload/v1737342952/120A7616_sasg6x.jpg"
+                image="https://res.cloudinary.com/dkxongd5z/image/upload/v1747823261/PN_New_aawjdb.jpg"
                 name="Prakash Nimbalkar"
                 role="Head, School of Management"
                 description="Marketing Consultant, GTM & Startup Advisor, Mentor @ Startup Hub MeitY, Wadhwani Foundations, NASSCOM and Visiting Faculty."
