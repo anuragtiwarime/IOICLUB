@@ -49,7 +49,7 @@ export default function GridSmallBackgroundDemo() {
                 {/* Main heading with dramatic styling */}
                 <h1 className="relative text-5xl md:text-6xl font-black text-transparent bg-clip-text bg-gradient-to-r from-white via-blue-100 to-orange-200 leading-none tracking-tight max-w-5xl mb-4 drop-shadow-2xl">
                     <span className="relative text-white">
-                        AWS Hackathon
+                        AWS Hackathon 2025
                         {/* Glow effect behind text */}
                         <div className="absolute inset-0 text-white/20 blur-xl font-black text-5xl md:text-7xl -z-10">
                             AWS Hackathon
@@ -67,35 +67,44 @@ export default function GridSmallBackgroundDemo() {
                 </div>
                 
                 {/* Logos with enhanced presentation */}
-                <div className="flex flex-row justify-center items-center space-x-16 mb-12">
+                <div className="flex flex-row justify-center items-center space-x-12 pr-20 mb-12">
                     <div className="relative group">
                         <div className="absolute inset-0 bg-white/10 rounded-full blur-xl group-hover:bg-white/20 transition-all duration-300"></div>
                         <div className="relative bg-white/10 backdrop-blur-sm rounded-full p-6 border border-white/20 hover:border-white/40 transition-all duration-300 hover:scale-110">
                             <img src="/pwioilogo.webp" alt="PWI Logo" height="160px" width="160px" className="drop-shadow-xl" />
                         </div>
                     </div>
+                    <div className="relative group font-semibold font-mono text-2xl text-white/80">
+                      X
+                    </div>
                     
                     <div className="relative group">
                         <div className="absolute inset-0 bg-orange-400/20 rounded-full blur-xl group-hover:bg-orange-400/30 transition-all duration-300"></div>
                         <div className="relative bg-white/10 backdrop-blur-sm rounded-full p-6 border border-orange-400/30 hover:border-orange-400/50 transition-all duration-300 hover:scale-110">
-                            <img src="/aws.png" alt="AWS Logo" height="100px" width="100px" className="drop-shadow-xl" />
+                            <img src="/aws.png" alt="AWS Logo" height="80px" width="80px" className="drop-shadow-xl" />
                         </div>
                     </div>
                 </div>
                 
                 {/* Enhanced button */}
                 <div className="relative group">
-                    {/* Button glow effect */}
-                    <div className="absolute inset-0 bg-gradient-to-r from-orange-400 to-yellow-400 rounded-full blur-lg opacity-75 group-hover:opacity-100 transition-all duration-300 animate-pulse"></div>
-                    
-                    <button className="relative bg-gradient-to-r from-white to-gray-100 text-gray-800 px-12 py-5 rounded-full text-xl font-black shadow-2xl hover:shadow-orange-400/25 transform hover:scale-110 transition-all duration-300 hover:from-orange-50 hover:to-white border-2 border-white/50 hover:border-orange-200">
-                        <span className="relative z-10 tracking-wide">
-                            🚀 REGISTRATION OPEN
-                        </span>
-                        {/* Button inner glow */}
-                        <div className="absolute inset-0 bg-gradient-to-r from-transparent via-orange-100/50 to-transparent rounded-full opacity-0 hover:opacity-100 transition-opacity duration-300"></div>
-                    </button>
-                </div>
+    {/* Button glow effect */}
+    <div className="absolute inset-0 bg-gradient-to-r from-orange-400 to-yellow-400 rounded-full blur-lg opacity-75 group-hover:opacity-100 transition-all duration-300 animate-pulse"></div>
+
+    <button className="relative bg-gradient-to-r from-white to-gray-100 text-gray-800 
+        px-6 py-3 text-sm 
+        md:px-12 md:py-5 md:text-lg 
+        rounded-full font-black shadow-2xl 
+        hover:shadow-orange-400/25 transform hover:scale-110 transition-all duration-300 
+        hover:from-orange-50 hover:to-white border-2 border-white/50 hover:border-orange-200">
+        <span className="relative z-10 tracking-wide">
+            REGISTRATION OPEN
+        </span>
+        {/* Button inner glow */}
+        <div className="absolute inset-0 bg-gradient-to-r from-transparent via-orange-100/50 to-transparent rounded-full opacity-0 hover:opacity-100 transition-opacity duration-300"></div>
+    </button>
+</div>
+
                 
                 {/* Additional call-to-action text */}
                 <p className="mt-8 text-lg text-white/80 font-medium tracking-wide animate-bounce">
