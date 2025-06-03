@@ -80,13 +80,13 @@ function Process() {
 
           {/* Mobile: Left Vertical Line */}
           <div className="md:hidden absolute left-4 top-0 w-1 bg-gradient-to-b from-blue-400 via-indigo-500 to-blue-600 rounded-full" 
-               style={{ height: `${(steps.length - 1) * 210  + 80}px` }}></div>
+               style={{ height: `${(steps.length - 1) * 220  + 80}px` }}></div>
 
           {/* Mobile: Progress Line */}
           <div 
             className="md:hidden absolute left-4 top-0 w-1 bg-gradient-to-b from-orange-400 to-orange-600 rounded-full transition-all duration-1000 ease-out"
             style={{ 
-              height: activeStep >= 0 ? `${Math.min(activeStep * 140 + 40, (steps.length - 1) * 210 + 80)}px` : '0px'
+              height: activeStep >= 0 ? `${Math.min(activeStep * 140 + 40, (steps.length - 1) * 220 + 80)}px` : '0px'
             }}
           ></div>
 
@@ -184,7 +184,7 @@ function Process() {
                       {/* Center dot */}
                       <div 
                         className={`
-                          w-5 h-5 rounded-full border-4 border-white shadow-lg transition-all duration-500 z-10 relative
+                          w-5 h-5 rounded-full border-4 border-white shadow-lg transition-all duration-500 z-10 relative mt-14
                           ${isActive 
                             ? 'bg-gradient-to-br from-orange-400 to-orange-600 shadow-orange-200' 
                             : 'bg-blue-400'
@@ -194,7 +194,7 @@ function Process() {
                       ></div>
                       
                       {/* Horizontal connector line */}
-                      <div className={`w-8 h-0.5 transition-all duration-500 ${isActive ? 'bg-orange-500' : 'bg-blue-400'} mt-2.5`}></div>
+                      <div className={`w-8 h-0.5 transition-all duration-500 ${isActive ? 'bg-orange-500' : 'bg-blue-400'}`}></div>
                     </div>
 
                     {/* Mobile Card */}

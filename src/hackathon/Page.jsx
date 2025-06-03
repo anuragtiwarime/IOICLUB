@@ -70,7 +70,7 @@ export default function GridSmallBackgroundDemo() {
                 <div className="flex flex-row justify-center items-center space-x-12 mb-12">
                     <div className="relative group">
                         <div className="absolute inset-0 bg-white/10 rounded-full blur-xl group-hover:bg-white/20 transition-all duration-300"></div>
-                        <div className="relative bg-white/10 backdrop-blur-sm rounded-full p-6 border border-white/20 hover:border-white/40 transition-all duration-300 hover:scale-110">
+                        <div className="relative bg-white/10 backdrop-blur-sm rounded-full p-4 border border-white/20 hover:border-white/40 transition-all duration-300 hover:scale-110">
                             <img src="/pwioilogo.webp" alt="PWI Logo" height="160px" width="160px" className="drop-shadow-xl" />
                         </div>
                     </div>
@@ -80,7 +80,7 @@ export default function GridSmallBackgroundDemo() {
                     
                     <div className="relative group">
                         <div className="absolute inset-0 bg-orange-400/20 rounded-full blur-xl group-hover:bg-orange-400/30 transition-all duration-300"></div>
-                        <div className="relative bg-white/10 backdrop-blur-sm rounded-full p-6 border border-orange-400/30 hover:border-orange-400/50 transition-all duration-300 hover:scale-110">
+                        <div className="relative bg-white/10 backdrop-blur-sm rounded-full p-4 border border-orange-400/30 hover:border-orange-400/50 transition-all duration-300 hover:scale-110">
                             <img src="/aws.png" alt="AWS Logo" height="80px" width="80px" className="drop-shadow-xl" />
                         </div>
                     </div>
