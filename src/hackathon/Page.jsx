@@ -84,7 +84,7 @@ export default function GridSmallBackgroundDemo() {
                 </div>
                 
                 {/* Main heading with dramatic styling */}
-                <h1 className="relative text-5xl md:text-6xl font-black text-transparent bg-clip-text bg-gradient-to-r from-white via-blue-100 to-orange-200 leading-none tracking-tight max-w-5xl mb-4 drop-shadow-2xl">
+                <h1 className="relative text-4xl md:text-5xl font-black text-transparent bg-clip-text bg-gradient-to-r from-white via-blue-100 to-orange-200 leading-none tracking-tight max-w-5xl mb-4 drop-shadow-2xl">
                     <span className="relative text-white">
                         AWS Hackathon 2025
                         {/* Glow effect behind text */}
@@ -110,7 +110,7 @@ export default function GridSmallBackgroundDemo() {
                         <div className="relative group">
                             <div className="absolute inset-0 bg-orange-400/20 rounded-2xl blur-lg group-hover:bg-orange-400/30 transition-all duration-300"></div>
                             <div className="relative bg-white/10 backdrop-blur-sm border border-white/20 rounded-2xl p-1 md:p-6 min-w-[55px] md:min-w-[100px] hover:border-orange-400/40 transition-all duration-300">
-                                <div className=" md:text-3xl md:text-4xl font-black text-white mb-1">
+                                <div className=" md:text-3xl  font-black text-white mb-1">
                                     {timeLeft.days.toString().padStart(2, '0')}
                                 </div>
                                 <div className="text-xs md:text-base text-orange-300 font-semibold tracking-wider uppercase">
@@ -126,7 +126,7 @@ export default function GridSmallBackgroundDemo() {
                         <div className="relative group">
                             <div className="absolute inset-0 bg-orange-400/20 rounded-2xl blur-lg group-hover:bg-orange-400/30 transition-all duration-300"></div>
                             <div className="relative bg-white/10 backdrop-blur-sm border border-white/20 rounded-2xl p-1 md:p-6 min-w-[55px] md:min-w-[100px] hover:border-orange-400/40 transition-all duration-300">
-                                <div className=" md:text-3xl md:text-4xl font-black text-white mb-1">
+                                <div className=" md:text-3xl  font-black text-white mb-1">
                                     {timeLeft.hours.toString().padStart(2, '0')}
                                 </div>
                                 <div className="text-xs md:text-base text-orange-300 font-semibold tracking-wider uppercase">
@@ -142,7 +142,7 @@ export default function GridSmallBackgroundDemo() {
                         <div className="relative group">
                             <div className="absolute inset-0 bg-orange-400/20 rounded-2xl blur-lg group-hover:bg-orange-400/30 transition-all duration-300"></div>
                             <div className="relative bg-white/10 backdrop-blur-sm border border-white/20 rounded-2xl p-1 md:p-6 min-w-[55px] md:min-w-[100px] hover:border-orange-400/40 transition-all duration-300">
-                                <div className=" md:text-3xl md:text-4xl font-black text-white mb-1">
+                                <div className=" md:text-3xl font-black text-white mb-1">
                                     {timeLeft.minutes.toString().padStart(2, '0')}
                                 </div>
                                 <div className="text-xs md:text-base text-orange-300 font-semibold tracking-wider uppercase">
@@ -158,7 +158,7 @@ export default function GridSmallBackgroundDemo() {
                         <div className="relative group">
                             <div className="absolute inset-0 bg-orange-400/20 rounded-2xl blur-lg group-hover:bg-orange-400/30 transition-all duration-300"></div>
                             <div className="relative bg-white/10 backdrop-blur-sm border border-white/20 rounded-2xl p-1 md:p-6 min-w-[55px] md:min-w-[100px] hover:border-orange-400/40 transition-all duration-300 transform hover:scale-105">
-                                <div className=" md:text-3xl md:text-4xl font-black text-white mb-1">
+                                <div className=" md:text-3xl font-black text-white mb-1">
                                     {timeLeft.seconds.toString().padStart(2, '0')}
                                 </div>
                                 <div className="text-xs md:text-base text-orange-300 font-semibold tracking-wider uppercase">
@@ -201,7 +201,7 @@ export default function GridSmallBackgroundDemo() {
 
                     <button className="relative bg-gradient-to-r from-white to-gray-100 text-gray-800 
                         px-6 py-3 text-sm 
-                        md:px-12 md:py-5 md:text-lg 
+                        md:px-8 md:py-3 md:text-lg 
                         rounded-full font-black shadow-2xl 
                         hover:shadow-orange-400/25 transform hover:scale-110 transition-all duration-300 
                         hover:from-orange-50 hover:to-white border-2 border-white/50 hover:border-orange-200"

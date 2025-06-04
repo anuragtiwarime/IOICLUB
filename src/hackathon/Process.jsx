@@ -7,8 +7,8 @@ function Process() {
   const steps = [
     {
       title: "Registration",
-      description: "Sign up for the hackathon and create your participant profile",
-      duration: "5 minutes"
+      description: "Register for the AWS Hackathon to secure your spot",
+      duration: "2 minutes"
     },
     {
       title: "Deep Dive Session from AWS SME",

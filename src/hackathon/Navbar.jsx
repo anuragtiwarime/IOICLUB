@@ -28,9 +28,9 @@ export default function Navbar() {
               </div> */}
 
               {/* Code icon */}
-              <div className="w-8 h-8 bg-white/20 rounded-lg flex items-center justify-center">
+              {/* <div className="w-8 h-8 bg-white/20 rounded-lg flex items-center justify-center">
                 <Code className="w-4 h-4 text-white" />
-              </div>
+              </div> */}
 
               {/* Registration Status */}
               <button className="bg-white/20 hover:bg-white/30 text-white h-10 min-w-[10rem] px-6 rounded-full text-sm font-medium transition-colors border border-white/30 shadow-md hover:shadow-lg"
