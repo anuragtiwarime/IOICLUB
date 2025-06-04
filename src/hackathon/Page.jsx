@@ -2,13 +2,6 @@ import React, { useState, useEffect } from 'react';
 import { cn } from "@/lib/utils";
 import Navbar from './Navbar';
 
-// function Navbar() {
-//   return (
-//     <div className="w-full p-4">
-//       <div className="text-white text-center">Navigation</div>
-//     </div>
-//   );
-// }
 
 export default function GridSmallBackgroundDemo() {
     const [timeLeft, setTimeLeft] = useState({
@@ -112,11 +105,11 @@ export default function GridSmallBackgroundDemo() {
 
                 {/* Countdown Timer */}
                 <div className="mb-16">
-                    <div className="flex flex-wrap items-center justify-center gap-4 md:gap-8">
+                    <div className="flex flex-wrap items-center justify-center gap-2 md:gap-8">
                         {/* Days */}
                         <div className="relative group">
                             <div className="absolute inset-0 bg-orange-400/20 rounded-2xl blur-lg group-hover:bg-orange-400/30 transition-all duration-300"></div>
-                            <div className="relative bg-white/10 backdrop-blur-sm border border-white/20 rounded-2xl p-4 md:p-6 min-w-[80px] md:min-w-[100px] hover:border-orange-400/40 transition-all duration-300">
+                            <div className="relative bg-white/10 backdrop-blur-sm border border-white/20 rounded-2xl p-2 md:p-6 min-w-[60px] md:min-w-[100px] hover:border-orange-400/40 transition-all duration-300">
                                 <div className="text-3xl md:text-4xl font-black text-white mb-1">
                                     {timeLeft.days.toString().padStart(2, '0')}
                                 </div>
@@ -132,7 +125,7 @@ export default function GridSmallBackgroundDemo() {
                         {/* Hours */}
                         <div className="relative group">
                             <div className="absolute inset-0 bg-orange-400/20 rounded-2xl blur-lg group-hover:bg-orange-400/30 transition-all duration-300"></div>
-                            <div className="relative bg-white/10 backdrop-blur-sm border border-white/20 rounded-2xl p-4 md:p-6 min-w-[80px] md:min-w-[100px] hover:border-orange-400/40 transition-all duration-300">
+                            <div className="relative bg-white/10 backdrop-blur-sm border border-white/20 rounded-2xl p-2 md:p-6 min-w-[60px] md:min-w-[100px] hover:border-orange-400/40 transition-all duration-300">
                                 <div className="text-3xl md:text-4xl font-black text-white mb-1">
                                     {timeLeft.hours.toString().padStart(2, '0')}
                                 </div>
@@ -148,7 +141,7 @@ export default function GridSmallBackgroundDemo() {
                         {/* Minutes */}
                         <div className="relative group">
                             <div className="absolute inset-0 bg-orange-400/20 rounded-2xl blur-lg group-hover:bg-orange-400/30 transition-all duration-300"></div>
-                            <div className="relative bg-white/10 backdrop-blur-sm border border-white/20 rounded-2xl p-4 md:p-6 min-w-[80px] md:min-w-[100px] hover:border-orange-400/40 transition-all duration-300">
+                            <div className="relative bg-white/10 backdrop-blur-sm border border-white/20 rounded-2xl p-2 md:p-6 min-w-[60px] md:min-w-[100px] hover:border-orange-400/40 transition-all duration-300">
                                 <div className="text-3xl md:text-4xl font-black text-white mb-1">
                                     {timeLeft.minutes.toString().padStart(2, '0')}
                                 </div>
@@ -164,7 +157,7 @@ export default function GridSmallBackgroundDemo() {
                         {/* Seconds */}
                         <div className="relative group">
                             <div className="absolute inset-0 bg-orange-400/20 rounded-2xl blur-lg group-hover:bg-orange-400/30 transition-all duration-300"></div>
-                            <div className="relative bg-white/10 backdrop-blur-sm border border-white/20 rounded-2xl p-4 md:p-6 min-w-[80px] md:min-w-[100px] hover:border-orange-400/40 transition-all duration-300 transform hover:scale-105">
+                            <div className="relative bg-white/10 backdrop-blur-sm border border-white/20 rounded-2xl p-2 md:p-6 min-w-[60px] md:min-w-[100px] hover:border-orange-400/40 transition-all duration-300 transform hover:scale-105">
                                 <div className="text-3xl md:text-4xl font-black text-white mb-1">
                                     {timeLeft.seconds.toString().padStart(2, '0')}
                                 </div>
