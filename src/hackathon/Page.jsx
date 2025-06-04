@@ -17,6 +17,9 @@ export default function GridSmallBackgroundDemo() {
         minutes: 0,
         seconds: 0
     });
+    function handleOnClick() {
+        window.location.href = "https://pw.jotform.com/251531213641950";
+    }
 
     useEffect(() => {
         // Set target date - adjust this to your hackathon date
@@ -207,7 +210,8 @@ export default function GridSmallBackgroundDemo() {
                         md:px-12 md:py-5 md:text-lg 
                         rounded-full font-black shadow-2xl 
                         hover:shadow-orange-400/25 transform hover:scale-110 transition-all duration-300 
-                        hover:from-orange-50 hover:to-white border-2 border-white/50 hover:border-orange-200">
+                        hover:from-orange-50 hover:to-white border-2 border-white/50 hover:border-orange-200"
+                        onClick={handleOnClick}>
                         <span className="relative z-10 tracking-wide">
                             REGISTER NOW
                         </span>

@@ -1,6 +1,9 @@
 import { Cloud, Code } from "lucide-react";
 
 export default function Navbar() {
+   function handleOnClick() {
+        window.location.href = "https://pw.jotform.com/251531213641950";
+    }
   return (
     <div className="relative z-10">
       <nav className="mt-4 mx-4 z-50"> {/* changed from fixed to scrollable */}
@@ -30,7 +33,8 @@ export default function Navbar() {
               </div>
 
               {/* Registration Status */}
-              <button className="bg-white/20 hover:bg-white/30 text-white h-10 min-w-[10rem] px-6 rounded-full text-sm font-medium transition-colors border border-white/30 shadow-md hover:shadow-lg">
+              <button className="bg-white/20 hover:bg-white/30 text-white h-10 min-w-[10rem] px-6 rounded-full text-sm font-medium transition-colors border border-white/30 shadow-md hover:shadow-lg"
+              onClick={handleOnClick}>
                 Register Now
               </button>
             </div>
