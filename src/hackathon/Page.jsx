@@ -110,7 +110,7 @@ export default function GridSmallBackgroundDemo() {
                         <div className="relative group">
                             <div className="absolute inset-0 bg-orange-400/20 rounded-2xl blur-lg group-hover:bg-orange-400/30 transition-all duration-300"></div>
                             <div className="relative bg-white/10 backdrop-blur-sm border border-white/20 rounded-2xl p-2 md:p-6 min-w-[60px] md:min-w-[100px] hover:border-orange-400/40 transition-all duration-300">
-                                <div className="text-3xl md:text-4xl font-black text-white mb-1">
+                                <div className="text-2xl md:text-3xl md:text-4xl font-black text-white mb-1">
                                     {timeLeft.days.toString().padStart(2, '0')}
                                 </div>
                                 <div className="text-sm md:text-base text-orange-300 font-semibold tracking-wider uppercase">
@@ -126,7 +126,7 @@ export default function GridSmallBackgroundDemo() {
                         <div className="relative group">
                             <div className="absolute inset-0 bg-orange-400/20 rounded-2xl blur-lg group-hover:bg-orange-400/30 transition-all duration-300"></div>
                             <div className="relative bg-white/10 backdrop-blur-sm border border-white/20 rounded-2xl p-2 md:p-6 min-w-[60px] md:min-w-[100px] hover:border-orange-400/40 transition-all duration-300">
-                                <div className="text-3xl md:text-4xl font-black text-white mb-1">
+                                <div className="text-2xl md:text-3xl md:text-4xl font-black text-white mb-1">
                                     {timeLeft.hours.toString().padStart(2, '0')}
                                 </div>
                                 <div className="text-sm md:text-base text-orange-300 font-semibold tracking-wider uppercase">
@@ -142,7 +142,7 @@ export default function GridSmallBackgroundDemo() {
                         <div className="relative group">
                             <div className="absolute inset-0 bg-orange-400/20 rounded-2xl blur-lg group-hover:bg-orange-400/30 transition-all duration-300"></div>
                             <div className="relative bg-white/10 backdrop-blur-sm border border-white/20 rounded-2xl p-2 md:p-6 min-w-[60px] md:min-w-[100px] hover:border-orange-400/40 transition-all duration-300">
-                                <div className="text-3xl md:text-4xl font-black text-white mb-1">
+                                <div className="text-2xl md:text-3xl md:text-4xl font-black text-white mb-1">
                                     {timeLeft.minutes.toString().padStart(2, '0')}
                                 </div>
                                 <div className="text-sm md:text-base text-orange-300 font-semibold tracking-wider uppercase">
@@ -158,7 +158,7 @@ export default function GridSmallBackgroundDemo() {
                         <div className="relative group">
                             <div className="absolute inset-0 bg-orange-400/20 rounded-2xl blur-lg group-hover:bg-orange-400/30 transition-all duration-300"></div>
                             <div className="relative bg-white/10 backdrop-blur-sm border border-white/20 rounded-2xl p-2 md:p-6 min-w-[60px] md:min-w-[100px] hover:border-orange-400/40 transition-all duration-300 transform hover:scale-105">
-                                <div className="text-3xl md:text-4xl font-black text-white mb-1">
+                                <div className="text-2xl md:text-3xl md:text-4xl font-black text-white mb-1">
                                     {timeLeft.seconds.toString().padStart(2, '0')}
                                 </div>
                                 <div className="text-sm md:text-base text-orange-300 font-semibold tracking-wider uppercase">
