@@ -105,7 +105,7 @@ export default function GridSmallBackgroundDemo() {
 
                 {/* Countdown Timer */}
                 <div className="mb-16">
-                    <div className="flex flex-wrap items-center justify-center gap-2 md:gap-8">
+                    <div className="flex flex-wrap items-center justify-center gap-1 md:gap-8">
                         {/* Days */}
                         <div className="relative group">
                             <div className="absolute inset-0 bg-orange-400/20 rounded-2xl blur-lg group-hover:bg-orange-400/30 transition-all duration-300"></div>
@@ -113,7 +113,7 @@ export default function GridSmallBackgroundDemo() {
                                 <div className=" md:text-3xl md:text-4xl font-black text-white mb-1">
                                     {timeLeft.days.toString().padStart(2, '0')}
                                 </div>
-                                <div className="text-sm md:text-base text-orange-300 font-semibold tracking-wider uppercase">
+                                <div className="text-xs md:text-base text-orange-300 font-semibold tracking-wider uppercase">
                                     Days
                                 </div>
                             </div>
@@ -129,7 +129,7 @@ export default function GridSmallBackgroundDemo() {
                                 <div className=" md:text-3xl md:text-4xl font-black text-white mb-1">
                                     {timeLeft.hours.toString().padStart(2, '0')}
                                 </div>
-                                <div className="text-sm md:text-base text-orange-300 font-semibold tracking-wider uppercase">
+                                <div className="text-xs md:text-base text-orange-300 font-semibold tracking-wider uppercase">
                                     Hours
                                 </div>
                             </div>
@@ -145,7 +145,7 @@ export default function GridSmallBackgroundDemo() {
                                 <div className=" md:text-3xl md:text-4xl font-black text-white mb-1">
                                     {timeLeft.minutes.toString().padStart(2, '0')}
                                 </div>
-                                <div className="text-sm md:text-base text-orange-300 font-semibold tracking-wider uppercase">
+                                <div className="text-xs md:text-base text-orange-300 font-semibold tracking-wider uppercase">
                                     Mins
                                 </div>
                             </div>
@@ -161,7 +161,7 @@ export default function GridSmallBackgroundDemo() {
                                 <div className=" md:text-3xl md:text-4xl font-black text-white mb-1">
                                     {timeLeft.seconds.toString().padStart(2, '0')}
                                 </div>
-                                <div className="text-sm md:text-base text-orange-300 font-semibold tracking-wider uppercase">
+                                <div className="text-xs md:text-base text-orange-300 font-semibold tracking-wider uppercase">
                                     Secs
                                 </div>
                             </div>
