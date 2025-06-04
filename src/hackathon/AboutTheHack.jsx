@@ -9,7 +9,7 @@ export default function AboutPWHackathon() {
           {/* Title with orange underline */}
           <div className="space-y-3">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900">
-              About Hackathon
+              About the Hackathon
             </h2>
             <div className="w-16 h-1 bg-orange-400 rounded-full"></div>
           </div>
@@ -17,49 +17,55 @@ export default function AboutPWHackathon() {
           {/* Introduction */}
           <div className="space-y-6 text-gray-700 text-lg leading-relaxed">
             <p>
-              Welcome to <span className="font-semibold text-gray-900">TechSangam 2025</span> – where innovation meets impact! 
-              Organized by the tech minds at PhysicsWallah, TechSangam is not just 
-              a hackathon – it's a celebration of creativity, collaboration, and cutting-edge problem solving.
+              Welcome to the <span className="font-semibold text-gray-900">AWS Hackathon – “Build with PartyRock”</span>, hosted at the IOI Campus, Bangalore! 
+              This unique event is designed to empower participants with hands-on experience using AWS's innovative PartyRock platform.
             </p>
 
             <p>
-              At TechSangam, we bring together passionate developers, designers, 
-              thinkers, and thinkers to turn bold ideas into reality. Whether you're 
-              building with AI, automating with code, or crafting clever solutions to 
-              real-world challenges – this is your launchpad.
+              Whether you're new to the cloud or a seasoned builder, this 15-hour hackathon promises immersive learning, real-time challenges, and creative solutions 
+              – all while working closely with AWS experts and your peers.
             </p>
           </div>
 
-          {/* What we stand for */}
+          {/* Objective */}
           <div className="space-y-4">
-            <h3 className="text-xl font-bold text-gray-900">What we stand for:</h3>
-            <ul className="space-y-3 text-gray-700">
-              <li className="flex items-start space-x-3">
-                <div className="w-2 h-2 bg-orange-400 rounded-full mt-2 flex-shrink-0"></div>
-                <span><span className="font-semibold">Innovation First</span> – Think big, build fast, break barriers.</span>
-              </li>
-              <li className="flex items-start space-x-3">
-                <div className="w-2 h-2 bg-orange-400 rounded-full mt-2 flex-shrink-0"></div>
-                <span><span className="font-semibold">Collaboration Over Competition</span> – It's a Sangam – a confluence – of minds, skills, and spirit.</span>
-              </li>
-              <li className="flex items-start space-x-3">
-                <div className="w-2 h-2 bg-orange-400 rounded-full mt-2 flex-shrink-0"></div>
-                <span><span className="font-semibold">Purpose-Driven Creation</span> – Build something that matters.</span>
-              </li>
-            </ul>
+            <h3 className="text-xl font-bold text-gray-900">Objective:</h3>
+            <p className="text-gray-700">
+              To outline the step-by-step flow of the AWS Hackathon, enabling seamless execution by all operations and support teams.
+            </p>
           </div>
+
+          {/* Timeline Summary */}
+          {/* <div className="space-y-6">
+            <h3 className="text-xl font-bold text-gray-900">Event Flow:</h3>
+            <ul className="space-y-3 text-gray-700">
+              <li><strong>Day 1 – 12th June 2025:</strong></li>
+              <li>• 11:00 AM – Welcome & Orientation</li>
+              <li>• 11:30 AM – Deep Dive: PartyRock with AWS Mentor</li>
+              <li>• 1:30 PM – Quiz on PartyRock</li>
+              <li>• 3:00 PM – Team Formation (via quiz scores)</li>
+              <li>• 6:00 PM – Problem Statement Release & Hackathon Start</li>
+              <li>• Overnight – Build using PartyRock</li>
+              <li>• 5:00 AM (13th June) – Submission Deadline</li>
+
+              <li className="mt-4"><strong>Day 2 – 13th June 2025:</strong></li>
+              <li>• 7:00 AM – Shortlisting & Result Announcement</li>
+              <li>• 10:30 AM – Final Presentations at IOI Campus</li>
+              <li>• 2:00 PM – Winner Announcement & Felicitation</li>
+            </ul>
+          </div> */}
 
           {/* Closing paragraph */}
           <div className="text-gray-700 text-lg leading-relaxed">
             <p>
-              From beginners to pros, everyone has a place here. With dedicated 
-              mentors, powerful workshops, and a buzzing community, <span className="font-semibold text-gray-900">TechSangam 2025</span> is your chance to shine.
+              Join us for this dynamic in-person experience where you'll collaborate, innovate, and compete in a friendly, high-energy environment. 
+              This is your moment to build with purpose, powered by AWS.
             </p>
           </div>
         </div>
 
         {/* Right Sidebar - Event Details */}
-        <div className="lg:col-span-1 mt-10 lg:mt-0">
+        <div className="lg:col-span-1 mt-10 lg:mt-20">
           <div className="bg-gradient-to-br from-blue-600 to-blue-800 rounded-2xl p-8 text-white shadow-xl border-4 border-black">
             {/* Date */}
             <div className="flex items-center space-x-4 mb-6">
@@ -68,7 +74,7 @@ export default function AboutPWHackathon() {
               </div>
               <div>
                 <h3 className="text-xl font-bold">June 12-13, 2025</h3>
-                <p className="text-blue-200">48-hour Hackathon</p>
+                <p className="text-blue-200">15-hour Hackathon</p>
               </div>
             </div>
 
@@ -78,8 +84,8 @@ export default function AboutPWHackathon() {
                 <MapPin className="w-6 h-6 text-white" />
               </div>
               <div>
-                <h3 className="text-xl font-bold">PW Institute of Innovation</h3>
-                <p className="text-blue-200">Bengaluru</p>
+                <h3 className="text-xl font-bold">IOI Campus</h3>
+                <p className="text-blue-200">Bangalore</p>
               </div>
             </div>
 
@@ -90,7 +96,7 @@ export default function AboutPWHackathon() {
               </div>
               <div>
                 <h3 className="text-xl font-bold">In-Person Event</h3>
-                <p className="text-blue-200">Limited to 500 participants</p>
+                <p className="text-blue-200">All students welcome</p>
               </div>
             </div>
           </div>

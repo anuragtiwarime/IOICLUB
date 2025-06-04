@@ -43,12 +43,24 @@ function Process() {
   ];
 
   useEffect(() => {
-    const timer = setInterval(() => {
-      setActiveStep(prev => (prev + 1) % (steps.length + 1));
-    }, 2000);
+  const handleScroll = () => {
+    const scrollTop = window.scrollY;
+    const stepHeight = 220; // Estimated height of each step
+    const offset = 700;    // Adjust based on header/padding above first step
 
-    return () => clearInterval(timer);
-  }, [steps.length]);
+    const scrolled = scrollTop - offset;
+    const currentStep = Math.floor(scrolled / stepHeight);
+
+    setActiveStep(Math.max(-1, Math.min(currentStep, steps.length - 1)));
+  };
+
+  window.addEventListener('scroll', handleScroll);
+  handleScroll(); // Set initial
+
+  return () => window.removeEventListener('scroll', handleScroll);
+}, [steps.length]);
+
+
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-indigo-50 py-8 px-4">
@@ -72,7 +84,7 @@ function Process() {
 
           {/* Desktop: Progress Line */}
           <div 
-            className="hidden md:block absolute left-1/2 transform -translate-x-1/2 w-1 bg-gradient-to-b from-orange-400 to-orange-600 rounded-full transition-all duration-1000 ease-out"
+            className="hidden md:block absolute left-1/2 transform -translate-x-1/2 w-1 bg-gradient-to-b from-orange-400 to-orange-600 rounded-full transition-all duration-500 ease-out"
             style={{ 
               height: activeStep >= 0 ? `${Math.min(activeStep * 220 + 100, (steps.length - 1) * 220 + 100)}px` : '0px'
             }}
@@ -84,7 +96,7 @@ function Process() {
 
           {/* Mobile: Progress Line */}
           <div 
-            className="md:hidden absolute left-4 top-0 w-1 bg-gradient-to-b from-orange-400 to-orange-600 rounded-full transition-all duration-1000 ease-out"
+            className="md:hidden absolute left-4 top-0 w-1 bg-gradient-to-b from-orange-400 to-orange-600 rounded-full transition-all duration-500 ease-out"
             style={{ 
               height: activeStep >= 0 ? `${Math.min(activeStep * 140 + 40, (steps.length - 1) * 220 + 80)}px` : '0px'
             }}

@@ -2,7 +2,7 @@ import { Trophy, Award, Medal, Star } from "lucide-react";
 
 export default function PrizesComponent() {
     return (
-        <div className="relative py-20 bg-gradient-to-br from-gray-50 to-blue-50 overflow-hidden">
+        <div className="relative pt-10 bg-gradient-to-br from-gray-50 to-blue-50 overflow-hidden">
             {/* Background decorations */}
             <div className="absolute top-0 left-0 w-96 h-96 bg-gradient-to-br from-orange-200 to-orange-300 rounded-full opacity-10 -translate-x-48 -translate-y-48"></div>
             <div className="absolute bottom-0 right-0 w-80 h-80 bg-gradient-to-tl from-blue-200 to-blue-300 rounded-full opacity-10 translate-x-40 translate-y-40"></div>
@@ -26,51 +26,8 @@ export default function PrizesComponent() {
 
                 {/* Prizes Grid */}
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
-                    {/* 1st Prize */}
-                    <div className="group relative">
-                        {/* Glow effect */}
-                        <div className="absolute inset-0 bg-gradient-to-r from-yellow-400 to-orange-500 rounded-3xl blur-xl opacity-25 group-hover:opacity-40 transition-all duration-500"></div>
-                        
-                        <div className="relative bg-white rounded-3xl p-8 shadow-2xl border-2 border-yellow-200 hover:border-yellow-300 transition-all duration-300 transform hover:scale-105 hover:-translate-y-2">
-                            {/* Crown/Badge */}
-                            <div className="absolute -top-6 left-1/2 transform -translate-x-1/2">
-                                <div className="bg-gradient-to-r from-yellow-400 to-orange-500 rounded-full p-4 shadow-lg">
-                                    <Trophy className="w-8 h-8 text-white" />
-                                </div>
-                            </div>
-                            
-                            {/* Position */}
-                            <div className="text-center mt-6 mb-6">
-                                <div className="text-5xl font-black text-transparent bg-clip-text bg-gradient-to-r from-yellow-500 to-orange-600 mb-2">
-                                    1st
-                                </div>
-                                <h3 className="text-2xl font-bold text-gray-800 mb-2">Winner</h3>
-                                <div className="w-16 h-1 bg-gradient-to-r from-yellow-400 to-orange-500 rounded-full mx-auto"></div>
-                            </div>
-                            
-                            {/* Prize Amount */}
-                            <div className="text-center mb-6">
-                                <div className="text-4xl font-black text-gray-900 mb-2">₹50,000</div>
-                                {/* <p className="text-gray-600">Cash Prize + Trophy</p> */}
-                            </div>
-                            
-                            {/* Features */}
-                            {/* <div className="space-y-3 text-center">
-                                <div className="flex items-center justify-center space-x-2 text-gray-700">
-                                    <Star className="w-4 h-4 text-yellow-500" />
-                                    <span>Winner Certificate</span>
-                                </div>
-                                <div className="flex items-center justify-center space-x-2 text-gray-700">
-                                    <Star className="w-4 h-4 text-yellow-500" />
-                                    <span>Mentorship Program</span>
-                                </div>
-                                <div className="flex items-center justify-center space-x-2 text-gray-700">
-                                    <Star className="w-4 h-4 text-yellow-500" />
-                                    <span>Interview Fast-track</span>
-                                </div>
-                            </div> */}
-                        </div>
-                    </div>
+                   
+                    
 
                     {/* 2nd Prize */}
                     <div className="group relative">
@@ -100,21 +57,38 @@ export default function PrizesComponent() {
                                 {/* <p className="text-gray-600">Cash Prize + Medal</p> */}
                             </div>
                             
-                            {/* Features */}
-                            {/* <div className="space-y-3 text-center">
-                                <div className="flex items-center justify-center space-x-2 text-gray-700">
-                                    <Star className="w-4 h-4 text-gray-500" />
-                                    <span>Runner-up Certificate</span>
+                           
+                        </div>
+                    </div>
+                     {/* 1st Prize */}
+                    <div className="group relative -mt-7 z-10">
+                        {/* Glow effect */}
+                        <div className="absolute inset-0 bg-gradient-to-r from-yellow-400 to-orange-500 rounded-3xl blur-xl opacity-25 group-hover:opacity-40 transition-all duration-500"></div>
+                        
+                        <div className="relative bg-white rounded-3xl p-14 shadow-2xl border-2 border-yellow-200 hover:border-yellow-300 transition-all duration-300 transform hover:scale-105 hover:-translate-y-2">
+                            {/* Crown/Badge */}
+                            <div className="absolute -top-6 left-1/2 transform -translate-x-1/2">
+                                <div className="bg-gradient-to-r from-yellow-400 to-orange-500 rounded-full p-4 shadow-lg">
+                                    <Trophy className="w-8 h-8 text-white" />
                                 </div>
-                                <div className="flex items-center justify-center space-x-2 text-gray-700">
-                                    <Star className="w-4 h-4 text-gray-500" />
-                                    <span>Networking Session</span>
+                            </div>
+                            
+                            {/* Position */}
+                            <div className="text-center mt-6 mb-6">
+                                <div className="text-5xl font-black text-transparent bg-clip-text bg-gradient-to-r from-yellow-500 to-orange-600 mb-2">
+                                    1st
                                 </div>
-                                <div className="flex items-center justify-center space-x-2 text-gray-700">
-                                    <Star className="w-4 h-4 text-gray-500" />
-                                    <span>Tech Resources</span>
-                                </div>
-                            </div> */}
+                                <h3 className="text-2xl font-bold text-gray-800 mb-2">Winner</h3>
+                                <div className="w-16 h-1 bg-gradient-to-r from-yellow-400 to-orange-500 rounded-full mx-auto"></div>
+                            </div>
+                            
+                            {/* Prize Amount */}
+                            <div className="text-center mb-6">
+                                <div className="text-4xl font-black text-gray-900 mb-2">₹50,000</div>
+                                {/* <p className="text-gray-600">Cash Prize + Trophy</p> */}
+                            </div>
+                            
+                           
                         </div>
                     </div>
 
@@ -136,37 +110,23 @@ export default function PrizesComponent() {
                                 <div className="text-5xl font-black text-transparent bg-clip-text bg-gradient-to-r from-orange-500 to-red-600 mb-2">
                                     3rd
                                 </div>
-                                <h3 className="text-2xl font-bold text-gray-800 mb-2">Third Place</h3>
+                                <h3 className="text-2xl font-bold text-gray-800 mb-2">2nd Runner Up</h3>
                                 <div className="w-16 h-1 bg-gradient-to-r from-orange-500 to-red-600 rounded-full mx-auto"></div>
                             </div>
                             
                             {/* Prize Amount */}
                             <div className="text-center mb-6">
                                 <div className="text-4xl font-black text-gray-900 mb-2">₹20,000</div>
-                                {/* <p className="text-gray-600">Cash Prize + Medal</p> */}
+                                
                             </div>
                             
-                            {/* Features */}
-                            {/* <div className="space-y-3 text-center">
-                                <div className="flex items-center justify-center space-x-2 text-gray-700">
-                                    <Star className="w-4 h-4 text-orange-500" />
-                                    <span>Achievement Certificate</span>
-                                </div>
-                                <div className="flex items-center justify-center space-x-2 text-gray-700">
-                                    <Star className="w-4 h-4 text-orange-500" />
-                                    <span>Community Access</span>
-                                </div>
-                                <div className="flex items-center justify-center space-x-2 text-gray-700">
-                                    <Star className="w-4 h-4 text-orange-500" />
-                                    <span>Learning Resources</span>
-                                </div>
-                            </div> */}
+                            
                         </div>
                     </div>
                 </div>
 
                 {/* Additional Info */}
-                <div className="text-center bg-white rounded-2xl p-8 shadow-xl border border-gray-100">
+                {/* <div className="text-center bg-white rounded-2xl p-8 shadow-xl border border-gray-100">
                     <h3 className="text-2xl font-bold text-gray-900 mb-4">Special Recognition</h3>
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-gray-700">
                         <div className="flex flex-col items-center space-y-2">
@@ -191,7 +151,7 @@ export default function PrizesComponent() {
                             <span className="text-sm text-gray-600">UI/UX Excellence</span>
                         </div>
                     </div>
-                </div>
+                </div> */}
             </div>
         </div>
     );

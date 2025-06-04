@@ -19,10 +19,10 @@ export default function Navbar() {
             {/* Right side elements */}
             <div className="flex items-center space-x-4">
               {/* Status indicator */}
-              <div className="hidden sm:flex items-center space-x-2">
+              {/* <div className="hidden sm:flex items-center space-x-2">
                 <div className="w-2 h-2 bg-orange-400 rounded-full animate-pulse"></div>
                 <span className="text-white/80 text-sm">Beta</span>
-              </div>
+              </div> */}
 
               {/* Code icon */}
               <div className="w-8 h-8 bg-white/20 rounded-lg flex items-center justify-center">
@@ -31,7 +31,7 @@ export default function Navbar() {
 
               {/* Registration Status */}
               <button className="bg-white/20 hover:bg-white/30 text-white h-10 min-w-[10rem] px-6 rounded-full text-sm font-medium transition-colors border border-white/30 shadow-md hover:shadow-lg">
-                Registration Open
+                Register Now
               </button>
             </div>
           </div>

@@ -29,7 +29,7 @@ export default function HackathonFooter() {
                                 </h3>
                                 <div className="w-16 h-1 bg-gradient-to-r from-orange-400 to-yellow-400 rounded-full"></div>
                                 <p className="text-gray-300 text-lg leading-relaxed max-w-md">
-                                    Where innovation meets impact! Join us for 13 hours of creativity, collaboration, 
+                                    Where innovation meets impact! Join us for 15 hours of creativity, collaboration, 
                                     and cutting-edge problem solving at India's premier hackathon.
                                 </p>
                             </div>
@@ -38,7 +38,7 @@ export default function HackathonFooter() {
                             <div className="space-y-3">
                                 <div className="flex items-center space-x-3 text-gray-300">
                                     <Calendar className="w-5 h-5 text-orange-400" />
-                                    <span>June 12-13, 2025 | 13-hour Hackathon</span>
+                                    <span>June 12-13, 2025 | 15-hour Hackathon</span>
                                 </div>
                                 <div className="flex items-center space-x-3 text-gray-300">
                                     <MapPin className="w-5 h-5 text-orange-400" />
@@ -58,8 +58,8 @@ export default function HackathonFooter() {
                                     { name: "Registration", href: "#register" },
                                     { name: "Prizes & Awards", href: "#prizes" },
                                     { name: "Schedule", href: "#schedule" },
-                                    { name: "Rules & Guidelines", href: "#rules" },
-                                    { name: "FAQs", href: "#faq" }
+                                    // { name: "Rules & Guidelines", href: "#rules" },
+                                    // { name: "FAQs", href: "#faq" }
                                 ].map((link) => (
                                     <li key={link.name}>
                                         <a 
@@ -86,13 +86,13 @@ export default function HackathonFooter() {
                                     <Mail className="w-5 h-5 text-orange-400 mt-1 flex-shrink-0" />
                                     <div className="space-y-1">
                                         <p className="text-gray-300">Email Support</p>
-                                        <a href="mailto:support@techsangam2025.com" className="text-orange-400 hover:text-orange-300 transition-colors">
-                                            support@techsangam2025.com
+                                        <a href="mailto:studentsuccess@pwioi.com" className="text-orange-400 hover:text-orange-300 transition-colors">
+                                            studentsuccess@pwioi.com
                                         </a>
                                     </div>
                                 </div>
                                 
-                                <div className="flex items-start space-x-3">
+                                {/* <div className="flex items-start space-x-3">
                                     <Phone className="w-5 h-5 text-orange-400 mt-1 flex-shrink-0" />
                                     <div className="space-y-1">
                                         <p className="text-gray-300">Phone Support</p>
@@ -100,7 +100,7 @@ export default function HackathonFooter() {
                                             +91-1234-567-890
                                         </a>
                                     </div>
-                                </div>
+                                </div> */}
 
                                 {/* Emergency Contact */}
                                 <div className="bg-orange-500/10 border border-orange-500/20 rounded-lg p-3 mt-4">
@@ -112,7 +112,7 @@ export default function HackathonFooter() {
                     </div>
 
                     {/* Social Media & Partners */}
-                    <div className="border-t border-gray-700/50 pt-8 mb-8">
+                    <div className="border-t border-gray-700/50 pt-8 mb-4">
                         <div className="flex flex-col md:flex-row justify-between items-center space-y-6 md:space-y-0">
                             
                             {/* Social Media */}
@@ -120,20 +120,30 @@ export default function HackathonFooter() {
                                 <h5 className="text-lg font-semibold text-white">Follow Us</h5>
                                 <div className="flex space-x-4">
                                     {[
-                                        { icon: Twitter, href: "#", color: "hover:text-blue-400" },
-                                        { icon: Instagram, href: "#", color: "hover:text-pink-400" },
-                                        { icon: Linkedin, href: "#", color: "hover:text-blue-500" },
-                                        { icon: Github, href: "#", color: "hover:text-gray-300" }
+                                        // { icon: Twitter, href: "#", color: "hover:text-blue-400" },
+                                        { icon: Instagram, href: "https://www.instagram.com/pw_ioi?igsh=MTdwajRwa3hjdzN3cQ==", color: "hover:text-pink-400" },
+                                        { icon: Linkedin, href: "https://www.linkedin.com/school/pw-ioi/", color: "hover:text-blue-500" },
+                                        // { icon: Github, href: "#", color: "hover:text-gray-300" }
                                     ].map((social, index) => (
                                         <a
                                             key={index}
                                             href={social.href}
+                                            target="_blank"
                                             className={`bg-gray-800 hover:bg-gray-700 p-3 rounded-full transition-all duration-300 transform hover:scale-110 ${social.color}`}
                                         >
                                             <social.icon className="w-5 h-5" />
                                         </a>
                                     ))}
                                 </div>
+                                    <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0 text-sm text-gray-400">
+                            <div className="flex items-center space-x-1">
+                                <span>© 2025 AWS Hackathon. Made with</span>
+                                <Heart className="w-4 h-4 text-red-500 fill-current" />
+                                <span>by PWIOI</span>
+                            </div>
+                            
+                            
+                        </div>
                             </div>
 
                             {/* Partner Logos */}
@@ -141,14 +151,14 @@ export default function HackathonFooter() {
                                 <h5 className="text-lg font-semibold text-white text-center">Organized By</h5>
                                 <div className="flex items-center space-x-8">
                                     <div className="bg-white/10 backdrop-blur-sm rounded-xl p-4 border border-white/20">
-                                        <div className="w-16 h-16 bg-white/20 rounded-lg flex items-center justify-center">
-                                            <span className="text-white font-bold text-sm">PWIOI</span>
+                                        <div className="w-24 h-16 bg-white/20 rounded-lg flex items-center justify-center">
+                                            <span className="text-white font-bold text-sm px-2"><img src="../public/pwioilogo.webp" alt="PWIOI" /></span>
                                         </div>
                                     </div>
                                     <div className="text-orange-400 text-2xl font-bold">×</div>
                                     <div className="bg-orange-500/10 backdrop-blur-sm rounded-xl p-4 border border-orange-500/20">
                                         <div className="w-16 h-16 bg-orange-500/20 rounded-lg flex items-center justify-center">
-                                            <span className="text-orange-300 font-bold text-sm">AWS</span>
+                                            <span className="text-orange-300 font-bold text-sm px-2"><img src="../public/aws.png" alt="AWS" /></span>
                                         </div>
                                     </div>
                                 </div>
@@ -156,22 +166,7 @@ export default function HackathonFooter() {
                         </div>
                     </div>
 
-                    {/* Bottom Bar */}
-                    <div className="border-t border-gray-700/50 pt-6">
-                        <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0 text-sm text-gray-400">
-                            <div className="flex items-center space-x-1">
-                                <span>© 2025 AWS Hackathon. Made with</span>
-                                <Heart className="w-4 h-4 text-red-500 fill-current" />
-                                <span>by PWIOI</span>
-                            </div>
-                            
-                            <div className="flex space-x-6">
-                                <a href="#" className="hover:text-orange-400 transition-colors">Privacy Policy</a>
-                                <a href="#" className="hover:text-orange-400 transition-colors">Terms of Service</a>
-                                <a href="#" className="hover:text-orange-400 transition-colors">Code of Conduct</a>
-                            </div>
-                        </div>
-                    </div>
+                   
                 </div>
 
                 {/* Decorative bottom gradient */}

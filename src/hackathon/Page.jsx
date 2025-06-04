@@ -1,7 +1,47 @@
+import React, { useState, useEffect } from 'react';
 import { cn } from "@/lib/utils";
-import Navbar from "./Navbar";
+import Navbar from './Navbar';
+
+// function Navbar() {
+//   return (
+//     <div className="w-full p-4">
+//       <div className="text-white text-center">Navigation</div>
+//     </div>
+//   );
+// }
 
 export default function GridSmallBackgroundDemo() {
+    const [timeLeft, setTimeLeft] = useState({
+        days: 0,
+        hours: 0,
+        minutes: 0,
+        seconds: 0
+    });
+
+    useEffect(() => {
+        // Set target date - adjust this to your hackathon date
+        const targetDate = new Date('2025-06-12T10:00:00');
+        
+        const timer = setInterval(() => {
+            const now = new Date().getTime();
+            const distance = targetDate.getTime() - now;
+            
+            if (distance > 0) {
+                setTimeLeft({
+                    days: Math.floor(distance / (1000 * 60 * 60 * 24)),
+                    hours: Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)),
+                    minutes: Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60)),
+                    seconds: Math.floor((distance % (1000 * 60)) / 1000)
+                });
+            } else {
+                setTimeLeft({ days: 0, hours: 0, minutes: 0, seconds: 0 });
+                clearInterval(timer);
+            }
+        }, 1000);
+
+        return () => clearInterval(timer);
+    }, []);
+
     return (
         <div className="relative w-full min-h-[50rem] bg-gradient-to-br from-blue-600 via-blue-700 to-blue-800 dark:from-blue-800 dark:via-blue-900 dark:to-black overflow-hidden">
             {/* Grid background */}
@@ -58,12 +98,83 @@ export default function GridSmallBackgroundDemo() {
                 </h1>
                 
                 {/* Subtitle with enhanced styling */}
-                <div className="relative mb-16">
+                <div className="relative mb-8">
                     <p className="text-2xl md:text-3xl font-bold text-orange-300 tracking-wider drop-shadow-lg">
                         "Build with PartyRock"
                     </p>
                     {/* Underline accent */}
                     <div className="absolute -bottom-2 left-1/2 transform -translate-x-1/2 w-32 h-1 bg-gradient-to-r from-orange-400 to-yellow-400 rounded-full"></div>
+                </div>
+
+                {/* Countdown Timer */}
+                <div className="mb-16">
+                    <div className="flex flex-wrap items-center justify-center gap-4 md:gap-8">
+                        {/* Days */}
+                        <div className="relative group">
+                            <div className="absolute inset-0 bg-orange-400/20 rounded-2xl blur-lg group-hover:bg-orange-400/30 transition-all duration-300"></div>
+                            <div className="relative bg-white/10 backdrop-blur-sm border border-white/20 rounded-2xl p-4 md:p-6 min-w-[80px] md:min-w-[100px] hover:border-orange-400/40 transition-all duration-300">
+                                <div className="text-3xl md:text-4xl font-black text-white mb-1">
+                                    {timeLeft.days.toString().padStart(2, '0')}
+                                </div>
+                                <div className="text-sm md:text-base text-orange-300 font-semibold tracking-wider uppercase">
+                                    Days
+                                </div>
+                            </div>
+                        </div>
+
+                        {/* Separator */}
+                        <div className="text-2xl md:text-3xl text-orange-400 font-bold animate-pulse">:</div>
+
+                        {/* Hours */}
+                        <div className="relative group">
+                            <div className="absolute inset-0 bg-orange-400/20 rounded-2xl blur-lg group-hover:bg-orange-400/30 transition-all duration-300"></div>
+                            <div className="relative bg-white/10 backdrop-blur-sm border border-white/20 rounded-2xl p-4 md:p-6 min-w-[80px] md:min-w-[100px] hover:border-orange-400/40 transition-all duration-300">
+                                <div className="text-3xl md:text-4xl font-black text-white mb-1">
+                                    {timeLeft.hours.toString().padStart(2, '0')}
+                                </div>
+                                <div className="text-sm md:text-base text-orange-300 font-semibold tracking-wider uppercase">
+                                    Hours
+                                </div>
+                            </div>
+                        </div>
+
+                        {/* Separator */}
+                        <div className="text-2xl md:text-3xl text-orange-400 font-bold animate-pulse">:</div>
+
+                        {/* Minutes */}
+                        <div className="relative group">
+                            <div className="absolute inset-0 bg-orange-400/20 rounded-2xl blur-lg group-hover:bg-orange-400/30 transition-all duration-300"></div>
+                            <div className="relative bg-white/10 backdrop-blur-sm border border-white/20 rounded-2xl p-4 md:p-6 min-w-[80px] md:min-w-[100px] hover:border-orange-400/40 transition-all duration-300">
+                                <div className="text-3xl md:text-4xl font-black text-white mb-1">
+                                    {timeLeft.minutes.toString().padStart(2, '0')}
+                                </div>
+                                <div className="text-sm md:text-base text-orange-300 font-semibold tracking-wider uppercase">
+                                    Mins
+                                </div>
+                            </div>
+                        </div>
+
+                        {/* Separator */}
+                        <div className="text-2xl md:text-3xl text-orange-400 font-bold animate-pulse">:</div>
+
+                        {/* Seconds */}
+                        <div className="relative group">
+                            <div className="absolute inset-0 bg-orange-400/20 rounded-2xl blur-lg group-hover:bg-orange-400/30 transition-all duration-300"></div>
+                            <div className="relative bg-white/10 backdrop-blur-sm border border-white/20 rounded-2xl p-4 md:p-6 min-w-[80px] md:min-w-[100px] hover:border-orange-400/40 transition-all duration-300 transform hover:scale-105">
+                                <div className="text-3xl md:text-4xl font-black text-white mb-1">
+                                    {timeLeft.seconds.toString().padStart(2, '0')}
+                                </div>
+                                <div className="text-sm md:text-base text-orange-300 font-semibold tracking-wider uppercase">
+                                    Secs
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    {/* Timer subtitle
+                    <p className="mt-6 text-lg text-white/80 font-medium tracking-wide">
+                        Until Registration Closes
+                    </p> */}
                 </div>
                 
                 {/* Logos with enhanced presentation */}
@@ -88,33 +199,28 @@ export default function GridSmallBackgroundDemo() {
                 
                 {/* Enhanced button */}
                 <div className="relative group">
-    {/* Button glow effect */}
-    <div className="absolute inset-0 bg-gradient-to-r from-orange-400 to-yellow-400 rounded-full blur-lg opacity-75 group-hover:opacity-100 transition-all duration-300 animate-pulse"></div>
+                    {/* Button glow effect */}
+                    <div className="absolute inset-0 bg-gradient-to-r from-orange-400 to-yellow-400 rounded-full blur-lg opacity-75 group-hover:opacity-100 transition-all duration-300 animate-pulse"></div>
 
-    <button className="relative bg-gradient-to-r from-white to-gray-100 text-gray-800 
-        px-6 py-3 text-sm 
-        md:px-12 md:py-5 md:text-lg 
-        rounded-full font-black shadow-2xl 
-        hover:shadow-orange-400/25 transform hover:scale-110 transition-all duration-300 
-        hover:from-orange-50 hover:to-white border-2 border-white/50 hover:border-orange-200">
-        <span className="relative z-10 tracking-wide">
-            REGISTRATION OPEN
-        </span>
-        {/* Button inner glow */}
-        <div className="absolute inset-0 bg-gradient-to-r from-transparent via-orange-100/50 to-transparent rounded-full opacity-0 hover:opacity-100 transition-opacity duration-300"></div>
-    </button>
-</div>
-
+                    <button className="relative bg-gradient-to-r from-white to-gray-100 text-gray-800 
+                        px-6 py-3 text-sm 
+                        md:px-12 md:py-5 md:text-lg 
+                        rounded-full font-black shadow-2xl 
+                        hover:shadow-orange-400/25 transform hover:scale-110 transition-all duration-300 
+                        hover:from-orange-50 hover:to-white border-2 border-white/50 hover:border-orange-200">
+                        <span className="relative z-10 tracking-wide">
+                            REGISTER NOW
+                        </span>
+                        {/* Button inner glow */}
+                        <div className="absolute inset-0 bg-gradient-to-r from-transparent via-orange-100/50 to-transparent rounded-full opacity-0 hover:opacity-100 transition-opacity duration-300"></div>
+                    </button>
+                </div>
                 
-                {/* Additional call-to-action text */}
+                {/* Additional call-to-action text
                 <p className="mt-8 text-lg text-white/80 font-medium tracking-wide animate-bounce">
                     Join the Innovation Revolution ⚡
-                </p>
+                </p> */}
             </div>
-            
-            
-
-            
         </div>
     );
 }

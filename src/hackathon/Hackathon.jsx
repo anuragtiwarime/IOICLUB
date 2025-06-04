@@ -4,6 +4,7 @@ import PrizesComponent from './Prizes'
 import HackathonFooter from './Footer';
 import TimeLine from './TimeLine';
 import Process from './Process';
+import Mentors from './Mentors';
 export default function Hackathon() {
   return (<>
   <Page></Page>
@@ -11,6 +12,7 @@ export default function Hackathon() {
   <AboutPWHackathon></AboutPWHackathon>
   <TimeLine></TimeLine>
   <PrizesComponent/>
+  <Mentors></Mentors>
   <HackathonFooter></HackathonFooter>
   </>);
 }
