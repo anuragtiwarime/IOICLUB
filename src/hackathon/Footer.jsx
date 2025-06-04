@@ -152,13 +152,13 @@ export default function HackathonFooter() {
                                 <div className="flex items-center space-x-8">
                                     <div className="bg-white/10 backdrop-blur-sm rounded-xl p-4 border border-white/20">
                                         <div className="w-24 h-16 bg-white/20 rounded-lg flex items-center justify-center">
-                                            <span className="text-white font-bold text-sm px-2"><img src="../public/pwioilogo.webp" alt="PWIOI" /></span>
+                                            <span className="text-white font-bold text-sm px-2"><img src="/pwioilogo.webp" alt="PWIOI" /></span>
                                         </div>
                                     </div>
                                     <div className="text-orange-400 text-2xl font-bold">×</div>
                                     <div className="bg-orange-500/10 backdrop-blur-sm rounded-xl p-4 border border-orange-500/20">
                                         <div className="w-16 h-16 bg-orange-500/20 rounded-lg flex items-center justify-center">
-                                            <span className="text-orange-300 font-bold text-sm px-2"><img src="../public/aws.png" alt="AWS" /></span>
+                                            <span className="text-orange-300 font-bold text-sm px-2"><img src="/aws.png" alt="AWS" /></span>
                                         </div>
                                     </div>
                                 </div>

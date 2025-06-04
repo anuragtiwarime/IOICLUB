@@ -8,7 +8,7 @@ function Mentors() {
       role: "AWS SME / Trainer",
       organization: "AWS",
       designation: "Technical Program Manager",
-      image: "../public/Akanksha.jpg", 
+      image: "/Akanksha.jpg", 
       brief: "Akanksha Rai Sharma is currently serving as the Technical Program Manager for AWS Academy in India and South Asia. She is a double AWS-certified professional with over 6 years of experience working on various AWS products including CloudFormation, ECS, IAM, ECR, System Manager, Amazon Bedrock, and Amazon Sagemaker Jumpstart. She holds an MBA from IIM Udaipur and has rich experience in Cloud Support. She has been conducting faculty as well as student training sessions on various cloud and allied topics for almost 5 years now.",
       specialties: ["AWS CloudFormation", "Amazon Bedrock", "System Manager", "Cloud Support"],
       experience: "6+ Years",
@@ -19,7 +19,7 @@ function Mentors() {
       role: "Industry Expert",
       organization: "Centilytics",
       designation: "Data Scientist",
-      image: "../public/Abhijit.jpg", // Replace with actual image path
+      image: "/Abhijit.jpg", // Replace with actual image path
       brief: "Abhijit is a Data Scientist specializing in NLP, ML and Generative AI with a B.Tech. from IIT Kharagpur. He leads innovative projects such as multimedia translation apps and automated meeting tools, enhancing efficiency and productivity through data-driven solutions. His expertise includes building sophisticated AI systems and interactive applications to streamline complex processes.",
       specialties: ["NLP & ML", "Generative AI", "Data Science", "AI Systems"],
       experience: "5+ Years",
