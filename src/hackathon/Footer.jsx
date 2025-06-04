@@ -1,4 +1,4 @@
-import { Mail, Phone, MapPin, Calendar, Twitter, Instagram, Linkedin, Github, ExternalLink, Heart } from "lucide-react";
+import { Mail, Phone, MapPin, Calendar, Youtube, Instagram, Linkedin, Github, ExternalLink, Heart } from "lucide-react";
 
 export default function HackathonFooter() {
     return (
@@ -123,7 +123,7 @@ export default function HackathonFooter() {
                                         // { icon: Twitter, href: "#", color: "hover:text-blue-400" },
                                         { icon: Instagram, href: "https://www.instagram.com/pw_ioi?igsh=MTdwajRwa3hjdzN3cQ==", color: "hover:text-pink-400" },
                                         { icon: Linkedin, href: "https://www.linkedin.com/school/pw-ioi/", color: "hover:text-blue-500" },
-                                        // { icon: Github, href: "#", color: "hover:text-gray-300" }
+                                        { icon: Youtube, href: "https://www.youtube.com/@PW-IOI", color: "hover:text-gray-300" },
                                     ].map((social, index) => (
                                         <a
                                             key={index}

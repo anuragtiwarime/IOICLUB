@@ -78,7 +78,7 @@ export default function TimeLine() {
                     <div className="bg-white/10 rounded-full p-2 mr-2">
                       <Calendar className="w-5 h-5 text-white" />
                     </div>
-                    <h2 className="text-2xl font-bold text-white">Day 1: 28th May</h2>
+                    <h2 className="text-2xl font-bold text-white">Day 1: 12th June</h2>
                   </div>
 
                   <div className="space-y-3">
@@ -133,7 +133,7 @@ export default function TimeLine() {
                     <div className="bg-white/10 rounded-full p-2 mr-2">
                       <Calendar className="w-5 h-5 text-white" />
                     </div>
-                    <h2 className="text-2xl font-bold text-white">Day 2: 29th May</h2>
+                    <h2 className="text-2xl font-bold text-white">Day 2: 13th June</h2>
                   </div>
 
                   <div className="space-y-3">

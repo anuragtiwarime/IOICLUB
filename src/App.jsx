@@ -38,7 +38,7 @@ const MainLayout = () => {
   const shouldShowNavbar = !hideNavbarPaths.includes(location.pathname);
 
   return (
-    <div className="min-h-screen bg-gray-100">
+    <div className="min-h-screen bg-gray-100 scroll-smooth">
       {shouldShowNavbar && <Navbar />}
       <Routes>
         <Route path="/" element={<Home />} />
