@@ -2,7 +2,9 @@ import { Calendar, MapPin, Users } from "lucide-react";
 
 export default function AboutPWHackathon() {
   return (
-    <div className="relative max-w-screen-xl mx-auto px-4 md:px-10 lg:px-20 py-16 bg-white overflow-hidden">
+    <div
+    id="about"
+     className="relative max-w-screen-xl mx-auto px-4 md:px-10 lg:px-20 py-16 bg-white overflow-hidden">
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 items-start">
         {/* Left Content - 2 columns */}
         <div className="lg:col-span-2 space-y-8">

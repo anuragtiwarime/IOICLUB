@@ -2,7 +2,7 @@ import { Trophy, Award, Medal, Star } from "lucide-react";
 
 export default function PrizesComponent() {
     return (
-        <div className="relative pt-10 bg-gradient-to-br from-gray-50 to-blue-50 overflow-hidden">
+        <div id="prizes" className="relative pt-10 bg-gradient-to-br from-gray-50 to-blue-50 overflow-hidden">
             {/* Background decorations */}
             <div className="absolute top-0 left-0 w-96 h-96 bg-gradient-to-br from-orange-200 to-orange-300 rounded-full opacity-10 -translate-x-48 -translate-y-48"></div>
             <div className="absolute bottom-0 right-0 w-80 h-80 bg-gradient-to-tl from-blue-200 to-blue-300 rounded-full opacity-10 translate-x-40 translate-y-40"></div>

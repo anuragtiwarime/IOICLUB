@@ -28,7 +28,7 @@ const scheduleData = {
 
 export default function TimeLine() {
   return (
-    <div className="min-h-screen relative overflow-hidden" style={{background: 'linear-gradient(135deg, #0f172a 0%, #1e293b 25%, #334155 50%, #475569 75%, #64748b 100%)'}}>
+    <div id="schedule" className="min-h-screen relative overflow-hidden" style={{background: 'linear-gradient(135deg, #0f172a 0%, #1e293b 25%, #334155 50%, #475569 75%, #64748b 100%)'}}>
       {/* Background animation & grid overlay remain the same */}
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute -top-32 -right-32 w-64 h-64 bg-blue-500/10 rounded-full blur-3xl animate-pulse"></div>

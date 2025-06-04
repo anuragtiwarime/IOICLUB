@@ -46,7 +46,8 @@ export default function GridSmallBackgroundDemo() {
     }, []);
 
     return (
-        <div className="relative w-full min-h-[50rem] bg-gradient-to-br from-blue-600 via-blue-700 to-blue-800 dark:from-blue-800 dark:via-blue-900 dark:to-black overflow-hidden">
+        <div
+         id='register' className="relative w-full min-h-[50rem] bg-gradient-to-br from-blue-600 via-blue-700 to-blue-800 dark:from-blue-800 dark:via-blue-900 dark:to-black overflow-hidden">
             {/* Grid background */}
             <div
                 className={cn(
