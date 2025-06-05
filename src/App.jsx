@@ -34,7 +34,7 @@ import Guide from './components/cee/interview/Guide.jsx';
 
 const MainLayout = () => {
   const location = useLocation();
-  const hideNavbarPaths = ['/hackathon/aws'];
+  const hideNavbarPaths = ['/hackathon/aws','/aws'];
   const shouldShowNavbar = !hideNavbarPaths.includes(location.pathname);
 
   return (
@@ -43,6 +43,7 @@ const MainLayout = () => {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/hackathon/aws" element={<Hackathon />} />
+        <Route path="/aws" element={<Hackathon />} />
         <Route path="/clubs" element={<div className="min-h-screen bg-gradient-to-br from-black via-gray-700 to-gray-900"><Clubs /></div>} />
         <Route path="/policies" element={<Policies />} />
         <Route path="/careers" element={<Careers />} />
