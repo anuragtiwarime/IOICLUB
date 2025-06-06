@@ -216,7 +216,7 @@ export default function TimeLine() {
                       Day 2: 13th June
                     </h3>
                     <span className="text-xs text-blue-300 bg-white/10 px-2 py-0.5 rounded-full">
-                      Day 2 must be attended in person
+                      Day 2 must be attended in campus
                     </span>
                   </div>
 
