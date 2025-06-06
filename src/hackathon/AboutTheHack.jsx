@@ -3,8 +3,9 @@ import { Calendar, MapPin, Users } from "lucide-react";
 export default function AboutPWHackathon() {
   return (
     <div
-    id="about"
-     className="relative max-w-screen-xl mx-auto px-4 md:px-10 lg:px-20 py-16 bg-white overflow-hidden">
+      id="about"
+      className="relative max-w-screen-xl mx-auto px-4 md:px-10 lg:px-20 py-16 bg-white overflow-hidden"
+    >
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 items-start">
         {/* Left Content - 2 columns */}
         <div className="lg:col-span-2 space-y-8">
@@ -19,13 +20,24 @@ export default function AboutPWHackathon() {
           {/* Introduction */}
           <div className="space-y-6 text-gray-700 text-lg leading-relaxed">
             <p>
-              Welcome to the <span className="font-semibold text-gray-900">AWS Hackathon – “Build with PartyRock”</span>, hosted at the IOI Campus, Bangalore! 
-              This unique event is designed to empower participants with hands-on experience using AWS's innovative PartyRock platform.
+              Welcome to the{" "}
+              <span className="font-semibold text-gray-900">
+                AWS Hackathon - “Build with PartyRock”
+              </span>{" "}
+              at IOI Campus, Bangalore! This in-person event offers a hands-on
+              introduction to AWS&apos;s PartyRock platform, guided by AWS mentors.
             </p>
 
             <p>
-              Whether you're new to the cloud or a seasoned builder, this 15-hour hackathon promises immersive learning, real-time challenges, and creative solutions 
-              – all while working closely with AWS experts and your peers.
+              Kick things off with a platform briefing, enjoy a fun quiz, and
+              dive into problem-solving once the challenge goes live. After an
+              overnight build session, teams will submit by 6:00 AM and prep
+              offline for presentations.
+            </p>
+
+            <p>
+              It's a chance to learn, build, and collaborate — all in a
+              high-energy, innovation-driven environment.
             </p>
           </div>
 
@@ -33,7 +45,8 @@ export default function AboutPWHackathon() {
           <div className="space-y-4">
             <h3 className="text-xl font-bold text-gray-900">Objective:</h3>
             <p className="text-gray-700">
-              To outline the step-by-step flow of the AWS Hackathon, enabling seamless execution by all operations and support teams.
+              To outline the step-by-step flow of the AWS Hackathon, enabling
+              seamless execution by all operations and support teams.
             </p>
           </div>
 
@@ -60,8 +73,10 @@ export default function AboutPWHackathon() {
           {/* Closing paragraph */}
           <div className="text-gray-700 text-lg leading-relaxed">
             <p>
-              Join us for this dynamic in-person experience where you'll collaborate, innovate, and compete in a friendly, high-energy environment. 
-              This is your moment to build with purpose, powered by AWS.
+              Join us for this dynamic in-person experience where you'll
+              collaborate, innovate, and compete in a friendly, high-energy
+              environment. This is your moment to build with purpose, powered by
+              AWS.
             </p>
           </div>
         </div>

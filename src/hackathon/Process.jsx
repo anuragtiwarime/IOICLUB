@@ -3,7 +3,7 @@ import { CheckCircle, Clock } from 'lucide-react';
 
 function Process() {
   const [activeStep, setActiveStep] = useState(-1);
-  
+
   const steps = [
     {
       title: "Registration",
@@ -16,29 +16,24 @@ function Process() {
       duration: "2 hours"
     },
     {
-      title: "Quiz",
+      title: "Quiz (Not qualifier)",
       description: "Test your understanding with a comprehensive AWS knowledge quiz",
       duration: "30 minutes"
     },
     {
       title: "Hackathon",
       description: "Build innovative solutions using AWS services and technologies",
-      duration: "48 hours"
-    },
-    {
-      title: "Submission",
-      description: "Submit your project with documentation and presentation materials",
-      duration: "1 hour"
+      duration: "13 hours"
     },
     {
       title: "Result Announcement",
       description: "Winners will be announced and recognized for their achievements",
-      duration: "Live Event"
+      duration: "90 minutes"
     },
     {
       title: "Final Briefing",
       description: "Closing ceremony with feedback and next steps for participants",
-      duration: "1 hour"
+      duration: "2 hours"
     }
   ];
 
@@ -79,25 +74,25 @@ function Process() {
         {/* Timeline Container */}
         <div className="relative max-w-4xl mx-auto">
           {/* Desktop: Center Vertical Line */}
-          <div className="hidden md:block absolute left-1/2 transform -translate-x-1/2 w-1 bg-gradient-to-b from-blue-400 via-indigo-500 to-blue-600 rounded-full" 
+          <div className="hidden md:block absolute left-1/2 transform -translate-x-1/2 w-1 bg-gradient-to-b from-blue-400 via-indigo-500 to-blue-600 rounded-full"
                style={{ height: `${(steps.length - 1) * 220 + 100}px` }}></div>
 
           {/* Desktop: Progress Line */}
-          <div 
+          <div
             className="hidden md:block absolute left-1/2 transform -translate-x-1/2 w-1 bg-gradient-to-b from-orange-400 to-orange-600 rounded-full transition-all duration-500 ease-out"
-            style={{ 
+            style={{
               height: activeStep >= 0 ? `${Math.min(activeStep * 220 + 100, (steps.length - 1) * 220 + 100)}px` : '0px'
             }}
           ></div>
 
           {/* Mobile: Left Vertical Line */}
-          <div className="md:hidden absolute left-4 top-0 w-1 bg-gradient-to-b from-blue-400 via-indigo-500 to-blue-600 rounded-full" 
+          <div className="md:hidden absolute left-4 top-0 w-1 bg-gradient-to-b from-blue-400 via-indigo-500 to-blue-600 rounded-full"
                style={{ height: `${(steps.length - 1) * 220  + 80}px` }}></div>
 
           {/* Mobile: Progress Line */}
-          <div 
+          <div
             className="md:hidden absolute left-4 top-0 w-1 bg-gradient-to-b from-orange-400 to-orange-600 rounded-full transition-all duration-500 ease-out"
-            style={{ 
+            style={{
               height: activeStep >= 0 ? `${Math.min(activeStep * 140 + 40, (steps.length - 1) * 220 + 80)}px` : '0px'
             }}
           ></div>
@@ -108,17 +103,17 @@ function Process() {
               const isActive = index <= activeStep;
               const isCurrentStep = index === activeStep;
               const isLeft = index % 2 === 0;
-              
+
               return (
                 <div key={index} className={`flex items-center w-full ${isLeft ? 'md:flex-row' : 'md:flex-row-reverse'} flex-row`}>
                   {/* Desktop Cards */}
                   <div className="hidden md:block w-5/12">
                     <div className={`relative group transition-all duration-500 ${isCurrentStep ? 'scale-105' : ''}`}>
-                      <div 
+                      <div
                         className={`
                           relative overflow-hidden rounded-2xl p-6 border-2 shadow-lg transition-all duration-500
-                          ${isActive 
-                            ? 'bg-gradient-to-br from-blue-600 to-indigo-700 border-black border-2 shadow-blue-200' 
+                          ${isActive
+                            ? 'bg-gradient-to-br from-blue-600 to-indigo-700 border-black border-2 shadow-blue-200'
                             : 'bg-white border-gray-200 hover:border-blue-300'
                           }
                           hover:shadow-xl hover:-translate-y-1
@@ -128,14 +123,14 @@ function Process() {
                         {isActive && (
                           <div className="absolute inset-0 bg-gradient-to-br from-blue-400/20 to-indigo-600/20 rounded-2xl"></div>
                         )}
-                        
+
                         {/* Step number */}
-                        <div 
+                        <div
                           className={`
                             absolute w-12 h-12 rounded-full flex items-center justify-center font-bold text-lg shadow-lg transition-all duration-500
                             ${isLeft ? '-right-3 -top-3' : '-left-3 -top-3'}
-                            ${isActive 
-                              ? 'bg-gradient-to-br from-orange-400 to-orange-600 text-white' 
+                            ${isActive
+                              ? 'bg-gradient-to-br from-orange-400 to-orange-600 text-white'
                               : 'bg-white text-blue-600 border-2 border-blue-200'
                             }
                           `}
@@ -168,11 +163,11 @@ function Process() {
                       )}
 
                       {/* Center dot */}
-                      <div 
+                      <div
                         className={`
                           w-5 h-5 rounded-full border-4 border-white shadow-lg mx-2 transition-all duration-500
-                          ${isActive 
-                            ? 'bg-gradient-to-br from-orange-400 to-orange-600 shadow-orange-200' 
+                          ${isActive
+                            ? 'bg-gradient-to-br from-orange-400 to-orange-600 shadow-orange-200'
                             : isLeft ? 'bg-blue-400' : 'bg-indigo-600'
                           }
                           ${isCurrentStep ? 'animate-pulse scale-125' : ''}
@@ -194,17 +189,17 @@ function Process() {
                     {/* Timeline dot and connector */}
                     <div className="flex flex-col items-center mr-4">
                       {/* Center dot */}
-                      <div 
+                      <div
                         className={`
                           w-5 h-5 rounded-full border-4 border-white shadow-lg transition-all duration-500 z-10 relative mt-14
-                          ${isActive 
-                            ? 'bg-gradient-to-br from-orange-400 to-orange-600 shadow-orange-200' 
+                          ${isActive
+                            ? 'bg-gradient-to-br from-orange-400 to-orange-600 shadow-orange-200'
                             : 'bg-blue-400'
                           }
                           ${isCurrentStep ? 'animate-pulse scale-125' : ''}
                         `}
                       ></div>
-                      
+
                       {/* Horizontal connector line */}
                       <div className={`w-8 h-0.5 transition-all duration-500 ${isActive ? 'bg-orange-500' : 'bg-blue-400'}`}></div>
                     </div>
@@ -212,11 +207,11 @@ function Process() {
                     {/* Mobile Card */}
                     <div className="flex-1 pb-8">
                       <div className={`relative group transition-all duration-500 ${isCurrentStep ? 'scale-105' : ''}`}>
-                        <div 
+                        <div
                           className={`
                             relative overflow-hidden rounded-2xl p-4 border-2 shadow-lg transition-all duration-500
-                            ${isActive 
-                              ? 'bg-gradient-to-br from-blue-600 to-indigo-700 border-orange-400 border-2 shadow-blue-200' 
+                            ${isActive
+                              ? 'bg-gradient-to-br from-blue-600 to-indigo-700 border-orange-400 border-2 shadow-blue-200'
                               : 'bg-white border-gray-200 hover:border-blue-300'
                             }
                             hover:shadow-xl hover:-translate-y-1
@@ -226,14 +221,14 @@ function Process() {
                           {isActive && (
                             <div className="absolute inset-0 bg-gradient-to-br from-blue-400/20 to-indigo-600/20 rounded-2xl"></div>
                           )}
-                          
+
                           {/* Step number */}
-                          <div 
+                          <div
                             className={`
                               absolute w-10 h-10 rounded-full flex items-center justify-center font-bold text-sm shadow-lg transition-all duration-500
                               -right-2 -top-2
-                              ${isActive 
-                                ? 'bg-gradient-to-br from-orange-400 to-orange-600 text-white' 
+                              ${isActive
+                                ? 'bg-gradient-to-br from-orange-400 to-orange-600 text-white'
                                 : 'bg-white text-blue-600 border-2 border-blue-200'
                               }
                             `}
