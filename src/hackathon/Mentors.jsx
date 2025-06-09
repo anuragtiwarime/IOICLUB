@@ -1,5 +1,5 @@
-import React from 'react';
-import { MapPin, Briefcase, Award, Users, Sparkles } from 'lucide-react';
+import { MapPin, Briefcase, Award, Users, Sparkles } from "lucide-react";
+import React from "react";
 
 function Mentors() {
   const mentors = [
@@ -8,11 +8,17 @@ function Mentors() {
       role: "AWS SME / Trainer",
       organization: "AWS",
       designation: "Technical Program Manager",
-      image: "/Akanksha.jpg", 
-      brief: "Akanksha Rai Sharma is currently serving as the Technical Program Manager for AWS Academy in India and South Asia. She is a double AWS-certified professional with over 6 years of experience working on various AWS products including CloudFormation, ECS, IAM, ECR, System Manager, Amazon Bedrock, and Amazon Sagemaker Jumpstart. She holds an MBA from IIM Udaipur and has rich experience in Cloud Support. She has been conducting faculty as well as student training sessions on various cloud and allied topics for almost 5 years now.",
-      specialties: ["AWS CloudFormation", "Amazon Bedrock", "System Manager", "Cloud Support"],
+      image: "/Akanksha.jpg",
+      brief:
+        "Akanksha Rai Sharma is currently serving as the Technical Program Manager for AWS Academy in India and South Asia. She is a double AWS-certified professional with over 6 years of experience working on various AWS products including CloudFormation, ECS, IAM, ECR, System Manager, Amazon Bedrock, and Amazon Sagemaker Jumpstart. She holds an MBA from IIM Udaipur and has rich experience in Cloud Support. She has been conducting faculty as well as student training sessions on various cloud and allied topics for almost 5 years now.",
+      specialties: [
+        "AWS CloudFormation",
+        "Amazon Bedrock",
+        "System Manager",
+        "Cloud Support",
+      ],
       experience: "6+ Years",
-      education: "MBA - IIM Udaipur"
+      education: "MBA - IIM Udaipur",
     },
     {
       name: "Abhijit Shinde",
@@ -20,15 +26,16 @@ function Mentors() {
       organization: "Centilytics",
       designation: "Data Scientist",
       image: "/Abhijit.jpg", // Replace with actual image path
-      brief: "Abhijit is a Data Scientist specializing in NLP, ML and Generative AI with a B.Tech. from IIT Kharagpur. He leads innovative projects such as multimedia translation apps and automated meeting tools, enhancing efficiency and productivity through data-driven solutions. His expertise includes building sophisticated AI systems and interactive applications to streamline complex processes.",
+      brief:
+        "Abhijit is a Data Scientist specializing in NLP, ML and Generative AI with a B.Tech. from IIT Kharagpur. He leads innovative projects such as multimedia translation apps and automated meeting tools, enhancing efficiency and productivity through data-driven solutions. His expertise includes building sophisticated AI systems and interactive applications to streamline complex processes.",
       specialties: ["NLP & ML", "Generative AI", "Data Science", "AI Systems"],
       experience: "5+ Years",
-      education: "B.Tech - IIT Kharagpur"
-    }
+      education: "B.Tech - IIT Kharagpur",
+    },
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-100 pb-16 px-4">
+    <div className="bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-100 pb-16 px-4">
       <div className="max-w-7xl mx-auto">
         {/* Header Section */}
         <div className="text-center mb-16">
@@ -39,7 +46,6 @@ function Mentors() {
             Meet Our Mentors
           </h1>
           <div className="w-32 h-1 bg-gradient-to-r from-blue-400 to-indigo-600 mx-auto mb-6 rounded-full"></div>
-          
         </div>
 
         {/* Mentors Grid */}
@@ -61,11 +67,10 @@ function Mentors() {
                         <div className="w-full h-full rounded-full bg-gray-200 flex items-center justify-center overflow-hidden">
                           {/* Replace this div with actual image */}
                           <img
-  src={mentor.image}
-  alt={mentor.name}
-  className="w-full h-full object-cover"
-/>
-
+                            src={mentor.image}
+                            alt={mentor.name}
+                            className="w-full h-full object-cover"
+                          />
                         </div>
                       </div>
                       {/* Floating Badge */}
@@ -77,7 +82,9 @@ function Mentors() {
 
                     {/* Name and Title */}
                     <div className="text-center">
-                      <h3 className="text-2xl font-bold text-gray-800 mb-2">{mentor.name}</h3>
+                      <h3 className="text-2xl font-bold text-gray-800 mb-2">
+                        {mentor.name}
+                      </h3>
                       <div className="space-y-2">
                         <div className="inline-flex items-center bg-blue-100 text-blue-700 px-4 py-2 rounded-full text-sm font-medium">
                           <Award className="w-4 h-4 mr-2" />
@@ -96,8 +103,6 @@ function Mentors() {
                       </div>
                     </div>
                   </div>
-
-                  
                 </div>
 
                 {/* Hover Effect Overlay */}
@@ -106,8 +111,6 @@ function Mentors() {
             </div>
           ))}
         </div>
-
-        
       </div>
     </div>
   );

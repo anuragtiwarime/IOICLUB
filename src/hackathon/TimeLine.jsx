@@ -1,5 +1,5 @@
-import React from "react";
 import { Calendar, Clock } from "lucide-react";
+import React from "react";
 
 const scheduleData = {
   day1: [
@@ -28,23 +28,38 @@ const scheduleData = {
 
 export default function TimeLine() {
   return (
-    <div id="schedule" className="min-h-screen relative overflow-hidden" style={{background: 'linear-gradient(135deg, #0f172a 0%, #1e293b 25%, #334155 50%, #475569 75%, #64748b 100%)'}}>
+    <div
+      id="schedule"
+      className="min-h-screen relative overflow-hidden"
+      style={{
+        background:
+          "linear-gradient(135deg, #0f172a 0%, #1e293b 25%, #334155 50%, #475569 75%, #64748b 100%)",
+      }}
+    >
       {/* Background animation & grid overlay remain the same */}
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute -top-32 -right-32 w-64 h-64 bg-blue-500/10 rounded-full blur-3xl animate-pulse"></div>
-        <div className="absolute -bottom-32 -left-32 w-64 h-64 bg-indigo-500/10 rounded-full blur-3xl animate-pulse" style={{animationDelay: '1s'}}></div>
-        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-80 h-80 bg-purple-500/5 rounded-full blur-3xl animate-pulse" style={{animationDelay: '2s'}}></div>
+        <div
+          className="absolute -bottom-32 -left-32 w-64 h-64 bg-indigo-500/10 rounded-full blur-3xl animate-pulse"
+          style={{ animationDelay: "1s" }}
+        ></div>
+        <div
+          className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-80 h-80 bg-purple-500/5 rounded-full blur-3xl animate-pulse"
+          style={{ animationDelay: "2s" }}
+        ></div>
       </div>
       <div className="absolute inset-0 opacity-5">
-        <div style={{
-          backgroundImage: `
+        <div
+          style={{
+            backgroundImage: `
             linear-gradient(rgba(255,255,255,0.1) 1px, transparent 1px),
             linear-gradient(90deg, rgba(255,255,255,0.1) 1px, transparent 1px)
           `,
-          backgroundSize: '50px 50px',
-          width: '100%',
-          height: '100%'
-        }}></div>
+            backgroundSize: "50px 50px",
+            width: "100%",
+            height: "100%",
+          }}
+        ></div>
       </div>
 
       <div className="relative z-10 p-6 md:p-8">
@@ -62,32 +77,54 @@ export default function TimeLine() {
         </div>
 
         <div className="flex flex-col items-center max-w-5xl mx-auto relative">
-          <div className="absolute left-1/2 transform -translate-x-1/2 w-0.5 h-full hidden md:block shadow-lg" style={{background: 'linear-gradient(to bottom, #4d9de6, #00469b)'}}></div>
-          <div className="absolute left-1/2 transform -translate-x-1/2 w-2 h-full hidden md:block blur-sm opacity-30" style={{background: 'linear-gradient(to bottom, #4d9de6, #00469b)'}}></div>
+          <div
+            className="absolute left-1/2 transform -translate-x-1/2 w-0.5 h-full hidden md:block shadow-lg"
+            style={{
+              background: "linear-gradient(to bottom, #4d9de6, #00469b)",
+            }}
+          ></div>
+          <div
+            className="absolute left-1/2 transform -translate-x-1/2 w-2 h-full hidden md:block blur-sm opacity-30"
+            style={{
+              background: "linear-gradient(to bottom, #4d9de6, #00469b)",
+            }}
+          ></div>
 
           {/* Day 1 */}
           <div className="flex flex-col md:flex-row items-center w-full mb-12 relative group">
             <div className="w-full md:w-5/12 transform transition-all duration-500 hover:scale-[1.02] hover:-translate-y-1">
-              <div className="rounded-xl p-6 border border-black border-2 shadow-2xl relative overflow-hidden" style={{ backgroundColor: '#00469b' }}>
+              <div
+                className="rounded-xl p-6 border border-black border-2 shadow-2xl relative overflow-hidden"
+                style={{ backgroundColor: "#00469b" }}
+              >
                 <div className="absolute inset-0 bg-gradient-to-br from-blue-400/10 to-transparent rounded-xl"></div>
                 <div className="absolute top-0 right-0 w-16 h-16 bg-gradient-to-bl from-white/10 to-transparent rounded-full -translate-y-8 translate-x-8"></div>
                 <div className="absolute bottom-0 left-0 w-12 h-12 bg-gradient-to-tr from-white/5 to-transparent rounded-full translate-y-6 -translate-x-6"></div>
 
                 <div className="relative z-10">
-                  <div className="flex items-center justify-center mb-4">
-                    <div className="bg-white/10 rounded-full p-2 mr-2">
-                      <Calendar className="w-5 h-5 text-white" />
-                    </div>
-                    <h2 className="text-2xl font-bold text-white">Day 1: 12th June</h2>
+                  <div className="flex items-center justify-between mb-2">
+                    <h3 className="text-white text-lg font-semibold">
+                      Day 1: 12th June
+                    </h3>
+                    <span className="text-xs text-blue-300 bg-white/10 px-2 py-0.5 rounded-full">
+                      can be online
+                    </span>
                   </div>
 
                   <div className="space-y-3">
                     {scheduleData.day1.map((item, index) => (
-                      <div key={index} className="flex items-start bg-white/5 rounded-md p-2 backdrop-blur-sm border border-white/10 hover:bg-white/10 transition-colors duration-300">
+                      <div
+                        key={index}
+                        className="flex items-start bg-white/5 rounded-md p-2 backdrop-blur-sm border border-white/10 hover:bg-white/10 transition-colors duration-300"
+                      >
                         <Clock className="w-4 h-4 text-blue-300 mr-2 mt-0.5 flex-shrink-0" />
                         <div>
-                          <span className="text-blue-200 font-medium text-xs">{item.time}</span>
-                          <span className="text-white/90 text-xs ml-1.5">- {item.title}</span>
+                          <span className="text-blue-200 font-medium text-xs">
+                            {item.time}
+                          </span>
+                          <span className="text-white/90 text-xs ml-1.5">
+                            - {item.title}
+                          </span>
                         </div>
                       </div>
                     ))}
@@ -98,10 +135,31 @@ export default function TimeLine() {
 
             <div className="hidden md:flex items-center justify-center w-2/12 py-6">
               <div className="flex items-center relative">
-                <div className="w-10 h-0.5 shadow-lg" style={{backgroundColor: '#4d9de6', boxShadow: '0 0 8px #4d9de6'}}></div>
-                <div className="w-0 h-0 border-t-[6px] border-b-[6px] border-r-[8px] border-transparent" style={{borderRightColor: '#4d9de6', filter: 'drop-shadow(0 0 3px #4d9de6)'}}></div>
-                <div className="w-5 h-5 rounded-full mx-3 border-4 border-white shadow-2xl relative" style={{backgroundColor: '#4d9de6', boxShadow: '0 0 14px #4d9de6'}}>
-                  <div className="absolute inset-0 rounded-full animate-ping" style={{backgroundColor: '#4d9de6', opacity: '0.4'}}></div>
+                <div
+                  className="w-10 h-0.5 shadow-lg"
+                  style={{
+                    backgroundColor: "#4d9de6",
+                    boxShadow: "0 0 8px #4d9de6",
+                  }}
+                ></div>
+                <div
+                  className="w-0 h-0 border-t-[6px] border-b-[6px] border-r-[8px] border-transparent"
+                  style={{
+                    borderRightColor: "#4d9de6",
+                    filter: "drop-shadow(0 0 3px #4d9de6)",
+                  }}
+                ></div>
+                <div
+                  className="w-5 h-5 rounded-full mx-3 border-4 border-white shadow-2xl relative"
+                  style={{
+                    backgroundColor: "#4d9de6",
+                    boxShadow: "0 0 14px #4d9de6",
+                  }}
+                >
+                  <div
+                    className="absolute inset-0 rounded-full animate-ping"
+                    style={{ backgroundColor: "#4d9de6", opacity: "0.4" }}
+                  ></div>
                 </div>
               </div>
             </div>
@@ -114,35 +172,68 @@ export default function TimeLine() {
             <div className="hidden md:block w-5/12"></div>
             <div className="hidden md:flex items-center justify-center w-2/12 py-6">
               <div className="flex items-center relative">
-                <div className="w-5 h-5 rounded-full mx-3 border-4 border-white shadow-2xl relative" style={{backgroundColor: '#00469b', boxShadow: '0 0 14px #00469b'}}>
-                  <div className="absolute inset-0 rounded-full animate-ping" style={{backgroundColor: '#00469b', opacity: '0.4'}}></div>
+                <div
+                  className="w-5 h-5 rounded-full mx-3 border-4 border-white shadow-2xl relative"
+                  style={{
+                    backgroundColor: "#00469b",
+                    boxShadow: "0 0 14px #00469b",
+                  }}
+                >
+                  <div
+                    className="absolute inset-0 rounded-full animate-ping"
+                    style={{ backgroundColor: "#00469b", opacity: "0.4" }}
+                  ></div>
                 </div>
-                <div className="w-10 h-0.5 shadow-lg" style={{backgroundColor: '#00469b', boxShadow: '0 0 8px #00469b'}}></div>
-                <div className="w-0 h-0 border-t-[6px] border-b-[6px] border-l-[8px] border-transparent" style={{borderLeftColor: '#00469b', filter: 'drop-shadow(0 0 3px #00469b)'}}></div>
+                <div
+                  className="w-10 h-0.5 shadow-lg"
+                  style={{
+                    backgroundColor: "#00469b",
+                    boxShadow: "0 0 8px #00469b",
+                  }}
+                ></div>
+                <div
+                  className="w-0 h-0 border-t-[6px] border-b-[6px] border-l-[8px] border-transparent"
+                  style={{
+                    borderLeftColor: "#00469b",
+                    filter: "drop-shadow(0 0 3px #00469b)",
+                  }}
+                ></div>
               </div>
             </div>
 
             <div className="w-full md:w-5/12 transform transition-all duration-500 hover:scale-[1.02] hover:-translate-y-1">
-              <div className="rounded-xl p-6 border border-black border-2 shadow-2xl relative overflow-hidden" style={{ backgroundColor: '#00469b' }}>
+              <div
+                className="rounded-xl p-6 border border-black border-2 shadow-2xl relative overflow-hidden"
+                style={{ backgroundColor: "#00469b" }}
+              >
                 <div className="absolute inset-0 bg-gradient-to-bl from-blue-400/10 to-transparent rounded-xl"></div>
                 <div className="absolute top-0 left-0 w-16 h-16 bg-gradient-to-br from-white/10 to-transparent rounded-full -translate-y-8 -translate-x-8"></div>
                 <div className="absolute bottom-0 right-0 w-12 h-12 bg-gradient-to-tl from-white/5 to-transparent rounded-full translate-y-6 translate-x-6"></div>
 
                 <div className="relative z-10">
-                  <div className="flex items-center justify-center mb-4">
-                    <div className="bg-white/10 rounded-full p-2 mr-2">
-                      <Calendar className="w-5 h-5 text-white" />
-                    </div>
-                    <h2 className="text-2xl font-bold text-white">Day 2: 13th June</h2>
+                  <div className="flex items-center justify-between mb-2">
+                    <h3 className="text-white text-lg font-semibold">
+                      Day 2: 13th June
+                    </h3>
+                    <span className="text-xs text-blue-300 bg-white/10 px-2 py-0.5 rounded-full">
+                      must be in campus
+                    </span>
                   </div>
 
                   <div className="space-y-3">
                     {scheduleData.day2.map((item, index) => (
-                      <div key={index} className="flex items-start bg-white/5 rounded-md p-2 backdrop-blur-sm border border-white/10 hover:bg-white/10 transition-colors duration-300">
+                      <div
+                        key={index}
+                        className="flex items-start bg-white/5 rounded-md p-2 backdrop-blur-sm border border-white/10 hover:bg-white/10 transition-colors duration-300"
+                      >
                         <Clock className="w-4 h-4 text-blue-300 mr-2 mt-0.5 flex-shrink-0" />
                         <div>
-                          <span className="text-blue-200 font-medium text-xs">{item.time}</span>
-                          <span className="text-white/90 text-xs ml-1.5">- {item.title}</span>
+                          <span className="text-blue-200 font-medium text-xs">
+                            {item.time}
+                          </span>
+                          <span className="text-white/90 text-xs ml-1.5">
+                            - {item.title}
+                          </span>
                         </div>
                       </div>
                     ))}
@@ -151,7 +242,6 @@ export default function TimeLine() {
               </div>
             </div>
           </div>
-
         </div>
       </div>
     </div>
