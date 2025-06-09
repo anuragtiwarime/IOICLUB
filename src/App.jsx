@@ -39,9 +39,9 @@ const MainLayout = () => {
 
   return (
     <div className="min-h-screen bg-gray-100 scroll-smooth">
-      {shouldShowNavbar && <Navbar />}
+      {/* {shouldShowNavbar && <Navbar />} */}
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/" element={<Hackathon />} />
         <Route path="/hackathon/aws" element={<Hackathon />} />
         <Route path="/aws" element={<Hackathon />} />
         <Route path="/clubs" element={<div className="min-h-screen bg-gradient-to-br from-black via-gray-700 to-gray-900"><Clubs /></div>} />
