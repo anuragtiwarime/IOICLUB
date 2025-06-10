@@ -31,6 +31,7 @@ function Mentors() {
       designation: "Sr. Manager",
       image: "/deewakar.jpg",
     },
+    
   ];
 
   return (

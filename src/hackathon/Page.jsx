@@ -40,7 +40,7 @@ export default function GridSmallBackgroundDemo() {
 
     return (
         <div
-         id='register' className="relative w-full min-h-[50rem] bg-gradient-to-br from-blue-600 via-blue-700 to-blue-800 dark:from-blue-800 dark:via-blue-900 dark:to-black overflow-hidden">
+         id='register' className="relative w-full min-h-[48rem] bg-gradient-to-br from-blue-600 via-blue-700 to-blue-800 dark:from-blue-800 dark:via-blue-900 dark:to-black overflow-hidden">
             {/* Grid background */}
             <div
                 className={cn(
@@ -175,7 +175,7 @@ export default function GridSmallBackgroundDemo() {
                 </div>
                 
                 {/* Logos with enhanced presentation */}
-                <div className="flex flex-row justify-center items-center space-x-12 mb-12">
+                <div className="flex flex-row justify-center items-center space-x-4 md:space-x-10 mb-12">
                     <div className="relative group">
                         <div className="absolute inset-0 bg-white/10 rounded-full blur-xl group-hover:bg-white/20 transition-all duration-300"></div>
                         <div className="relative bg-white/10 backdrop-blur-sm rounded-full p-4 border border-white/20 hover:border-white/40 transition-all duration-300 hover:scale-110">
@@ -212,12 +212,13 @@ export default function GridSmallBackgroundDemo() {
                         {/* Button inner glow */}
                         <div className="absolute inset-0 bg-gradient-to-r from-transparent via-orange-100/50 to-transparent rounded-full opacity-0 hover:opacity-100 transition-opacity duration-300"></div>
                     </button>
+                    
                 </div>
                 
-                {/* Additional call-to-action text
+                
                 <p className="mt-8 text-lg text-white/80 font-medium tracking-wide animate-bounce">
-                    Join the Innovation Revolution ⚡
-                </p> */}
+                    Registration Closes on 11th June EOD ⚡
+                </p>
             </div>
         </div>
     );
