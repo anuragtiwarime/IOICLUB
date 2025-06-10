@@ -58,11 +58,11 @@ function Mentors() {
                 <div className="absolute bottom-0 left-0 w-24 h-24 bg-gradient-to-tr from-indigo-100/30 to-transparent rounded-full translate-y-12 -translate-x-12"></div>
 
                 {/* Content Container */}
-                <div className="relative z-10 p-6 flex flex-col h-full">
+                <div className="relative z-10 p-8 flex flex-col h-full">
                   {/* Profile Image Section */}
-                  <div className="flex flex-col items-center mb-6 flex-grow">
-                    <div className="relative mb-4">
-                      <div className="w-24 h-24 rounded-full bg-gradient-to-br from-blue-400 to-indigo-600 p-1 shadow-lg">
+                  <div className="flex flex-col items-center text-center">
+                    <div className="relative mb-6">
+                      <div className="w-28 h-28 rounded-full bg-gradient-to-br from-blue-400 to-indigo-600 p-1 shadow-lg">
                         <div className="w-full h-full rounded-full bg-gray-200 flex items-center justify-center overflow-hidden">
                           <img
                             src={mentor.image}
@@ -79,33 +79,32 @@ function Mentors() {
                         </div>
                       </div>
                       {/* Floating Badge */}
-                      <div className="absolute -bottom-1 -right-1 bg-gradient-to-r from-orange-400 to-orange-600 text-white text-xs font-bold px-2 py-1 rounded-full shadow-lg">
+                      <div className="absolute -bottom-2 -right-2 bg-gradient-to-r from-orange-400 to-orange-600 text-white text-xs font-bold px-3 py-1 rounded-full shadow-lg">
                         <Sparkles className="w-3 h-3 inline mr-1" />
                         Expert
                       </div>
                     </div>
 
-                    {/* Name and Title */}
-                    <div className="text-center flex-grow flex flex-col justify-between">
-                      <div className="mb-4">
-                        <h3 className="text-xl font-bold text-gray-800 mb-3 leading-tight">
-                          {mentor.name}
-                        </h3>
-                        <div className="inline-flex items-center bg-blue-100 text-blue-700 px-3 py-2 rounded-full text-sm font-medium mb-3">
-                          <Award className="w-4 h-4 mr-2" />
-                          {mentor.role}
-                        </div>
+                    {/* Name */}
+                    <h3 className="text-xl font-bold text-gray-800 mb-4 leading-tight min-h-[3rem] flex items-center">
+                      {mentor.name}
+                    </h3>
+
+                    {/* Role Badge */}
+                    <div className="inline-flex items-center bg-blue-100 text-blue-700 px-4 py-2 rounded-full text-sm font-medium mb-4">
+                      <Award className="w-4 h-4 mr-2" />
+                      {mentor.role}
+                    </div>
+                    
+                    {/* Info Tags */}
+                    <div className="space-y-3 w-full">
+                      <div className="inline-flex items-center bg-gray-100 text-gray-700 px-4 py-2 rounded-full text-sm w-full justify-center min-h-[2rem]">
+                        <Briefcase className="w-3 h-3 mr-2 flex-shrink-0" />
+                        <span className="truncate">{mentor.designation}</span>
                       </div>
-                      
-                      <div className="space-y-2">
-                        <div className="inline-flex items-center bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm w-full justify-center">
-                          <Briefcase className="w-3 h-3 mr-2" />
-                          <span className="truncate">{mentor.designation}</span>
-                        </div>
-                        <div className="inline-flex items-center bg-indigo-100 text-indigo-700 px-3 py-1 rounded-full text-sm w-full justify-center">
-                          <MapPin className="w-3 h-3 mr-2" />
-                          {mentor.organization}
-                        </div>
+                      <div className="inline-flex items-center bg-indigo-100 text-indigo-700 px-4 py-2 rounded-full text-sm w-full justify-center min-h-[2rem]">
+                        <MapPin className="w-3 h-3 mr-2 flex-shrink-0" />
+                        {mentor.organization}
                       </div>
                     </div>
                   </div>
