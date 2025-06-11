@@ -14,7 +14,7 @@ const MeetOurLeadership = () => {
           {/* COO Section */}
           <div className="flex flex-col items-center md:items-start h-full">
             <COOCard
-              image="https://res.cloudinary.com/dkxongd5z/image/upload/v1737619426/IMG_4763_jtxlag.jpg"
+              image="https://ik.imagekit.io/s0kb1s3cx3/PWIOI/gopal-min.jpg?updatedAt=1749632398507"
               name="Gopal Sharma"
               role="Chief Operating Officer"
               description="Gold Medalist from IIT-BHU, COO at Physics Wallah, passionate about learning, growth, and revolutionizing education."
@@ -26,7 +26,7 @@ const MeetOurLeadership = () => {
           <div className="flex flex-col gap-6 w-full">
             <div className="flex flex-col w-full">
               <AcademicHeadCard
-                image="https://res.cloudinary.com/dkxongd5z/image/upload/v1736948072/ali_z1qegf.png"
+                image="https://ik.imagekit.io/s0kb1s3cx3/PWIOI/ali-min.JPG?updatedAt=1749631912662"
                 name="Janishar Ali"
                 role="Head, School of Technology"
                 description="AVP at PhysicsWallah, ex-founder of CuriousJr (acquired by PhysicsWallah) and MindOrks, passionate innovator."
@@ -36,7 +36,7 @@ const MeetOurLeadership = () => {
 
             <div className="flex flex-col w-full">
               <AcademicHeadCard
-                image="https://res.cloudinary.com/dkxongd5z/image/upload/v1747823261/PN_New_aawjdb.jpg"
+                image="https://ik.imagekit.io/s0kb1s3cx3/PWIOI/nimbalkar-min.JPG?updatedAt=1749631912481"
                 name="Prakash Nimbalkar"
                 role="Head, School of Management"
                 description="Marketing Consultant, GTM & Startup Advisor, Mentor @ Startup Hub MeitY, Wadhwani Foundations, NASSCOM and Visiting Faculty."

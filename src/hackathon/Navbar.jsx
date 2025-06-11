@@ -33,9 +33,9 @@ export default function Navbar() {
               </div> */}
 
               {/* Registration Status */}
-              <button className="bg-white/20 hover:bg-white/30 text-white h-10 min-w-[10rem] px-6 rounded-full text-sm font-medium transition-colors border border-white/30 shadow-md hover:shadow-lg"
+              <button className="disabled cursor-not-allowed bg-white/20 hover:bg-white/30 text-white h-10 min-w-[10rem] px-6 rounded-full text-sm font-medium transition-colors border border-white/30 shadow-md hover:shadow-lg"
               onClick={handleOnClick}>
-                Register Now
+                Registration Closed
               </button>
             </div>
           </div>

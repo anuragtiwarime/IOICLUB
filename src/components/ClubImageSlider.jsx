@@ -2,12 +2,12 @@ import { useState, useEffect } from 'react';
 import { GoChevronLeft, GoChevronRight } from 'react-icons/go';
 
 const images = [
-  "https://res.cloudinary.com/dkxongd5z/image/upload/v1737527177/img25_j57sn0-min_ij6s18.jpg",
-  "https://res.cloudinary.com/dkxongd5z/image/upload/v1738081694/DSC02660_bohvbb.jpg",
-  "https://res.cloudinary.com/dkxongd5z/image/upload/v1736949612/img21_mjrrsx.jpg",
-  "https://res.cloudinary.com/dkxongd5z/image/upload/v1736949636/img29_neubpf.jpg",
-  "https://res.cloudinary.com/dkxongd5z/image/upload/v1736949942/img19_l0lhs8.jpg",
-  "https://res.cloudinary.com/dkxongd5z/image/upload/v1737436401/Hackwinner_ggj2gt.jpg",
+  "https://ik.imagekit.io/s0kb1s3cx3/PWIOI/DSC00533-nav.JPG?updatedAt=1749633123512",
+  "https://ik.imagekit.io/s0kb1s3cx3/PWIOI/img.c-min.png?updatedAt=1749623777709",
+  "https://ik.imagekit.io/s0kb1s3cx3/PWIOI/121A9045-min.JPG?updatedAt=1749622044927",
+  "https://ik.imagekit.io/s0kb1s3cx3/PWIOI/120A6698-min.JPG?updatedAt=1749630544169",
+  "https://ik.imagekit.io/s0kb1s3cx3/PWIOI/120A8707-min.JPG?updatedAt=1749622041102",
+ 
 ];
 
 export default function ImageSlider() {

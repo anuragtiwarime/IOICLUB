@@ -1,74 +1,48 @@
 import React, { useState, useEffect } from "react";
-import { Menu, X } from "lucide-react";
-import { Link, useLocation } from "react-router-dom";
-import { GoChevronDown } from "react-icons/go";
+import { Menu, X, ChevronDown } from "lucide-react";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
-  const [showNavbar, setShowNavbar] = useState(true);
   const [activeLink, setActiveLink] = useState("");
-  const location = useLocation();
-  let lastScrollY = 0;
 
   const handleLinkClick = (link) => {
     setActiveLink(link);
+    setIsOpen(false);
   };
 
-  useEffect(() => {
-    const currentPath = location.pathname;
-    setActiveLink(currentPath.includes("/students") ? "/students" : currentPath);
-  }, [location]);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      if (window.scrollY > lastScrollY) {
-        setShowNavbar(false);
-      } else {
-        setShowNavbar(true);
-      }
-      lastScrollY = window.scrollY;
-    };
-
-    window.addEventListener("scroll", handleScroll);
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
-
-  const NavLink = ({ to, children }) => (
-    <Link
-      to={to}
-      onClick={() => handleLinkClick(to)}
-      className={`relative group hover:text-gray-300 transition-all duration-200 ease-in-out py-1
+  const NavLink = ({ to, children, onClick }) => (
+    <a
+      href={to}
+      onClick={() => {
+        handleLinkClick(to);
+        if (onClick) onClick();
+      }}
+      className={`relative group hover:text-gray-300 transition-all duration-200 ease-in-out py-1 cursor-pointer
                 ${activeLink === to ? 'text-white' : 'text-gray-300'}`}
     >
       {children}
       <span className={`absolute bottom-0 left-0 w-full h-0.5 bg-white transform origin-left transition-transform duration-300 ease-out
                      ${activeLink === to ? 'scale-x-100' : 'scale-x-0 group-hover:scale-x-100'}`} />
-    </Link>
+    </a>
   );
 
   return (
-    <nav
-      className={`bg-black backdrop-blur-md text-white fixed w-full z-50 shadow-lg transition-all duration-300 ease-in-out ${
-        showNavbar ? "top-0" : "-top-20"
-      }`}
-    >
+    <nav className="bg-black backdrop-blur-md text-white fixed w-full z-50 shadow-lg top-0">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <Link
-            to="/"
+          <a
+            href="/"
             onClick={() => handleLinkClick("/")}
             className="flex items-center space-x-2 transform transition-transform duration-200 hover:scale-105"
           >
             <img
-              src="https://res.cloudinary.com/dkxongd5z/image/upload/v1736950534/logo_v2tpru.png"
+              src="https://ik.imagekit.io/s0kb1s3cx3/PWIOI/pwioi.png?updatedAt=1749631662026"
               alt="Logo"
               className="h-12"
             />
-          </Link>
+          </a>
 
           {/* Desktop Menu */}
           <div className="hidden md:flex items-center space-x-8 text-[1rem] font-medium">
@@ -88,7 +62,7 @@ const Navbar = () => {
                          ${activeLink === "/students" ? 'text-white' : 'text-gray-300 hover:text-gray-300'}`}
               >
                 Students
-                <GoChevronDown className={`ml-1 transform transition-transform duration-200 
+                <ChevronDown className={`ml-1 w-4 h-4 transform transition-transform duration-200 
                                       ${isDropdownOpen ? 'rotate-180' : ''}`} />
                 <span className={`absolute bottom-0 left-0 w-full h-0.5 bg-white transform origin-left transition-transform duration-300 ease-out
                               ${activeLink === "/students" ? 'scale-x-100' : 'scale-x-0 group-hover:scale-x-100'}`} />
@@ -101,14 +75,14 @@ const Navbar = () => {
                     { to: "/students/technology", label: "School of Technology" },
                     { to: "/students/management", label: "School of Management" }
                   ].map((item) => (
-                    <Link
+                    <a
                       key={item.to}
-                      to={item.to}
+                      href={item.to}
                       onClick={() => handleLinkClick("/students")}
                       className="block px-6 py-3 text-sm text-gray-300 hover:text-white hover:bg-gray-800/50 transition-all duration-200"
                     >
                       {item.label}
-                    </Link>
+                    </a>
                   ))}
                 </div>
               </div>
@@ -116,12 +90,13 @@ const Navbar = () => {
 
             <NavLink to="/facultyandstaff">Faculty & Staff</NavLink>
 
-            <Link
-                to="/cee"
+            <a
+                href="/cee"
+                onClick={() => handleLinkClick("/cee")}
                 className="px-4 py-2 rounded-xl text-white bg-gradient-to-r from-blue-500 to-indigo-600 hover:from-blue-600 hover:to-indigo-700 transition-all shadow-md hover:shadow-lg"
             >
               CEE
-            </Link>
+            </a>
 
           </div>
 
@@ -147,9 +122,9 @@ const Navbar = () => {
             { to: "/policies", label: "Policies" },
             { to: "/careers", label: "Careers" }
           ].map((item) => (
-            <Link
+            <a
               key={item.to}
-              to={item.to}
+              href={item.to}
               onClick={() => {
                 setIsOpen(false);
                 handleLinkClick(item.to);
@@ -160,7 +135,7 @@ const Navbar = () => {
                          : 'text-gray-300 hover:bg-gray-800/30 hover:text-white'}`}
             >
               {item.label}
-            </Link>
+            </a>
           ))}
 
           {/* Mobile Students Section */}
@@ -171,9 +146,9 @@ const Navbar = () => {
                 { to: "/students/technology", label: "School of Technology" },
                 { to: "/students/management", label: "School of Management" }
               ].map((item) => (
-                <Link
+                <a
                   key={item.to}
-                  to={item.to}
+                  href={item.to}
                   onClick={() => {
                     setIsOpen(false);
                     handleLinkClick("/students");
@@ -181,13 +156,13 @@ const Navbar = () => {
                   className="block py-2 px-4 text-sm font-medium text-gray-400 hover:text-white hover:bg-gray-800/30 rounded-lg transition-all duration-200"
                 >
                   {item.label}
-                </Link>
+                </a>
               ))}
             </div>
           </div>
 
-          <Link
-            to="/facultyandstaff"
+          <a
+            href="/facultyandstaff"
             onClick={() => {
               setIsOpen(false);
               handleLinkClick("/facultyandstaff");
@@ -198,9 +173,9 @@ const Navbar = () => {
                        : 'text-gray-300 hover:bg-gray-800/30 hover:text-white'}`}
           >
             Faculty & Staff
-          </Link>
-          <Link
-                to="/cee"
+          </a>
+          <a
+                href="/cee"
                 onClick={() => {
                   setIsOpen(false);
                   handleLinkClick("/cee");
@@ -208,7 +183,7 @@ const Navbar = () => {
                 className="block py-2 px-4 text-lg font-medium rounded-lg text-white bg-gradient-to-r from-blue-500 to-indigo-600 hover:from-blue-600 hover:to-indigo-700 transition-all shadow-md hover:shadow-lg text-center"
             >
               CEE
-            </Link>
+            </a>
           
         </div>
       </div>

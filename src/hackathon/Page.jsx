@@ -199,15 +199,15 @@ export default function GridSmallBackgroundDemo() {
                     {/* Button glow effect */}
                     <div className="absolute inset-0 bg-gradient-to-r from-orange-400 to-yellow-400 rounded-full blur-lg opacity-75 group-hover:opacity-100 transition-all duration-300 animate-pulse"></div>
 
-                    <button className="relative bg-gradient-to-r from-white to-gray-100 text-gray-800 
+                    <button className="relative disabled  bg-gradient-to-r from-white to-gray-100 text-gray-800 
                         px-6 py-3 text-sm 
                         md:px-8 md:py-3 md:text-lg 
                         rounded-full font-black shadow-2xl 
                         hover:shadow-orange-400/25 transform hover:scale-110 transition-all duration-300 
-                        hover:from-orange-50 hover:to-white border-2 border-white/50 hover:border-orange-200"
+                        hover:from-orange-50 hover:to-white border-2 border-white/50 hover:border-orange-200 cursor-not-allowed opacity-50"
                         onClick={handleOnClick}>
                         <span className="relative z-10 tracking-wide">
-                            REGISTER NOW
+                            REGISTRATION CLOSED
                         </span>
                         {/* Button inner glow */}
                         <div className="absolute inset-0 bg-gradient-to-r from-transparent via-orange-100/50 to-transparent rounded-full opacity-0 hover:opacity-100 transition-opacity duration-300"></div>
@@ -216,9 +216,9 @@ export default function GridSmallBackgroundDemo() {
                 </div>
                 
                 
-                <p className="mt-8 text-lg text-white/80 font-medium tracking-wide animate-bounce">
-                    Registration Closes on 11th June 05:00 PM ⚡
-                </p>
+                {/* <p className="mt-8 text-lg text-white/80 font-medium tracking-wide animate-bounce">
+                    Regi ⚡
+                </p> */}
             </div>
         </div>
     );

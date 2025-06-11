@@ -5,11 +5,10 @@ import { GoChevronLeft, GoChevronRight } from 'react-icons/go';
 const images = [
   "https://ik.imagekit.io/s0kb1s3cx3/PWIOI/DSC00533-min.JPG?updatedAt=1749622040941",
   "https://ik.imagekit.io/s0kb1s3cx3/PWIOI/img.c-min.png?updatedAt=1749623777709",
-  "https://res.cloudinary.com/dkxongd5z/image/upload/v1736949598/img11_jvdvmh.jpg",
-  "https://res.cloudinary.com/dkxongd5z/image/upload/v1737527436/img23_awsttv-min_ze0b7a.jpg",
-  "https://res.cloudinary.com/dkxongd5z/image/upload/v1737381150/img.e_uikamz.png",
-  "https://res.cloudinary.com/dkxongd5z/image/upload/v1736949612/img14_hcgyzj.jpg",
-  "https://res.cloudinary.com/dkxongd5z/image/upload/v1737436401/Hackwinner_ggj2gt.jpg"
+  "https://ik.imagekit.io/s0kb1s3cx3/PWIOI/121A9045-min.JPG?updatedAt=1749622044927",
+  "https://ik.imagekit.io/s0kb1s3cx3/PWIOI/120A6698-min.JPG?updatedAt=1749630544169",
+  "https://ik.imagekit.io/s0kb1s3cx3/PWIOI/120A8707-min.JPG?updatedAt=1749622041102",
+ 
 ];
 
 export default function ImageSlider() {
@@ -44,7 +43,7 @@ export default function ImageSlider() {
   };
 
   return (
-    <div className="group relative h-[300px] md:h-[800px] overflow-hidden rounded-2xl">
+    <div className="group relative h-[300px] md:h-[650px] overflow-hidden rounded-2xl">
       {/* Gradient Overlays */}
       <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent z-10 pointer-events-none"></div>
       <div className="absolute inset-0 bg-gradient-to-b from-black/30 to-transparent z-10 pointer-events-none"></div>
