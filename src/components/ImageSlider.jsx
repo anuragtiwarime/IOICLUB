@@ -3,8 +3,8 @@ import React from 'react';
 import { GoChevronLeft, GoChevronRight } from 'react-icons/go';
 
 const images = [
-  "https://res.cloudinary.com/dkxongd5z/image/upload/v1736949622/img24_yzf6ry.jpg",
-  "https://res.cloudinary.com/dkxongd5z/image/upload/v1736949596/img10_pieeo2.jpg",
+  "https://ik.imagekit.io/s0kb1s3cx3/PWIOI/DSC00533-min.JPG?updatedAt=1749622040941",
+  "https://ik.imagekit.io/s0kb1s3cx3/PWIOI/img.c-min.png?updatedAt=1749623777709",
   "https://res.cloudinary.com/dkxongd5z/image/upload/v1736949598/img11_jvdvmh.jpg",
   "https://res.cloudinary.com/dkxongd5z/image/upload/v1737527436/img23_awsttv-min_ze0b7a.jpg",
   "https://res.cloudinary.com/dkxongd5z/image/upload/v1737381150/img.e_uikamz.png",

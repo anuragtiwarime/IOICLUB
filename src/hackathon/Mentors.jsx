@@ -31,6 +31,13 @@ function Mentors() {
       designation: "Sr. Manager",
       image: "/deewakar.jpg",
     },
+    {
+      name: "Shruti Nambiar",
+      role: "AWS SME",
+      organization: "AWS",
+      designation: "Program Manager",
+      image: "/shruti.jpg",
+    },
     
   ];
 
@@ -48,10 +55,10 @@ function Mentors() {
           <div className="w-32 h-1 bg-gradient-to-r from-blue-400 to-indigo-600 mx-auto mb-6 rounded-full"></div>
         </div>
 
-        {/* Mentors Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        {/* Mentors Grid - Responsive layout that looks good with 5 cards */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6 justify-items-center">
           {mentors.map((mentor, index) => (
-            <div key={index} className="group">
+            <div key={index} className="group w-full max-w-sm">
               <div className="relative bg-white rounded-3xl shadow-xl overflow-hidden border border-gray-100 hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 h-full">
                 {/* Decorative Background Pattern */}
                 <div className="absolute inset-0 bg-gradient-to-br from-blue-50/50 to-indigo-50/50"></div>
@@ -59,11 +66,11 @@ function Mentors() {
                 <div className="absolute bottom-0 left-0 w-24 h-24 bg-gradient-to-tr from-indigo-100/30 to-transparent rounded-full translate-y-12 -translate-x-12"></div>
 
                 {/* Content Container */}
-                <div className="relative z-10 p-8 flex flex-col h-full">
+                <div className="relative z-10 p-6 flex flex-col h-full">
                   {/* Profile Image Section */}
                   <div className="flex flex-col items-center text-center">
                     <div className="relative mb-6">
-                      <div className="w-28 h-28 rounded-full bg-gradient-to-br from-blue-400 to-indigo-600 p-1 shadow-lg">
+                      <div className="w-24 h-24 rounded-full bg-gradient-to-br from-blue-400 to-indigo-600 p-1 shadow-lg">
                         <div className="w-full h-full rounded-full bg-gray-200 flex items-center justify-center overflow-hidden">
                           <img
                             src={mentor.image}
@@ -74,37 +81,37 @@ function Mentors() {
                               e.target.nextSibling.style.display = 'flex';
                             }}
                           />
-                          <div className="w-full h-full bg-gradient-to-br from-gray-300 to-gray-400 flex items-center justify-center text-gray-600 font-semibold text-lg" style={{display: 'none'}}>
+                          <div className="w-full h-full bg-gradient-to-br from-gray-300 to-gray-400 flex items-center justify-center text-gray-600 font-semibold text-sm" style={{display: 'none'}}>
                             {mentor.name.split(' ').map(n => n[0]).join('')}
                           </div>
                         </div>
                       </div>
                       {/* Floating Badge */}
-                      <div className="absolute -bottom-2 -right-2 bg-gradient-to-r from-orange-400 to-orange-600 text-white text-xs font-bold px-3 py-1 rounded-full shadow-lg">
+                      <div className="absolute -bottom-2 -right-2 bg-gradient-to-r from-orange-400 to-orange-600 text-white text-xs font-bold px-2 py-1 rounded-full shadow-lg">
                         <Sparkles className="w-3 h-3 inline mr-1" />
                         Expert
                       </div>
                     </div>
 
                     {/* Name */}
-                    <h3 className="text-xl font-bold text-gray-800 mb-4 leading-tight min-h-[3rem] flex items-center">
+                    <h3 className="text-lg font-bold text-gray-800 mb-3 leading-tight min-h-[2.5rem] flex items-center text-center">
                       {mentor.name}
                     </h3>
 
                     {/* Role Badge */}
-                    <div className="inline-flex items-center bg-blue-100 text-blue-700 px-4 py-2 rounded-full text-sm font-medium mb-4">
-                      <Award className="w-4 h-4 mr-2" />
+                    <div className="inline-flex items-center bg-blue-100 text-blue-700 px-3 py-1.5 rounded-full text-xs font-medium mb-3">
+                      <Award className="w-3 h-3 mr-1.5" />
                       {mentor.role}
                     </div>
                     
                     {/* Info Tags */}
-                    <div className="space-y-3 w-full">
-                      <div className="inline-flex items-center bg-gray-100 text-gray-700 px-4 py-2 rounded-full text-sm w-full justify-center min-h-[2rem]">
-                        <Briefcase className="w-3 h-3 mr-2 flex-shrink-0" />
-                        <span className="truncate">{mentor.designation}</span>
+                    <div className="space-y-2 w-full">
+                      <div className="inline-flex items-center bg-gray-100 text-gray-700 px-3 py-1.5 rounded-full text-xs w-full justify-center min-h-[1.75rem]">
+                        <Briefcase className="w-3 h-3 mr-1.5 flex-shrink-0" />
+                        <span className="truncate text-center">{mentor.designation}</span>
                       </div>
-                      <div className="inline-flex items-center bg-indigo-100 text-indigo-700 px-4 py-2 rounded-full text-sm w-full justify-center min-h-[2rem]">
-                        <MapPin className="w-3 h-3 mr-2 flex-shrink-0" />
+                      <div className="inline-flex items-center bg-indigo-100 text-indigo-700 px-3 py-1.5 rounded-full text-xs w-full justify-center min-h-[1.75rem]">
+                        <MapPin className="w-3 h-3 mr-1.5 flex-shrink-0" />
                         {mentor.organization}
                       </div>
                     </div>

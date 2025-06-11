@@ -217,7 +217,7 @@ export default function GridSmallBackgroundDemo() {
                 
                 
                 <p className="mt-8 text-lg text-white/80 font-medium tracking-wide animate-bounce">
-                    Registration Closes on 11th June EOD ⚡
+                    Registration Closes on 11th June 05:00 PM ⚡
                 </p>
             </div>
         </div>

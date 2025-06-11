@@ -14,7 +14,7 @@ const StudentAccessPortal = () => {
           <AccessCard
             title="Leave Request Form"
             description="Kindly complete the form below to request a leave. Ensure all details are accurate for smooth processing of your application."
-            image="https://res.cloudinary.com/dkxongd5z/image/upload/v1736950547/leave_dcshti.jpg"
+            image="https://ik.imagekit.io/s0kb1s3cx3/PWIOI/Artboard%201-100.jpg?updatedAt=1749624499366"
             buttonLink="https://pw.jotform.com/242621898990067"
           />
           {/* <AccessCard
@@ -26,7 +26,7 @@ const StudentAccessPortal = () => {
           <AccessCard
             title="Internship and Event"
             description="Please complete the form below to register for an internship or event. Accurate details will help us process your application efficiently."
-            image="https://res.cloudinary.com/dkxongd5z/image/upload/v1736950546/internship_uvoxo3.jpg"
+            image="https://ik.imagekit.io/s0kb1s3cx3/PWIOI/Artboard%201%20copy-100.jpg?updatedAt=1749624499022"
             buttonLink="https://pw.jotform.com/243390511127045"
           />
         </div>
