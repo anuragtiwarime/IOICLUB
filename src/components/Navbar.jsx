@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 import { Menu, X, ChevronDown } from "lucide-react";
 
 const Navbar = () => {
@@ -12,8 +13,8 @@ const Navbar = () => {
   };
 
   const NavLink = ({ to, children, onClick }) => (
-    <a
-      href={to}
+    <Link
+      to={to}
       onClick={() => {
         handleLinkClick(to);
         if (onClick) onClick();
@@ -24,7 +25,7 @@ const Navbar = () => {
       {children}
       <span className={`absolute bottom-0 left-0 w-full h-0.5 bg-white transform origin-left transition-transform duration-300 ease-out
                      ${activeLink === to ? 'scale-x-100' : 'scale-x-0 group-hover:scale-x-100'}`} />
-    </a>
+    </Link>
   );
 
   return (
@@ -32,8 +33,8 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <a
-            href="/"
+          <Link
+            to="/"
             onClick={() => handleLinkClick("/")}
             className="flex items-center space-x-2 transform transition-transform duration-200 hover:scale-105"
           >
@@ -42,7 +43,7 @@ const Navbar = () => {
               alt="Logo"
               className="h-12"
             />
-          </a>
+          </Link>
 
           {/* Desktop Menu */}
           <div className="hidden md:flex items-center space-x-8 text-[1rem] font-medium">
@@ -75,14 +76,14 @@ const Navbar = () => {
                     { to: "/students/technology", label: "School of Technology" },
                     { to: "/students/management", label: "School of Management" }
                   ].map((item) => (
-                    <a
+                    <Link
                       key={item.to}
-                      href={item.to}
+                      to={item.to}
                       onClick={() => handleLinkClick("/students")}
                       className="block px-6 py-3 text-sm text-gray-300 hover:text-white hover:bg-gray-800/50 transition-all duration-200"
                     >
                       {item.label}
-                    </a>
+                    </Link>
                   ))}
                 </div>
               </div>
@@ -90,13 +91,13 @@ const Navbar = () => {
 
             <NavLink to="/facultyandstaff">Faculty & Staff</NavLink>
 
-            <a
-                href="/cee"
+            <Link
+                to="/cee"
                 onClick={() => handleLinkClick("/cee")}
                 className="px-4 py-2 rounded-xl text-white bg-gradient-to-r from-blue-500 to-indigo-600 hover:from-blue-600 hover:to-indigo-700 transition-all shadow-md hover:shadow-lg"
             >
               CEE
-            </a>
+            </Link>
 
           </div>
 
@@ -122,9 +123,9 @@ const Navbar = () => {
             { to: "/policies", label: "Policies" },
             { to: "/careers", label: "Careers" }
           ].map((item) => (
-            <a
+            <Link
               key={item.to}
-              href={item.to}
+              to={item.to}
               onClick={() => {
                 setIsOpen(false);
                 handleLinkClick(item.to);
@@ -135,7 +136,7 @@ const Navbar = () => {
                          : 'text-gray-300 hover:bg-gray-800/30 hover:text-white'}`}
             >
               {item.label}
-            </a>
+            </Link>
           ))}
 
           {/* Mobile Students Section */}
@@ -146,9 +147,9 @@ const Navbar = () => {
                 { to: "/students/technology", label: "School of Technology" },
                 { to: "/students/management", label: "School of Management" }
               ].map((item) => (
-                <a
+                <Link
                   key={item.to}
-                  href={item.to}
+                  to={item.to}
                   onClick={() => {
                     setIsOpen(false);
                     handleLinkClick("/students");
@@ -156,13 +157,13 @@ const Navbar = () => {
                   className="block py-2 px-4 text-sm font-medium text-gray-400 hover:text-white hover:bg-gray-800/30 rounded-lg transition-all duration-200"
                 >
                   {item.label}
-                </a>
+                </Link>
               ))}
             </div>
           </div>
 
-          <a
-            href="/facultyandstaff"
+          <Link
+            to="/facultyandstaff"
             onClick={() => {
               setIsOpen(false);
               handleLinkClick("/facultyandstaff");
@@ -173,9 +174,9 @@ const Navbar = () => {
                        : 'text-gray-300 hover:bg-gray-800/30 hover:text-white'}`}
           >
             Faculty & Staff
-          </a>
-          <a
-                href="/cee"
+          </Link>
+          <Link
+                to="/cee"
                 onClick={() => {
                   setIsOpen(false);
                   handleLinkClick("/cee");
@@ -183,7 +184,7 @@ const Navbar = () => {
                 className="block py-2 px-4 text-lg font-medium rounded-lg text-white bg-gradient-to-r from-blue-500 to-indigo-600 hover:from-blue-600 hover:to-indigo-700 transition-all shadow-md hover:shadow-lg text-center"
             >
               CEE
-            </a>
+            </Link>
           
         </div>
       </div>

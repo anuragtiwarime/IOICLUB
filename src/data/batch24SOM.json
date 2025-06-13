@@ -5,6 +5,8 @@
     "state": "",
     "photo": "https://res.cloudinary.com/dkxongd5z/image/upload/v1737890950/Artboard_7_upgkrr.png",
     "linkedIn": ""
+    ,
+    "Male":"true"
   },
   {
     "name": "Abhishek Kumar",
@@ -12,6 +14,8 @@
     "state": "",
     "photo": "https://res.cloudinary.com/dkxongd5z/image/upload/v1737890949/Artboard_3_eflepj.png",
     "linkedIn": ""
+    ,
+    "Male":"true"
   },
   {
     "name": "Amrita P",
@@ -19,6 +23,8 @@
     "state": "",
     "photo": "https://res.cloudinary.com/dkxongd5z/image/upload/v1737890949/Artboard_8_hoyfxo.png",
     "linkedIn": ""
+    ,
+    "Male":"false"
   },
   {
     "name": "Atchaya R",
@@ -26,6 +32,8 @@
     "state": "Tamil Nadu",
     "photo": "https://res.cloudinary.com/dkxongd5z/image/upload/v1737471130/Avatar3_Male_dvztet.png",
     "linkedIn": ""
+    ,
+    "Male":"false"
   },
   {
     "name": "Deeksha Pawar",
@@ -33,6 +41,8 @@
     "state": "",
     "photo": "https://res.cloudinary.com/dkxongd5z/image/upload/v1737445586/Avatar_i4xb7l.png",
     "linkedIn": ""
+    ,
+    "Male":"false"
   },
   {
     "name": "Deepak",
@@ -40,6 +50,8 @@
     "state": "Andhra Pradesh",
     "photo": "https://res.cloudinary.com/dkxongd5z/image/upload/v1737442156/Purple_Pink_Gradient_Man_3D_Avatar_wa2ato.png",
     "linkedIn": ""
+    ,
+    "Male":"true"
   },
   {
     "name": "Deepak Kumar Mahto",
@@ -47,6 +59,8 @@
     "state": "Karnataka",
     "photo": "https://res.cloudinary.com/dkxongd5z/image/upload/v1737890950/Artboard_7_upgkrr.png",
     "linkedIn": ""
+    ,
+    "Male":"true"
   },
   {
     "name": "Iffa Naaz",
@@ -54,6 +68,8 @@
     "state": "Delhi",
     "photo": "https://res.cloudinary.com/dkxongd5z/image/upload/v1737890949/Artboard_3_eflepj.png",
     "linkedIn": ""
+    ,
+    "Male":"false"
   },
   {
     "name": "Jasleen Kaur",
@@ -61,6 +77,8 @@
     "state": "",
     "photo": "https://res.cloudinary.com/dkxongd5z/image/upload/v1737890949/Artboard_8_hoyfxo.png",
     "linkedIn": ""
+    ,
+    "Male":"true"
   },
   {
     "name": "Jaypal Pandey",
@@ -68,13 +86,17 @@
     "state": "Uttar Pradesh",
     "photo": "https://res.cloudinary.com/dkxongd5z/image/upload/v1737471130/Avatar3_Male_dvztet.png",
     "linkedIn": ""
+    ,
+    "Male":"true"
   },
   {
-    "name": "Kashish Kashish",
+    "name": "Kashish",
     "city": "Nehru Vihar",
     "state": "Delhi",
     "photo": "https://res.cloudinary.com/dkxongd5z/image/upload/v1737890949/Artboard_1_ejqebt.png",
     "linkedIn": ""
+    ,
+    "Male":"true"
   },
   {
     "name": "Khushal",
@@ -82,6 +104,8 @@
     "state": "Maharashtra",
     "photo": "https://res.cloudinary.com/dkxongd5z/image/upload/v1737445586/Avatar_i4xb7l.png",
     "linkedIn": ""
+    ,
+    "Male":"true"
   },
   {
     "name": "Mayank Ranjan",
@@ -89,6 +113,8 @@
     "state": "",
     "photo": "https://res.cloudinary.com/dkxongd5z/image/upload/v1737442156/Purple_Pink_Gradient_Man_3D_Avatar_wa2ato.png",
     "linkedIn": ""
+    ,
+    "Male":"true"
   },
   {
     "name": "Md Kaif Alam",
@@ -96,6 +122,8 @@
     "state": "",
     "photo": "https://res.cloudinary.com/dkxongd5z/image/upload/v1737890950/Artboard_7_upgkrr.png",
     "linkedIn": ""
+    ,
+    "Male":"true"
   },
   {
     "name": "Parvathi Chandhana",
@@ -103,6 +131,8 @@
     "state": "",
     "photo": "https://res.cloudinary.com/dkxongd5z/image/upload/v1737890949/Artboard_3_eflepj.png",
     "linkedIn": ""
+    ,
+    "Male":"false"
   },
   {
     "name": "Prajwal Kagalagomb",
@@ -110,6 +140,8 @@
     "state": "Karnataka",
     "photo": "https://res.cloudinary.com/dkxongd5z/image/upload/v1737890949/Artboard_8_hoyfxo.png",
     "linkedIn": ""
+    ,
+    "Male":"true"
   },
   {
     "name": "Pulkit Vyas",
@@ -117,6 +149,8 @@
     "state": "Rajasthan",
     "photo": "https://res.cloudinary.com/dkxongd5z/image/upload/v1737471130/Avatar3_Male_dvztet.png",
     "linkedIn": ""
+    ,
+    "Male":"true"
   },
   {
     "name": "Raj Mishra",
@@ -124,6 +158,8 @@
     "state": "",
     "photo": "https://res.cloudinary.com/dkxongd5z/image/upload/v1737445586/Avatar_i4xb7l.png",
     "linkedIn": ""
+    ,
+    "Male":"true"
   },
   {
     "name": "Rajdeep Debnath",
@@ -131,6 +167,8 @@
     "state": "",
     "photo": "https://res.cloudinary.com/dkxongd5z/image/upload/v1737442156/Purple_Pink_Gradient_Man_3D_Avatar_wa2ato.png",
     "linkedIn": ""
+    ,
+    "Male":"true"
   },
   {
     "name": "Sahil Singh",
@@ -138,6 +176,8 @@
     "state": "Jharkhand",
     "photo": "https://res.cloudinary.com/dkxongd5z/image/upload/v1737890950/Artboard_7_upgkrr.png",
     "linkedIn": ""
+    ,
+    "Male":"true"
   },
   {
     "name": "Sahil Soni",
@@ -145,6 +185,8 @@
     "state": "",
     "photo": "https://res.cloudinary.com/dkxongd5z/image/upload/v1737890949/Artboard_3_eflepj.png",
     "linkedIn": ""
+    ,
+    "Male":"true"
   },
   {
     "name": "Shivam Kumar",
@@ -152,6 +194,8 @@
     "state": "",
     "photo": "https://res.cloudinary.com/dkxongd5z/image/upload/v1737890949/Artboard_8_hoyfxo.png",
     "linkedIn": ""
+    ,
+    "Male":"true"
   },
   {
     "name": "Shreya Tiwari",
@@ -159,6 +203,8 @@
     "state": "Rajasthan",
     "photo": "https://res.cloudinary.com/dkxongd5z/image/upload/v1737471117/Avatar2_Female_ydzckw.png",
     "linkedIn": ""
+    ,
+    "Male":"false"
   },
   {
     "name": "Shubham Kumar Saurav",
@@ -166,6 +212,8 @@
     "state": "",
     "photo": "https://res.cloudinary.com/dkxongd5z/image/upload/v1737471130/Avatar3_Male_dvztet.png",
     "linkedIn": ""
+    ,
+    "Male":"true"
   },
   {
     "name": "Tushar Dengle",
@@ -173,6 +221,8 @@
     "state": "Maharashtra",
     "photo": "https://res.cloudinary.com/dkxongd5z/image/upload/v1737445586/Avatar_i4xb7l.png",
     "linkedIn": ""
+    ,
+    "Male":"true"
   },
   {
     "name": "Shristi",
@@ -180,6 +230,8 @@
     "state": "Haryana",
     "photo": "https://res.cloudinary.com/dkxongd5z/image/upload/v1737890949/Artboard_4_ykrsye.png",
     "linkedIn": ""
+    ,
+    "Male":"false"
   },
   {
     "name": "Vivek",
@@ -187,6 +239,8 @@
     "state": "Uttar Pradesh",
     "photo": "https://res.cloudinary.com/dkxongd5z/image/upload/v1737442156/Purple_Pink_Gradient_Man_3D_Avatar_wa2ato.png",
     "linkedIn": ""
+    ,
+    "Male":"true"
   },
   {
     "name": "Vivek Sahu",
@@ -194,6 +248,8 @@
     "state": "",
     "photo": "https://res.cloudinary.com/dkxongd5z/image/upload/v1737890950/Artboard_7_upgkrr.png",
     "linkedIn": ""
+    ,
+    "Male":"true"
   },
   {
     "name": "Yash Sahu",
@@ -201,6 +257,8 @@
     "state": "",
     "photo": "https://res.cloudinary.com/dkxongd5z/image/upload/v1737890949/Artboard_3_eflepj.png",
     "linkedIn": ""
+    ,
+    "Male":"true"
   },
   {
     "name": "Dharani Hosur",
@@ -208,5 +266,7 @@
     "state": "Karnataka",
     "photo": "https://res.cloudinary.com/dkxongd5z/image/upload/v1737890949/Artboard_8_hoyfxo.png",
     "linkedIn": ""
+    ,
+    "Male":"false"
   }
 ]
